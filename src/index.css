@@ -1,13 +1,342 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p {
+  margin-bottom: 0;
+  padding: 0;
+}
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+/* App ************************************ */
+.app {
+  width: 100%;
+  display: flex;
+}
+.app-right {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+/* sidebar ************************************/
+
+.sc-dPWrhe.cQiZws {
+  height: 100vh;
+}
+
+/* Topbar****************************************/
+
+.topbar {
+  display: flex;
+  padding: 18px 30px;
+  align-items: center;
+  background-color: #cccccc;
+}
+.topbar-left {
+  width: 20%;
+}
+.topbar-right {
+  width: 80%;
+  text-align: end;
+}
+.topbar .topbar-right svg {
+  font-size: 38px;
+}
+
+/* Overview *************************** */
+.overview {
+  padding: 10px;
+}
+.overview-top {
+  display: flex;
+  width: 100%;
+  padding: 0px 10px;
+  background-color: #fff;
+  align-items: center;
+}
+.overview-top-left {
+  width: 45%;
+}
+.overview-top-right {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+}
+.overview-top-right .overview-top-right-content p {
+  margin-bottom: 0;
+}
+/*  summary Tabs ********************************* */
+
+.summary-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.summary-wrapper-left {
+  padding: 10px;
+  width: 55%;
+  border-right: 1px solid #000;
+}
+.summary-wrapper-left .summary-left-top {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between;
+}
+
+.summary-wrapper-right {
+  width: 45%;
+  padding: 10px;
+}
+.summary-wrapper-right-visitordetails {
+  width: 100%;
+  display: flex;
+}
+.summary-wrapper-right-visitordetails-left {
+  width: 50%;
+}
+.summary-wrapper-right-visitordetails-right {
+  width: 50%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5px;
+}
+.visitor-content {
+  display: flex;
+  justify-content: space-between;
+}
+.visitor-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Devicess*********************************88 */
+.summary-wrapper-right-device-all {
+  width: 100%;
+  display: flex;
+}
+.summary-wrapper-right-device-alltabs {
+  width: 50%;
+  padding: 10px;
+}
+.summary-wrapper-right-device-alltabs-computer {
+  display: flex;
+  justify-content: space-between;
+}
+.summary-wrapper-right-device-alltabs-tablet {
+  display: flex;
+  justify-content: space-between;
+}
+.summary-wrapper-right-device-alltabs-mobile {
+  display: flex;
+  justify-content: space-between;
+}
+.summary-wrapper-right-device-alltabs-tv {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Audience profile*************************** */
+.audience {
+  padding: 5px;
+}
+.audience-wrapper {
+  padding: 10px;
+  display: flex;
+  background-color: #fff;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Audience Interest ********************** */
+.audience-interest {
+  padding: 5px;
+}
+.audience-interest-wrapper {
+  padding: 10px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+/* refferal-source $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+.refferal-source {
+  padding: 5px;
+}
+.refferal-source-wrapper {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+}
+.refferal-source-wrapper-left {
+  padding-right: 20px;
+  width: 40%;
+}
+.refferal-source-wrapper-right {
+  padding: 10px;
+  width: 60%;
+}
+
+/* Geo Location ******************************* */
+.geolocation {
+  padding: 5px;
+}
+.geolocation-wrapper {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+}
+.geolocation-wrapper-left {
+  width: 40%;
+}
+.geolocation-wrapper-top {
+  width: 100%;
+  align-items: center;
+  display: flex;
+}
+.geolocation-wrapper-right {
+  width: 60%;
+}
+
+/* Content@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.content {
+  padding: 5px;
+}
+.content-wrapper {
+  width: 100%;
+  display: flex;
+}
+.content-wrapper-first {
+  width: 100%;
+  padding: 5px;
+}
+.content-wrapper-second {
+  width: 100%;
+  padding: 5px;
+}
+.content-wrapper-third {
+  width: 100%;
+  padding: 5px;
+}
+.content-wrapper-fourth {
+  width: 100%;
+  padding: 5px;
+}
+/* / liveview%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.liveview {
+  padding: 5px;
+  width: 100%;
+}
+.liveview-wrapper {
+  display: flex;
+  width: 100%;
+}
+.liveview-wrapper-left {
+  width: 30%;
+}
+
+.liveview-wrapper-left-bargraph {
+  width: 100%;
+  height: 150px;
+}
+.liveview-wrapper-left-graph-multi {
+  width: 100%;
+  display: flex;
+}
+.liveview-wrapper-left-graph-multi-first {
+  width: 50%;
+}
+.liveview-wrapper-left-graph-multi-first svg.recharts-surface {
+  height: 170px;
+}
+.liveview-wrapper-left-graph-multi-second {
+  width: 50%;
+}
+.liveview-wrapper-left-graph-multi-second svg.recharts-surface {
+  height: 170px;
+}
+/*   middle&&&&&&&&&&&&&&&&&&& */
+.liveview-wrapper-middle {
+  width: 40%;
+  padding: 5px;
+}
+.liveview-wrapper-middle-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.liveview-wrapper-middle-head {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  width: 100%;
+}
+.liveview-wrapper-middle-graph {
+  height: 200px;
+  width: 100%;
+  margin-top: 1rem;
+}
+.liveview-wrapper-middle-second-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.liveview-wrapper-middle-second-bottom {
+  display: flex;
+  width: 100%;
+}
+.liveview-wrapper-middle-second-bottom-left {
+  width: 45%;
+  border-right: 1px solid rgba(95, 93, 93, 0.123);
+}
+.liveview-wrapper-middle-second-bottom-right {
+  width: 55%;
+}
+.liveview-wrapper-middle-second-bottom-right-graph {
+  width: 100%;
+  height: 140px;
+  border-bottom: 1px solid rgba(114, 111, 111, 0.151);
+}
+.liveview-wrapper-middle-second-bottom-right-graph svg.recharts-surface {
+  height: 150px;
+  width: 150px;
+}
+.recharts-wrapper {
+  height: 100px;
+}
+/* right************************************* */
+.liveview-wrapper-right {
+  width: 30%;
+}
+.liveview-wrapper-right-first-top {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.liveview-wrapper-right-first-bottom-content{
+  width: 100%;
+  display: flex;justify-content: space-between;
+  margin-top: 1rem;
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(134, 127, 127, 0.281);
 }
