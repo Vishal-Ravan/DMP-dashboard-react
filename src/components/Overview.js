@@ -276,13 +276,13 @@ const Overview = () => {
             </TabPanel>
 
             <TabPanel>
-<RefferalSource/>
+              <RefferalSource />
             </TabPanel>
             <TabPanel>
-         <GeoLocation/>
+              <GeoLocation />
             </TabPanel>
             <TabPanel>
-<Content/>
+              <Content />
             </TabPanel>
           </Tabs>
         </div>

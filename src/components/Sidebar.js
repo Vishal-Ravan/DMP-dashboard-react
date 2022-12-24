@@ -17,9 +17,14 @@ const Sidebar = () => {
           <CDBSidebarMenu>
           <Link to='/'><CDBSidebarMenuItem icon="th-large">Overview</CDBSidebarMenuItem></Link>
             <Link to='/live-view'><CDBSidebarMenuItem icon="sticky-note">Live View</CDBSidebarMenuItem></Link>
-            <CDBSidebarMenuItem icon="credit-card" iconType="solid">
-              Metrics
-            </CDBSidebarMenuItem>
+            <Link to='/audience'> <CDBSidebarMenuItem icon="credit-card" iconType="solid">
+              Audience
+            </CDBSidebarMenuItem></Link>
+          <Link to='/source'><CDBSidebarMenuItem icon="th-large">Source</CDBSidebarMenuItem></Link>
+          <Link to='/content'><CDBSidebarMenuItem icon="th-large">Engagement</CDBSidebarMenuItem></Link>
+
+          <Link to='/content'><CDBSidebarMenuItem icon="th-large">Content</CDBSidebarMenuItem></Link>
+
           </CDBSidebarMenu>
         </CDBSidebarContent>
 

@@ -4,6 +4,9 @@ import { Route, Switch } from "react-router-dom";
 import Topbar from './components/Topbar';
 import Overview from './components/Overview';
 import LIveView from './components/liveview/LIveView';
+import AudienceSegment from './components/audience/AudienceSegment';
+import Source from './components/source/Source';
+import Content from './components/content/Content';
 
 const App = () => {
   return (
@@ -18,6 +21,12 @@ const App = () => {
       <Switch>
         <Route exact path="/" component={Overview} /> 
         <Route path='/live-view' component={LIveView} />
+        <Route path='/audience' component={AudienceSegment} />
+        <Route path='/source' component={Source} />
+        <Route path='/content' component={Content} />
+
+
+
       </Switch>
       </div>
     </div>

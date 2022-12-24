@@ -275,8 +275,12 @@ tr:nth-child(even) {
   height: 170px;
 }
 /*   middle&&&&&&&&&&&&&&&&&&& */
+
+.liveview-wrapper-right-side {
+  width: 70%;
+}
 .liveview-wrapper-middle {
-  width: 40%;
+  width: 60%;
   padding: 5px;
 }
 .liveview-wrapper-middle-top {
@@ -326,17 +330,217 @@ tr:nth-child(even) {
 }
 /* right************************************* */
 .liveview-wrapper-right {
-  width: 30%;
+  width: 40%;
+}
+.liveview-wrapper-right-side-wrapper {
+  width: 100%;
+  display: flex;
 }
 .liveview-wrapper-right-first-top {
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
-.liveview-wrapper-right-first-bottom-content{
+.liveview-wrapper-right-first-bottom-content {
   width: 100%;
-  display: flex;justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
   margin-top: 1rem;
   padding: 5px 0;
   border-bottom: 1px solid rgba(134, 127, 127, 0.281);
+}
+
+/* left-liveview-publishing ********************************* */
+.publishing-content {
+  width: 100%;
+  display: flex;
+  margin-bottom: 3rem;
+  height: 80px;
+}
+.publishing-content-left {
+  width: 50%;
+}
+.publishing-content-right {
+  width: 50%;
+}
+.liveview-wrapper-left-second-authors {
+  margin-top: 5rem;
+}
+.liveview-wrapper-left-second-authors-head {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.liveview-wrapper-left-second-authors-details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*  Audience Segments^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+
+.audience-segment-bottom-table {
+  display: flex;
+  width: 100%;
+}
+/*  table left********************** */
+
+.audience-segment-bottom-table-left {
+  width: 30%;
+}
+.audience-segment-bottom-table-left-data {
+  display: flex;
+  width: 100%;
+}
+.audience-srno {
+  width: 20%;
+  text-align: center;
+}
+.audience-drop {
+  width: 80%;
+}
+
+/*  middle ******************************************* */
+
+.audience-segment-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.audience-segment-top-left{
+  display: flex;
+  width: 30%;
+  align-items: center;
+}
+.audience-segment-top-middle{
+  width: 40%;
+}
+.audience-segment-top-right{
+  width: 30%;
+}
+.audience-segment-top-right-time-drop{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.audience-segment-bottom-table-middle {
+  width: 35%;
+}
+.audience-segment-bottom-head{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.audience-segment-bottom-head-right{
+  display: flex;
+}
+.audience-segment-bottom-audience{
+  display: flex;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.audience-segment-bottom-table-middle-gendertype {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.audience-segment-bottom-table-middle-datas {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+.middle-datas-num{
+  width: 30%;
+}
+.middle-datas-range{
+  width: 30%;
+}
+.middle-datas-graph{
+  width: 40%;
+}
+.middle-datas-graph {
+  height: 100%;
+  width: 100%;
+}
+.middle-datas-graph .recharts-responsive-container{
+  /* width: 170px; */
+  text-align: end;
+}
+.middle-datas-graph .recharts-wrapper{
+  width: 120px;
+}
+.middle-datas-graph svg.recharts-surface {
+  height: 100px;
+  width: 100px;
+}
+
+
+/* Source ********************************************************************* */
+
+.source-top{
+  display: flex;
+  width: 100%;
+  /* margin-bottom: 2rem; */
+}
+.source-top-left{
+  width: 70%;
+}
+.source-top-left-time{
+width: 30%;}
+.source-top-left-btn-drop{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.source-bottom-first{
+  width: 100%;
+  display: flex;
+}
+.source-bottom-first-left{
+  width: 30%;
+}
+.source-bottom-first-left-chart{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.source-bottom-first-right{
+  width: 70%;
+}
+.source-bottom-first-right-matric{
+  display: flex;
+  margin-top: 2rem;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Content *(************************************************** */
+
+.source-bottom-wrapper{
+  display: flex;
+  width: 100%;
+}
+.source-bottom-wrapper-left{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.source-bottom-wrapper-middle{
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.source-bottom-wrapper-right{
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
