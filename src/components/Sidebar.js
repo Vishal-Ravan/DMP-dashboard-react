@@ -7,12 +7,13 @@ import {
   CDBSidebarMenuItem,
   CDBSidebarFooter,
 } from 'cdbreact';
+import cuberoot from "./source/cuberoot.png"
 import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
       <CDBSidebar className="CDBSidebar">
-        <CDBSidebarHeader prefix={<i className="fa fa-bars" />}>Contrast</CDBSidebarHeader>
+        <CDBSidebarHeader prefix={<i className="fa fa-bars" />}><img src={cuberoot} width='150' alt=''/></CDBSidebarHeader>
         <CDBSidebarContent>
           <CDBSidebarMenu>
           <Link to='/'><CDBSidebarMenuItem icon="th-large">Overview</CDBSidebarMenuItem></Link>
@@ -20,6 +21,11 @@ const Sidebar = () => {
             <Link to='/audience'> <CDBSidebarMenuItem icon="credit-card" iconType="solid">
               Audience
             </CDBSidebarMenuItem></Link>
+            <Link to='/audience-first'> <CDBSidebarMenuItem icon="credit-card" iconType="solid">
+              Audiencefirst
+            </CDBSidebarMenuItem></Link>
+          <Link to='/geo-graphy'><CDBSidebarMenuItem icon="th-large">GeoGraphy</CDBSidebarMenuItem></Link>
+
           <Link to='/source'><CDBSidebarMenuItem icon="th-large">Source</CDBSidebarMenuItem></Link>
           <Link to='/content'><CDBSidebarMenuItem icon="th-large">Engagement</CDBSidebarMenuItem></Link>
 

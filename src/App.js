@@ -7,6 +7,8 @@ import LIveView from './components/liveview/LIveView';
 import AudienceSegment from './components/audience/AudienceSegment';
 import Source from './components/source/Source';
 import Content from './components/content/Content';
+import AudienceSegmentFirst from './components/audiencesegmentfirst/AudienceSegmentFirst';
+import AudienceGeography from './components/audience/audiencegeography/AudienceGeography';
 
 const App = () => {
   return (
@@ -24,6 +26,10 @@ const App = () => {
         <Route path='/audience' component={AudienceSegment} />
         <Route path='/source' component={Source} />
         <Route path='/content' component={Content} />
+        <Route path='/geo-graphy' component={AudienceGeography} />
+
+        <Route path='/audience-first' component={AudienceSegmentFirst} />
+
 
 
 

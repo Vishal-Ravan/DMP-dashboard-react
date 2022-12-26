@@ -403,23 +403,23 @@ tr:nth-child(even) {
 
 /*  middle ******************************************* */
 
-.audience-segment-top{
+.audience-segment-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.audience-segment-top-left{
+.audience-segment-top-left {
   display: flex;
   width: 30%;
   align-items: center;
 }
-.audience-segment-top-middle{
+.audience-segment-top-middle {
   width: 40%;
 }
-.audience-segment-top-right{
+.audience-segment-top-right {
   width: 30%;
 }
-.audience-segment-top-right-time-drop{
+.audience-segment-top-right-time-drop {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -427,16 +427,16 @@ tr:nth-child(even) {
 .audience-segment-bottom-table-middle {
   width: 35%;
 }
-.audience-segment-bottom-head{
+.audience-segment-bottom-head {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
 }
-.audience-segment-bottom-head-right{
+.audience-segment-bottom-head-right {
   display: flex;
 }
-.audience-segment-bottom-audience{
+.audience-segment-bottom-audience {
   display: flex;
   width: 100%;
   margin-bottom: 2rem;
@@ -454,24 +454,24 @@ tr:nth-child(even) {
   align-items: center;
   height: 100px;
 }
-.middle-datas-num{
+.middle-datas-num {
   width: 30%;
 }
-.middle-datas-range{
+.middle-datas-range {
   width: 30%;
 }
-.middle-datas-graph{
+.middle-datas-graph {
   width: 40%;
 }
 .middle-datas-graph {
   height: 100%;
   width: 100%;
 }
-.middle-datas-graph .recharts-responsive-container{
+.middle-datas-graph .recharts-responsive-container {
   /* width: 170px; */
   text-align: end;
 }
-.middle-datas-graph .recharts-wrapper{
+.middle-datas-graph .recharts-wrapper {
   width: 120px;
 }
 .middle-datas-graph svg.recharts-surface {
@@ -479,40 +479,40 @@ tr:nth-child(even) {
   width: 100px;
 }
 
-
 /* Source ********************************************************************* */
 
-.source-top{
+.source-top {
   display: flex;
   width: 100%;
   /* margin-bottom: 2rem; */
 }
-.source-top-left{
+.source-top-left {
   width: 70%;
 }
-.source-top-left-time{
-width: 30%;}
-.source-top-left-btn-drop{
+.source-top-left-time {
+  width: 30%;
+}
+.source-top-left-btn-drop {
   align-items: center;
   display: flex;
   justify-content: space-between;
 }
-.source-bottom-first{
+.source-bottom-first {
   width: 100%;
   display: flex;
 }
-.source-bottom-first-left{
+.source-bottom-first-left {
   width: 30%;
 }
-.source-bottom-first-left-chart{
+.source-bottom-first-left-chart {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.source-bottom-first-right{
+.source-bottom-first-right {
   width: 70%;
 }
-.source-bottom-first-right-matric{
+.source-bottom-first-right-matric {
   display: flex;
   margin-top: 2rem;
   width: 100%;
@@ -522,25 +522,78 @@ width: 30%;}
 
 /* Content *(************************************************** */
 
-.source-bottom-wrapper{
+.source-bottom-wrapper {
   display: flex;
   width: 100%;
 }
-.source-bottom-wrapper-left{
+.source-bottom-wrapper-left {
   width: 50%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.source-bottom-wrapper-middle{
+.source-bottom-wrapper-middle {
   width: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.source-bottom-wrapper-right{
+.source-bottom-wrapper-right {
   width: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Audience-first-segment------ summary------ ************************************   */
+.summary-audience {
+  width: 100%;
+  display: flex;
+}
+.summary-audience-wrapper-left {
+  width: 40%;
+}
+.summary-audience-wrapper-right {
+  width: 60%;
+}
+/* audience-engagement */
+.audience-engagement {
+  height: 500px;
+}
+
+/* AudienceEngagement &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+.audience-engagement{
+  width: 100%;
+}
+.audience-engagement-wrapper {
+  width: 100%;
+  display: flex;
+}
+.audience-engagement-wrapper-left {
+  width: 50%;
+}
+.audience-engagement-wrapper-right {
+  width: 50%;
+  text-align: end;
+}
+.audience-engagement-bottom-left {
+  width: 50%;
+}
+.audience-engagement-bottom-right {
+  width: 50%;
+}
+.audience-engagement-bottom {
+ display: flex;
+  width: 100%;
+}
+
+
+/* Geography location ************************************************ */
+.audiencegeography-wrapper-map{
+  width: 100%;
+}
+.audiencegeography-wrapper-map svg{
+  height: auto;
+  width: 100%;
+  object-fit: contain;
 }
