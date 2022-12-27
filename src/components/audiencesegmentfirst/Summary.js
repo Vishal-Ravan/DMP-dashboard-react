@@ -8,6 +8,7 @@ import {
   CartesianGrid,
   Tooltip,
 } from "recharts";
+import AudienceEngagementType from "../audienceengagementtype/AudienceEngagementType";
 
 const Summary = () => {
   const datas = [
@@ -151,6 +152,11 @@ const Summary = () => {
           </ResponsiveContainer>
         </div>
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
+<AudienceEngagementType/>
     </>
   );
 };

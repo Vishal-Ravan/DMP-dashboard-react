@@ -84,19 +84,19 @@ const Overview = () => {
       <div className="overview">
         <div className="overview-top">
           <div className="overview-top-left">
-            <h3>Site Performance</h3>
+            <h3 className="h3first">Site Performance</h3>
           </div>
-          <div className="overview-top-right">
+          <div className="overview-top-right right-align" >
             <div className="overview-top-right-content">
-              <p>Post Published</p>
+              <p className="p1">Post Published</p>
               <h5>345</h5>
             </div>
             <div className="overview-top-right-content">
-              <p>Publishing Trend</p>
+              <p className="p1">Publishing Trend</p>
               <h5>345</h5>
             </div>
             <div className="overview-top-right-content">
-              <p>Time Period</p>
+              <p className="p1">Time Period</p>
               <Tabs>
                 <TabList>
                   <Tab>Title 1</Tab>
@@ -105,17 +105,16 @@ const Overview = () => {
               </Tabs>
             </div>
             <div className="overview-top-right-content">
-              <p>Time Period</p>
               <Dropdown
                 options={options}
                 value={defaultOption}
                 placeholder="Select an option"
               />
-              ;
+              
             </div>
           </div>
         </div>
-        <div className="overview-tabs">
+        <div className="overview-tabs multiple-tabs">
           <Tabs>
             <TabList>
               <Tab>Summary</Tab>
@@ -126,35 +125,35 @@ const Overview = () => {
               <Tab>Top Content</Tab>
             </TabList>
             <TabPanel className="summary">
-              <div className="summary-wrapper">
-                <div className="summary-wrapper-left">
-                  <h6>Key Metric</h6>
+              <div className="summary-wrapper ph">
+                <div className="summary-wrapper-left pls">
+                  <h6 className="h6first">Key Metric</h6>
                   <div className="summary-left-top">
                     <div className="summary-left-top-content">
-                      <p>Visitors</p>
-                      <h5>65,296</h5>
+                      <p className="p1">Visitors</p>
+                      <h5 className="num">65,296</h5>
                       <p>
                         Vs lorem epson <span>15%</span>{" "}
                       </p>
                     </div>
                     <div className="summary-left-top-content">
-                      <p>Page Views</p>
-                      <h5>6,565,296</h5>
+                      <p className="p1">Page Views</p>
+                      <h5 className="num">6,565,296</h5>
                       <p>
                         Vs lorem epson <span>15%</span>{" "}
                       </p>
                     </div>
                     <div className="summary-left-top-content">
-                      <p>Engaged Time</p>
-                      <h5>8,235,296 min</h5>
+                      <p className="p1">Engaged Time</p>
+                      <h5 className="num">8,235,296 min</h5>
                       <p>
                         Vs lorem epson <span>15%</span>{" "}
                       </p>
                     </div>
                     <div className="summary-left-top-content">
-                      <p>Min/Visitor</p>
-                      <h5>1.23 min</h5>
-                      <p>
+                      <p className="p1">Min/Visitor</p>
+                      <h5 className="num">1.23 min</h5>
+                      <p className="p2">
                         Vs lorem epson <span>15%</span>{" "}
                       </p>
                     </div>
@@ -186,7 +185,7 @@ const Overview = () => {
                     </div>
                   </div>
                 </div>
-                <div className="summary-wrapper-right">
+                <div className="summary-wrapper-right prs">
                   <h6>Visitor Breakdown</h6>
                   <div className="summary-wrapper-right-visitordetails">
                     <div className="summary-wrapper-right-visitordetails-left">

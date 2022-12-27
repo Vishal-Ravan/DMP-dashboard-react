@@ -1,10 +1,10 @@
 import React from "react";
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 import Dropdown from "react-dropdown";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
 const AudienceGeography = () => {
-
-    const geoUrl =
+  const geoUrl =
     "https://raw.githubusercontent.com/deldersveld/topojson/master/world-countries.json";
 
   const options = ["one", "two", "three"];
@@ -44,6 +44,77 @@ const AudienceGeography = () => {
               }
             </Geographies>
           </ComposableMap>
+        </div>
+        <div className="audiencegeography-wrapper-table">
+          <Tabs>
+            <TabList>
+              <Tab>City</Tab>
+              <Tab>State</Tab>
+              <Tab>Country </Tab>
+              <Tab>Contient </Tab>
+              <Tab>Sub Contient </Tab>
+            </TabList>
+
+            <TabPanel>
+              <table>
+                <tr>
+                  <th>Sr No.</th>
+                  <th>City</th>
+                  <th>Trend</th>
+                  <th>Visitors</th>
+                  <th>Avg. Time</th>
+
+                  <th>PageViews</th>
+
+                  <th></th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>New Delhi</td>
+                  <td></td>
+                  <td>269</td>
+                  <td>0.80min</td>
+                  <td>53,767</td>
+                  <td>
+                    <input type="range" id="vol" name="vol" min="0" max="50" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>New Delhi</td>
+                  <td></td>
+                  <td>269</td>
+                  <td>0.80min</td>
+                  <td>53,767</td>
+                  <td>
+                    <input type="range" id="vol" name="vol" min="0" max="50" />
+                  </td>
+                </tr><tr>
+                  <td>1</td>
+                  <td>New Delhi</td>
+                  <td></td>
+                  <td>269</td>
+                  <td>0.80min</td>
+                  <td>53,767</td>
+                  <td>
+                    <input type="range" id="vol" name="vol" min="0" max="50" />
+                  </td>
+                </tr><tr>
+                  <td>1</td>
+                  <td>New Delhi</td>
+                  <td></td>
+                  <td>269</td>
+                  <td>0.80min</td>
+                  <td>53,767</td>
+                  <td>
+                    <input type="range" id="vol" name="vol" min="0" max="50" />
+                  </td>
+                </tr>
+              </table>
+            </TabPanel>
+            <TabPanel></TabPanel>
+            <TabPanel></TabPanel>
+          </Tabs>
         </div>
       </div>
     </>
