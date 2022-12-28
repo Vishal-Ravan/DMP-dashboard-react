@@ -6,75 +6,98 @@ const GeoLocation = () => {
   const geoUrl =
     "https://raw.githubusercontent.com/deldersveld/topojson/master/world-countries.json";
 
-  const options = ["one", "two", "three"];
+  const options = ["Cities", "two", "three"];
   const defaultOption = options[0];
   return (
     <>
-      <div className="geolocation">
+      <div className="geolocation pa">
+        <h6 className="h6first">Location</h6>
         <div className="geolocation-wrapper">
           <div className="geolocation-wrapper-left">
-            <h6>Location</h6>
             <div className="geolocation-wrapper-top">
-              <p>Top Location</p>
-              <Dropdown
-                options={options}
-                value={defaultOption}
-                placeholder="Select an option"
-              />
+              <p className="p1">Top Location</p>
+              <span className="table-dd1">
+                <Dropdown
+                  options={options}
+                  value={defaultOption}
+                  placeholder="Select an option"
+                />
+              </span>
             </div>
             <div className="geolocation-table">
               <table>
                 <tr>
-                  <th>City</th>
-                  <th>PageView Share</th>
+                  <th className="p1">City</th>
+                  <th className="p1">PageView </th>
 
-                  <th></th>
+                  <th className="p1">Share</th>
                 </tr>
                 <tr>
-                  <td>New Delhi</td>
-                  <td>28%</td>
+                  <td className="num2">New Delhi</td>
+                  <td className="num5">28%</td>
                   <td>
                     <input type="range" id="vol" name="vol" min="0" max="50" />
                   </td>
                 </tr>
                 <tr>
-                  <td>New Delhi</td>
-                  <td>28%</td>
+                  <td className="num2">New Delhi</td>
+                  <td className="num5">28%</td>
                   <td>
                     <input type="range" id="vol" name="vol" min="0" max="50" />
                   </td>
                 </tr>
                 <tr>
-                  <td>New Delhi</td>
-                  <td>28%</td>
+                  <td className="num2">New Delhi</td>
+                  <td className="num5">28%</td>
                   <td>
                     <input type="range" id="vol" name="vol" min="0" max="50" />
                   </td>
                 </tr>
                 <tr>
-                  <td>New Delhi</td>
-                  <td>28%</td>
+                  <td className="num2">New Delhi</td>
+                  <td className="num5">28%</td>
                   <td>
                     <input type="range" id="vol" name="vol" min="0" max="50" />
                   </td>
                 </tr>
                 <tr>
-                  <td>New Delhi</td>
-                  <td>28%</td>
+                  <td className="num2">New Delhi</td>
+                  <td className="num5">28%</td>
                   <td>
                     <input type="range" id="vol" name="vol" min="0" max="50" />
                   </td>
                 </tr>
                 <tr>
-                  <td>New Delhi</td>
-                  <td>28%</td>
+                  <td className="num2">New Delhi</td>
+                  <td className="num5">28%</td>
                   <td>
                     <input type="range" id="vol" name="vol" min="0" max="50" />
                   </td>
                 </tr>
                 <tr>
-                  <td>New Delhi</td>
-                  <td>28%</td>
+                  <td className="num2">New Delhi</td>
+                  <td className="num5">28%</td>
+                  <td>
+                    <input type="range" id="vol" name="vol" min="0" max="50" />
+                  </td>
+                </tr>
+                <tr>
+                  <td className="num2">New Delhi</td>
+                  <td className="num5">28%</td>
+                  <td>
+                    <input type="range" id="vol" name="vol" min="0" max="50" />
+                  </td>
+                </tr>
+                <tr>
+                  <td className="num2">New Delhi</td>
+                  <td className="num5">28%</td>
+                  <td>
+                    <input type="range" id="vol" name="vol" min="0" max="50" />
+                  </td>
+                </tr>
+                <tr>
+                  <td className="num2">New Delhi</td>
+                  <td className="num5">28%</td>
                   <td>
                     <input type="range" id="vol" name="vol" min="0" max="50" />
                   </td>
@@ -82,15 +105,16 @@ const GeoLocation = () => {
               </table>
             </div>
           </div>
-          <div className="geolocation-wrapper-right">
-            <h6>Location</h6>
+          <div className="geolocation-wrapper-right plr">
             <div className="geolocation-wrapper-top">
-              <p>Map View</p>
-              <Dropdown
-                options={options}
-                value={defaultOption}
-                placeholder="Global"
-              />
+              <p className="p1">Map View</p>
+              <span className="table-dd1">
+                <Dropdown
+                  options={options}
+                  value={defaultOption}
+                  placeholder="Global"
+                />
+              </span>
             </div>
             <div className="geolocation-map">
               <ComposableMap>

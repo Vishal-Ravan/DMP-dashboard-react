@@ -28,26 +28,26 @@ const Overview = () => {
   const data = [
     {
       name: "Page A",
-      uv: 4000,
-      pv: 2400,
-      amt: 2400,
+      uv: 0,
+      pv: 400,
+      amt: 400,
     },
     {
       name: "Page B",
-      uv: 3000,
-      pv: 1398,
+      uv: 1000,
+      pv: 198,
       amt: 2210,
     },
     {
       name: "Page C",
-      uv: 2000,
+      uv: 1500,
       pv: 9800,
       amt: 2290,
     },
     {
       name: "Page D",
       uv: 2780,
-      pv: 3908,
+      pv: 308,
       amt: 2000,
     },
     {
@@ -64,7 +64,7 @@ const Overview = () => {
     },
     {
       name: "Page G",
-      uv: 3490,
+      uv: 290,
       pv: 4300,
       amt: 2100,
     },
@@ -86,7 +86,7 @@ const Overview = () => {
           <div className="overview-top-left">
             <h3 className="h3first">Site Performance</h3>
           </div>
-          <div className="overview-top-right right-align" >
+          <div className="overview-top-right right-align">
             <div className="overview-top-right-content">
               <p className="p1">Post Published</p>
               <h5>345</h5>
@@ -110,7 +110,6 @@ const Overview = () => {
                 value={defaultOption}
                 placeholder="Select an option"
               />
-              
             </div>
           </div>
         </div>
@@ -132,21 +131,21 @@ const Overview = () => {
                     <div className="summary-left-top-content">
                       <p className="p1">Visitors</p>
                       <h5 className="num">65,296</h5>
-                      <p>
+                      <p className="p2">
                         Vs lorem epson <span>15%</span>{" "}
                       </p>
                     </div>
                     <div className="summary-left-top-content">
                       <p className="p1">Page Views</p>
                       <h5 className="num">6,565,296</h5>
-                      <p>
+                      <p className="p2">
                         Vs lorem epson <span>15%</span>{" "}
                       </p>
                     </div>
                     <div className="summary-left-top-content">
                       <p className="p1">Engaged Time</p>
                       <h5 className="num">8,235,296 min</h5>
-                      <p>
+                      <p className="p2">
                         Vs lorem epson <span>15%</span>{" "}
                       </p>
                     </div>
@@ -158,14 +157,14 @@ const Overview = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="summary-left-charts">
+                  <div className="summary-left-charts lc">
                     <div style={{ width: "100%", height: 300 }}>
                       <ResponsiveContainer>
                         <AreaChart
                           data={data}
                           margin={{
                             top: 10,
-                            right: 30,
+                            right: 0,
                             left: 0,
                             bottom: 0,
                           }}
@@ -186,27 +185,27 @@ const Overview = () => {
                   </div>
                 </div>
                 <div className="summary-wrapper-right prs">
-                  <h6>Visitor Breakdown</h6>
+                  <h6 className="h6first">Visitor Breakdown</h6>
                   <div className="summary-wrapper-right-visitordetails">
                     <div className="summary-wrapper-right-visitordetails-left">
-                      <div className="visitor-heading">
-                        <p>Visitor Type</p>
-                        <p>Share</p>
+                      <div className="visitor-heading hb">
+                        <p className="p1">Visitor Type</p>
+                        <p className="p1">Share</p>
                       </div>
-                      <div className="visitor-content">
-                        <p>New</p>
-                        <p>6,203,269</p>
-                        <h6>55%</h6>
+                      <div className="visitor-content cb">
+                        <p className="p1">New</p>
+                        <p className="num2">6,203,269</p>
+                        <h6 className="num3">55%</h6>
                       </div>
-                      <div className="visitor-content">
-                        <p>Returning</p>
-                        <p>6,203,269</p>
-                        <h6>35%</h6>
+                      <div className="visitor-content cb">
+                        <p className="p1">Returning</p>
+                        <p className="num2">6,203,269</p>
+                        <h6 className="num3">35%</h6>
                       </div>
-                      <div className="visitor-content">
-                        <p>Loyal</p>
-                        <p>6,767,203</p>
-                        <h6>10%</h6>
+                      <div className="visitor-content cb">
+                        <p className="p1">Loyal</p>
+                        <p className="num2">6,767,203</p>
+                        <h6 className="num3">10%</h6>
                       </div>
                     </div>
                     <div className="summary-wrapper-right-visitordetails-right">
@@ -229,38 +228,42 @@ const Overview = () => {
                           ))}
                         </Pie>
                       </PieChart>
-                      <button>View Audience Engagement</button>
+                      <button className="btn1">View Audience Engagement</button>
                     </div>
                   </div>
-                  <div className="summary-wrapper-right-device">
-                    <h6>Devices</h6>
+                  <div className="summary-wrapper-right-device device-mt">
+                    <h6 className="h6first">Devices</h6>
                     <div className="summary-wrapper-right-device-all">
-                      <div className="summary-wrapper-right-device-alltabs">
-                        <div className="summary-wrapper-right-device-alltabs-computer">
+                      <div className="summary-wrapper-right-device-alltabs ct-div">
+                        <div className="summary-wrapper-right-device-alltabs-computer computer">
                           <MdComputer />
-                          <p>Computer</p>
-                          <h6>30%</h6>
+                          <p className="p1">Computer</p>
+                          <h6 className="num">30%</h6>
                         </div>
-                        <div className="summary-wrapper-right-device-alltabs-tablet">
+                        <div className="summary-wrapper-right-device-alltabs-tablet tablet">
                           <MdComputer />
-                          <p>Computer</p>
-                          <h6>30%</h6>
+                          <p className="p1">Computer</p>
+                          <h6 className="num">30%</h6>
                         </div>
                       </div>
                       <div className="summary-wrapper-right-device-alltabs">
-                        <div className="summary-wrapper-right-device-alltabs-mobile">
+                        <div className="summary-wrapper-right-device-alltabs-mobile mobile">
                           <MdComputer />
-                          <p>Computer</p>
-                          <h6>30%</h6>
+                          <p className="p1">Computer</p>
+                          <h6 className="num">30%</h6>
                         </div>
-                        <div className="summary-wrapper-right-device-alltabs-tv">
+                        <div className="summary-wrapper-right-device-alltabs-tv tv">
                           <MdComputer />
-                          <p>Computer</p>
-                          <h6>30%</h6>
+                          <p className="p1">Computer</p>
+                          <h6 className="num">30%</h6>
                         </div>
                       </div>
                     </div>
-                    <button>View Device Property</button>
+                    <div className="mt">
+                      <button className="btn1 mt-3">
+                        View Device Property
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>

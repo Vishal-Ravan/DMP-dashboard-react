@@ -17,7 +17,7 @@ const AudienceProfile = () => {
       <div className="audience">
         <h5>Audience</h5>
         <div className="audience-wrapper">
-          <div className="audience-wrapper-left">
+          <div className="audience-wrapper-left dtl">
             <PieChart width={220} height={200}>
               <Pie
                 data={datas}
@@ -37,32 +37,32 @@ const AudienceProfile = () => {
                 ))}
               </Pie>
             </PieChart>
-            <div className="audience-left-table">
+            <div className="audience-left-table tw">
               <table>
                 <tr>
-                  <th>Gender</th>
-                  <th>PageViews</th>
-                  <th>Share</th>
+                  <th className="p1">Gender</th>
+                  <th className="p1">PageViews</th>
+                  <th className="p1">Share</th>
                 </tr>
                 <tr>
-                  <td>Male</td>
-                  <td>6,203,269</td>
-                  <td>65%</td>
+                  <td className="p3">Male</td>
+                  <td className="num2">6,203,269</td>
+                  <td className="num3">65%</td>
                 </tr>
                 <tr>
-                  <td>Female</td> 
-                  <td>6,203,269</td>
-                  <td>30%</td>
+                  <td className="p3">Female</td> 
+                  <td className="num2">6,203,269</td>
+                  <td className="num3">30%</td>
                 </tr>
                 <tr>
-                  <td> Other</td> 
-                  <td>6,203,269</td>
-                  <td>5%</td>
+                  <td className="p3"> Other</td> 
+                  <td className="num2">6,203,269</td>
+                  <td className="num3">5%</td>
                 </tr>
               </table>
             </div>
           </div>
-          <div className="audience-wrapper-middle">
+          <div className="audience-wrapper-middle dtl">
             <PieChart width={220} height={200}>
               <Pie
                 data={datas}
@@ -82,32 +82,32 @@ const AudienceProfile = () => {
                 ))}
               </Pie>
             </PieChart>
-            <div className="audience-middle-table">
-              <table>
+            <div className="audience-middle-table tw ">
+            <table>
                 <tr>
-                  <th>Gender</th>
-                  <th>PageViews</th>
-                  <th>Share</th>
+                  <th className="p1">Gender</th>
+                  <th className="p1">PageViews</th>
+                  <th className="p1">Share</th>
                 </tr>
                 <tr>
-                  <td>Male</td>
-                  <td>6,203,269</td>
-                  <td>65%</td>
+                  <td className="p3">Male</td>
+                  <td className="num2">6,203,269</td>
+                  <td className="num3">65%</td>
                 </tr>
                 <tr>
-                  <td>Female</td> 
-                  <td>6,203,269</td>
-                  <td>30%</td>
+                  <td className="p3">Female</td> 
+                  <td className="num2">6,203,269</td>
+                  <td className="num3">30%</td>
                 </tr>
                 <tr>
-                  <td> Other</td> 
-                  <td>6,203,269</td>
-                  <td>5%</td>
+                  <td className="p3"> Other</td> 
+                  <td className="num2">6,203,269</td>
+                  <td className="num3">5%</td>
                 </tr>
               </table>
             </div>
           </div>
-          <div className="audience-wrapper-right">
+          <div className="audience-wrapper-right dtr">
             <PieChart width={220} height={200}>
               <Pie
                 data={datas}
@@ -127,37 +127,27 @@ const AudienceProfile = () => {
                 ))}
               </Pie>
             </PieChart>
-            <div className="audience-right-table">
-              <table>
+            <div className="audience-right-table tw">
+            <table>
                 <tr>
-                  <th>Gender</th>
-                  <th>PageViews</th>
-                  <th>Share</th>
+                  <th className="p1">Gender</th>
+                  <th className="p1">PageViews</th>
+                  <th className="p1">Share</th>
                 </tr>
                 <tr>
-                  <td>Male</td>
-                  <td>6,203,269</td>
-                  <td>65%</td>
+                  <td className="p3">Male</td>
+                  <td className="num2">6,203,269</td>
+                  <td className="num3">65%</td>
                 </tr>
                 <tr>
-                  <td>Female</td>
-                   <td>6,203,269</td>
-                  <td>30%</td>
+                  <td className="p3">Female</td> 
+                  <td className="num2">6,203,269</td>
+                  <td className="num3">30%</td>
                 </tr>
                 <tr>
-                  <td> Other</td> 
-                  <td>6,203,269</td>
-                  <td>5%</td>
-                </tr>
-                <tr>
-                  <td> Other</td> 
-                  <td>6,203,269</td>
-                  <td>5%</td>
-                </tr>
-                <tr>
-                  <td> Other</td> 
-                  <td>6,203,269</td>
-                  <td>5%</td>
+                  <td className="p3"> Other</td> 
+                  <td className="num2">6,203,269</td>
+                  <td className="num3">5%</td>
                 </tr>
               </table>
             </div>
