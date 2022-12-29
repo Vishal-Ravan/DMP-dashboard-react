@@ -22,6 +22,45 @@
   color: rgb(0, 0, 0);
   border: 1px solid black;
 }
+.btn2 {
+  outline: none;
+  cursor: pointer;
+  border-right: 1px solid rgb(0, 0, 0);
+  border-left: none;
+  border-bottom: none;
+  border-top: none;
+  font-size: 14px;
+  width: 100%;
+  padding: 0px 3px;
+  background-color: rgb(53, 46, 155);
+  color: #fff;
+}
+.btn2:focus {
+  outline: none;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+.btn2:active {
+  outline: none;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+.btn3 {
+  background-color: blue;
+  color: white;
+  font-size: 14px;
+  padding: 4px 4px;
+  border: 1px solid #000;
+  outline: none;
+  border-radius: 2px;
+  margin-left: 5px;
+}
+.graph-height {
+  height: 70px;
+  width: 200px;
+}
 .device-mt {
   margin-top: 2rem;
 }
@@ -93,6 +132,10 @@
   font-size: 16px;
   color: #000;
   font-weight: 600;
+}
+.bgwht {
+  background-color: #fff;
+  padding: 10px;
 }
 .computer {
   border-bottom: 1px dotted rgba(0, 0, 0, 0.411);
@@ -300,19 +343,14 @@
   border-radius: 50%;
 }
 
-
-.border-both{
-  
+.border-both {
   border-right: 2px dotted rgba(0, 0, 0, 0.411);
   border-left: 2px dotted rgba(0, 0, 0, 0.411);
 }
-
-
-
-
-
-
-
+.bg-wht {
+  background-color: #fff;
+  margin-top: 1rem;
+}
 
 .audience-drop .Dropdown-control {
   background-color: transparent;
@@ -332,19 +370,6 @@
   right: 50px;
   top: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* custom css EEEEEEEEEEENDDDDDDDD ************************************************************ */
 
@@ -764,7 +789,7 @@ tr:nth-child(even) {
   display: flex;
   width: 100%;
   border-top: 2px dotted rgba(0, 0, 0, 0.411);
-margin-top: 1rem;
+  margin-top: 1rem;
   padding: 10px 0;
 }
 .audience-segment-bottom-table-left-head {
@@ -773,14 +798,11 @@ margin-top: 1rem;
   justify-content: center;
   height: 71px;
   border-bottom: 2px dotted rgba(0, 0, 0, 0.411);
-
-
 }
 .audience-segment-bottom-table-middle-head {
   text-align: center;
   padding-bottom: 5px;
   border-bottom: 2px dotted rgba(0, 0, 0, 0.411);
-
 }
 
 /*  table left********************** */
@@ -796,14 +818,14 @@ margin-top: 1rem;
   height: 100px;
   align-items: center;
   border-bottom: 2px dotted rgba(0, 0, 0, 0.411);
-
 }
 .audience-srno {
   width: 10%;
   text-align: left;
   font-size: 18px;
   font-weight: 600;
-  display: flex;align-items: center;
+  display: flex;
+  align-items: center;
 }
 .audience-drop {
   width: 90%;
@@ -836,7 +858,7 @@ margin-top: 1rem;
 }
 .audience-segment-bottom-table-middle {
   width: 35%;
-  padding: 0 10px ;
+  padding: 0 10px;
 }
 .audience-segment-bottom-head {
   display: flex;
@@ -855,7 +877,6 @@ margin-top: 1rem;
   justify-content: space-between;
   border-bottom: 2px dotted rgba(0, 0, 0, 0.411);
   padding: 6px;
-
 }
 
 .audience-segment-bottom-table-middle-datas {
@@ -939,6 +960,15 @@ margin-top: 1rem;
 .source-bottom-wrapper {
   display: flex;
   width: 100%;
+  padding: 32px 0;
+}
+.source-bottom-wrapper-left-btns {
+  border-left: 1px solid #000;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-right: none;
+
+  display: flex;
 }
 .source-bottom-wrapper-left {
   width: 50%;

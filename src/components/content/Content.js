@@ -16,6 +16,7 @@ import {
 import "react-tabs/style/react-tabs.css";
 import Dropdown from "react-dropdown";
 import "react-dropdown/style.css";
+import { Tab, TabList, Tabs } from "react-tabs";
 
 const Content = () => {
   const options = ["one", "two", "three"];
@@ -78,19 +79,22 @@ const Content = () => {
 
   return (
     <>
-      <div className="content">
-        <div className="source-top">
+      <div className="overview">
+      <div className="source-top overview-top">
           <div className="source-top-left">
-            <h4>Source</h4>
+            <h4>Sectionwise Summary</h4>
           </div>
-          <div className="source-top-left-time">
-            <p>Time Period</p>
-
-            <div className="source-top-left-btn-drop">
-              <div className="source-top-left-btn">
-                <button>Pulse</button>
-                <button>Historic</button>
-              </div>
+          <div className="audience-segment-top-right right-align">
+            <div className="overview-top-right-content">
+              <p className="p1">Time Period</p>
+              <Tabs>
+                <TabList>
+                  <Tab>Title 1</Tab>
+                  <Tab>Title 2</Tab>
+                </TabList>
+              </Tabs>
+            </div>
+            <div className="overview-top-right-content">
               <Dropdown
                 options={options}
                 value={defaultOption}
@@ -99,156 +103,160 @@ const Content = () => {
             </div>
           </div>
         </div>
-        <div className="source-middle">
-          <div className="summary-wrapper">
-            <div className="summary-wrapper-left">
-              <h6>Key Metric</h6>
-              <div className="summary-left-top">
-                <div className="summary-left-top-content">
-                  <p>Visitors</p>
-                  <h5>65,296</h5>
-                  <p>
-                    Vs lorem epson <span>15%</span>{" "}
-                  </p>
-                </div>
-                <div className="summary-left-top-content">
-                  <p>Page Views</p>
-                  <h5>6,565,296</h5>
-                  <p>
-                    Vs lorem epson <span>15%</span>{" "}
-                  </p>
-                </div>
-                <div className="summary-left-top-content">
-                  <p>Engaged Time</p>
-                  <h5>8,235,296 min</h5>
-                  <p>
-                    Vs lorem epson <span>15%</span>{" "}
-                  </p>
-                </div>
-                <div className="summary-left-top-content">
-                  <p>Min/Visitor</p>
-                  <h5>1.23 min</h5>
-                  <p>
-                    Vs lorem epson <span>15%</span>{" "}
-                  </p>
-                </div>
-              </div>
-              <div className="summary-left-charts">
-                <div style={{ width: "100%", height: 300 }}>
-                  <ResponsiveContainer>
-                    <AreaChart
-                      data={data}
-                      margin={{
-                        top: 10,
-                        right: 30,
-                        left: 0,
-                        bottom: 0,
-                      }}
-                    >
-                      <CartesianGrid strokeDasharray="3 3" />
-                      <XAxis dataKey="name" />
-                      <YAxis />
-                      <Tooltip />
-                      <Area
-                        type="monotone"
-                        dataKey="uv"
-                        stroke="#8884d8"
-                        fill="#8884d8"
-                      />
-                    </AreaChart>
-                  </ResponsiveContainer>
-                </div>
-              </div>
-            </div>
-            <div className="summary-wrapper-right">
-              <h6>Visitor Breakdown</h6>
-              <div className="summary-wrapper-right-visitordetails">
-                <div className="summary-wrapper-right-visitordetails-left">
-                  <div className="visitor-heading">
-                    <p>Visitor Type</p>
-                    <p>Share</p>
-                  </div>
-                  <div className="visitor-content">
-                    <p>New</p>
-                    <p>6,203,269</p>
-                    <h6>55%</h6>
-                  </div>
-                  <div className="visitor-content">
-                    <p>Returning</p>
-                    <p>6,203,269</p>
-                    <h6>35%</h6>
-                  </div>
-                  <div className="visitor-content">
-                    <p>Loyal</p>
-                    <p>6,767,203</p>
-                    <h6>10%</h6>
-                  </div>
-                </div>
-                <div className="summary-wrapper-right-visitordetails-right">
-                  <PieChart width={220} height={200}>
-                    <Pie
-                      data={datas}
-                      cx={100}
-                      cy={90}
-                      innerRadius={50}
-                      outerRadius={90}
-                      fill="#8884d8"
-                      // paddingAngle={0}
-                      dataKey="value"
-                    >
-                      {datas.map((entry, index) => (
-                        <Cell
-                          key={`cell-${index}`}
-                          fill={COLORS[index % COLORS.length]}
-                        />
-                      ))}
-                    </Pie>
-                  </PieChart>
-                  <button>View Audience Engagement</button>
-                </div>
-              </div>
-              <div className="summary-wrapper-right-device">
-                <h6>Devices</h6>
-                <div className="summary-wrapper-right-device-all">
-                  <div className="summary-wrapper-right-device-alltabs">
-                    <div className="summary-wrapper-right-device-alltabs-computer">
-                      <MdComputer />
-                      <p>Computer</p>
-                      <h6>30%</h6>
+        <div className="bg-wht">
+        <div className="summary-wrapper ph">
+                <div className="summary-wrapper-left pls">
+                  <h6 className="h6first">Key Metric</h6>
+                  <div className="summary-left-top">
+                    <div className="summary-left-top-content">
+                      <p className="p1">Visitors</p>
+                      <h5 className="num">65,296</h5>
+                      <p className="p2">
+                        Vs lorem epson <span>15%</span>{" "}
+                      </p>
                     </div>
-                    <div className="summary-wrapper-right-device-alltabs-tablet">
-                      <MdComputer />
-                      <p>Computer</p>
-                      <h6>30%</h6>
+                    <div className="summary-left-top-content">
+                      <p className="p1">Page Views</p>
+                      <h5 className="num">6,565,296</h5>
+                      <p className="p2">
+                        Vs lorem epson <span>15%</span>{" "}
+                      </p>
+                    </div>
+                    <div className="summary-left-top-content">
+                      <p className="p1">Engaged Time</p>
+                      <h5 className="num">8,235,296 min</h5>
+                      <p className="p2">
+                        Vs lorem epson <span>15%</span>{" "}
+                      </p>
+                    </div>
+                    <div className="summary-left-top-content">
+                      <p className="p1">Min/Visitor</p>
+                      <h5 className="num">1.23 min</h5>
+                      <p className="p2">
+                        Vs lorem epson <span>15%</span>{" "}
+                      </p>
                     </div>
                   </div>
-                  <div className="summary-wrapper-right-device-alltabs">
-                    <div className="summary-wrapper-right-device-alltabs-mobile">
-                      <MdComputer />
-                      <p>Computer</p>
-                      <h6>30%</h6>
-                    </div>
-                    <div className="summary-wrapper-right-device-alltabs-tv">
-                      <MdComputer />
-                      <p>Computer</p>
-                      <h6>30%</h6>
+                  <div className="summary-left-charts lc">
+                    <div style={{ width: "100%", height: 300 }}>
+                      <ResponsiveContainer>
+                        <AreaChart
+                          data={data}
+                          margin={{
+                            top: 10,
+                            right: 0,
+                            left: 0,
+                            bottom: 0,
+                          }}
+                        >
+                          <CartesianGrid strokeDasharray="3 3" />
+                          <XAxis dataKey="name" />
+                          <YAxis />
+                          <Tooltip />
+                          <Area
+                            type="monotone"
+                            dataKey="uv"
+                            stroke="#FFBB28"
+                            fill="#FF8042"
+                          />
+                        </AreaChart>
+                      </ResponsiveContainer>
                     </div>
                   </div>
                 </div>
-                <button>View Device Property</button>
+                <div className="summary-wrapper-right prs">
+                  <h6 className="h6first">Visitor Breakdown</h6>
+                  <div className="summary-wrapper-right-visitordetails">
+                    <div className="summary-wrapper-right-visitordetails-left">
+                      <div className="visitor-heading hb">
+                        <p className="p1">Visitor Type</p>
+                        <p className="p1">Share</p>
+                      </div>
+                      <div className="visitor-content cb">
+                        <p className="p1">New</p>
+                        <p className="num2">6,203,269</p>
+                        <h6 className="num3">55%</h6>
+                      </div>
+                      <div className="visitor-content cb">
+                        <p className="p1">Returning</p>
+                        <p className="num2">6,203,269</p>
+                        <h6 className="num3">35%</h6>
+                      </div>
+                      <div className="visitor-content cb">
+                        <p className="p1">Loyal</p>
+                        <p className="num2">6,767,203</p>
+                        <h6 className="num3">10%</h6>
+                      </div>
+                    </div>
+                    <div className="summary-wrapper-right-visitordetails-right">
+                      <PieChart width={220} height={200}>
+                        <Pie
+                          data={datas}
+                          cx={100}
+                          cy={90}
+                          innerRadius={50}
+                          outerRadius={90}
+                          fill="#8884d8"
+                          // paddingAngle={0}
+                          dataKey="value"
+                        >
+                          {datas.map((entry, index) => (
+                            <Cell
+                              key={`cell-${index}`}
+                              fill={COLORS[index % COLORS.length]}
+                            />
+                          ))}
+                        </Pie>
+                      </PieChart>
+                      <button className="btn1">View Audience Engagement</button>
+                    </div>
+                  </div>
+                  <div className="summary-wrapper-right-device device-mt">
+                    <h6 className="h6first">Devices</h6>
+                    <div className="summary-wrapper-right-device-all">
+                      <div className="summary-wrapper-right-device-alltabs ct-div">
+                        <div className="summary-wrapper-right-device-alltabs-computer computer">
+                          <MdComputer />
+                          <p className="p1">Computer</p>
+                          <h6 className="num">30%</h6>
+                        </div>
+                        <div className="summary-wrapper-right-device-alltabs-tablet tablet">
+                          <MdComputer />
+                          <p className="p1">Computer</p>
+                          <h6 className="num">30%</h6>
+                        </div>
+                      </div>
+                      <div className="summary-wrapper-right-device-alltabs">
+                        <div className="summary-wrapper-right-device-alltabs-mobile mobile">
+                          <MdComputer />
+                          <p className="p1">Computer</p>
+                          <h6 className="num">30%</h6>
+                        </div>
+                        <div className="summary-wrapper-right-device-alltabs-tv tv">
+                          <MdComputer />
+                          <p className="p1">Computer</p>
+                          <h6 className="num">30%</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mt">
+                      <button className="btn1 mt-3">
+                        View Device Property
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
+              </div>
         <div className="source-bottom">
           <div className="source-bottom-wrapper">
-            <div className="source-bottom-wrapper-left">
-              <h6>Filter Section by: </h6>
+            <div className="source-bottom-wrapper-left right-align">
+              <h6 className="h6first">Filter Section by: </h6>
               <div className="source-bottom-wrapper-left-btns">
-                <button>None</button>
-                <button>Author</button>
-                <button>Tags</button>
-                <button>Publishinh Withing</button>
+                <button className="btn2">None</button>
+                <button className="btn2">Author</button>
+                <button className="btn2">Tags</button>
+                <button className="btn2">Publishing Withing</button>
               </div>
               <Dropdown
                 options={options}
@@ -257,15 +265,15 @@ const Content = () => {
               />
             </div>
             <div className="source-bottom-wrapper-middle">
-              <h6>Export as:</h6>
-              <button>XLS</button>
-              <button>CSV</button>
-              <button>PDF</button>
-              <button>PPT</button>
+              <h6 className="h6first">Export as:</h6>
+              <button className="btn3">XLS</button>
+              <button className="btn3">CSV</button>
+              <button className="btn3">PDF</button>
+              <button className="btn3">PPT</button>
             </div>
 
-            <div className="source-bottom-wrapper-right">
-              <h6>Sjow Section by:</h6>
+            <div className="source-bottom-wrapper-right right-align">
+              <h6 className="h6first">Show Section by:</h6>
               <Dropdown
                 options={options}
                 value={defaultOption}
@@ -273,113 +281,139 @@ const Content = () => {
               />
             </div>
           </div>
-          <div className="source-bottom-table">
+          <div className="source-bottom-table bgwht">
             <table>
               <tr>
-                <th>Sr No.</th>
-                <th>Section Name</th>
-                <th>PageViews : 30 Days</th>
-                <th>Posts</th>
-                <th>Pageviews per Post</th>
-                <th>Visitors</th>
-                <th>Avg Time</th>
-                <th>Pageviews</th>
+                <th></th>
+                <th className="p1">Section Name</th>
+                <th className="p1">PageViews : 30 Days</th>
+                <th className="p1">Posts</th>
+                <th className="p1">Pageviews per Post</th>
+                <th className="p1">Visitors</th>
+                <th className="p1">Avg Time</th>
+                <th className="p1">Pageviews</th>
               </tr>
               <tr>
-                <td>1</td>
-                <td>Etim in iligula</td>
-                <td>
+                <td className="num5">1.</td>
+                <td className="num4">Etim in iligula</td>
+                <td className="graph-height">
                   <ResponsiveContainer width="100%" height="100%">
                     <BarChart width={150} height={40} data={data}>
                       <Bar dataKey="uv" fill="#8884d8" />
                     </BarChart>
                   </ResponsiveContainer>
                 </td>
-                <td>269</td>
-                <td>269</td>
-                <td>226</td>
-                <td>0.80 min</td>
-                <td>34,576</td>
+                <td className="num4">269</td>
+                <td className="num4">269</td>
+                <td className="num4">226</td>
+                <td className="num4">0.80 min</td>
+                <td className="num5">34,576</td>
               </tr>
               <tr>
-                <td>1</td>
-                <td>Etim in iligula</td>
-                <td>
+                <td className="num5">1.</td>
+                <td className="num4">Etim in iligula</td>
+                <td className="graph-height">
                   <ResponsiveContainer width="100%" height="100%">
                     <BarChart width={150} height={40} data={data}>
                       <Bar dataKey="uv" fill="#8884d8" />
                     </BarChart>
                   </ResponsiveContainer>
                 </td>
-                <td>269</td>
-                <td>269</td>
-                <td>226</td>
-                <td>0.80 min</td>
-                <td>34,576</td>
-              </tr>{" "}
-              <tr>
-                <td>1</td>
-                <td>Etim in iligula</td>
-                <td>
+                <td className="num4">269</td>
+                <td className="num4">269</td>
+                <td className="num4">226</td>
+                <td className="num4">0.80 min</td>
+                <td className="num5">34,576</td>
+              </tr><tr>
+                <td className="num5">1.</td>
+                <td className="num4">Etim in iligula</td>
+                <td className="graph-height">
                   <ResponsiveContainer width="100%" height="100%">
                     <BarChart width={150} height={40} data={data}>
                       <Bar dataKey="uv" fill="#8884d8" />
                     </BarChart>
                   </ResponsiveContainer>
                 </td>
-                <td>269</td>
-                <td>269</td>
-                <td>226</td>
-                <td>0.80 min</td>
-                <td>34,576</td>
-              </tr>{" "}
-              <tr>
-                <td>1</td>
-                <td>Etim in iligula</td>
-                <td>
+                <td className="num4">269</td>
+                <td className="num4">269</td>
+                <td className="num4">226</td>
+                <td className="num4">0.80 min</td>
+                <td className="num5">34,576</td>
+              </tr><tr>
+                <td className="num5">1.</td>
+                <td className="num4">Etim in iligula</td>
+                <td className="graph-height">
                   <ResponsiveContainer width="100%" height="100%">
                     <BarChart width={150} height={40} data={data}>
                       <Bar dataKey="uv" fill="#8884d8" />
                     </BarChart>
                   </ResponsiveContainer>
                 </td>
-                <td>269</td>
-                <td>269</td>
-                <td>226</td>
-                <td>0.80 min</td>
-                <td>34,576</td>
-              </tr>{" "}
-              <tr>
-                <td>1</td>
-                <td>Etim in iligula</td>
-                <td>
+                <td className="num4">269</td>
+                <td className="num4">269</td>
+                <td className="num4">226</td>
+                <td className="num4">0.80 min</td>
+                <td className="num5">34,576</td>
+              </tr><tr>
+                <td className="num5">1.</td>
+                <td className="num4">Etim in iligula</td>
+                <td className="graph-height">
                   <ResponsiveContainer width="100%" height="100%">
                     <BarChart width={150} height={40} data={data}>
                       <Bar dataKey="uv" fill="#8884d8" />
                     </BarChart>
                   </ResponsiveContainer>
                 </td>
-                <td>269</td>
-                <td>269</td>
-                <td>226</td>
-                <td>0.80 min</td>
-                <td>34,576</td>
-              </tr>{" "}
-              <tr>
-                <td>1</td>
-                <td>Etim in iligula</td>
-                <td>
+                <td className="num4">269</td>
+                <td className="num4">269</td>
+                <td className="num4">226</td>
+                <td className="num4">0.80 min</td>
+                <td className="num5">34,576</td>
+              </tr><tr>
+                <td className="num5">1.</td>
+                <td className="num4">Etim in iligula</td>
+                <td className="graph-height">
                   <ResponsiveContainer width="100%" height="100%">
-                    <BarChart width={100} height={40} data={data}>
+                    <BarChart width={150} height={40} data={data}>
                       <Bar dataKey="uv" fill="#8884d8" />
                     </BarChart>
                   </ResponsiveContainer>
                 </td>
-                <td>269</td>
-                <td>269</td>
-                <td>226</td>
-                <td>0.80 min</td>
-                <td>34,576</td>
+                <td className="num4">269</td>
+                <td className="num4">269</td>
+                <td className="num4">226</td>
+                <td className="num4">0.80 min</td>
+                <td className="num5">34,576</td>
+              </tr><tr>
+                <td className="num5">1.</td>
+                <td className="num4">Etim in iligula</td>
+                <td className="graph-height">
+                  <ResponsiveContainer width="100%" height="100%">
+                    <BarChart width={150} height={40} data={data}>
+                      <Bar dataKey="uv" fill="#8884d8" />
+                    </BarChart>
+                  </ResponsiveContainer>
+                </td>
+                <td className="num4">269</td>
+                <td className="num4">269</td>
+                <td className="num4">226</td>
+                <td className="num4">0.80 min</td>
+                <td className="num5">34,576</td>
+              </tr><tr>
+                <td className="num5">1.</td>
+                <td className="num4">Etim in iligula</td>
+                <td className="graph-height">
+                  <ResponsiveContainer width="100%" height="100%">
+                    <BarChart width={150} height={40} data={data}>
+                      <Bar dataKey="uv" fill="#8884d8" />
+                    </BarChart>
+                  </ResponsiveContainer>
+                </td>
+                <td className="num4">269</td>
+                <td className="num4">269</td>
+                <td className="num4">226</td>
+                <td className="num4">0.80 min</td>
+                <td className="num5">34,576</td>
               </tr>
             </table>
           </div>
