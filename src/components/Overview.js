@@ -176,8 +176,8 @@ const Overview = () => {
                           <Area
                             type="monotone"
                             dataKey="uv"
-                            stroke="#8884d8"
-                            fill="#8884d8"
+                            stroke="#FFBB28"
+                            fill="#FF8042"
                           />
                         </AreaChart>
                       </ResponsiveContainer>
