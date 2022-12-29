@@ -11,19 +11,22 @@ const AudienceSegmentFirst = () => {
 
   return (
     <>
-      <div className="audiencesegmentfirst">
-        <div className="source-top">
+      <div className="overview">
+        <div className="source-top overview-top">
           <div className="source-top-left">
             <h4>Audience Demography - Gender</h4>
           </div>
-          <div className="source-top-left-time">
-            <p>Time Period</p>
-
-            <div className="source-top-left-btn-drop">
-              <div className="source-top-left-btn">
-                <button>Pulse</button>
-                <button>Historic</button>
-              </div>
+          <div className="audience-segment-top-right right-align">
+            <div className="overview-top-right-content">
+              <p className="p1">Time Period</p>
+              <Tabs>
+                <TabList>
+                  <Tab>Title 1</Tab>
+                  <Tab>Title 2</Tab>
+                </TabList>
+              </Tabs>
+            </div>
+            <div className="overview-top-right-content">
               <Dropdown
                 options={options}
                 value={defaultOption}
@@ -33,7 +36,7 @@ const AudienceSegmentFirst = () => {
           </div>
         </div>
 
-        <div className="audiencesegmentfirst-wrapper-tab">
+        <div className="audiencesegmentfirst-wrapper-tab multiple-tabs">
           <Tabs>
             <TabList>
               <Tab>Summary</Tab>

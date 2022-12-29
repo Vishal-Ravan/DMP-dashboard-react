@@ -66,8 +66,8 @@ const Summary = () => {
     <>
       <div className="summary-audience">
         <div className="summary-audience-wrapper-left">
-          <h6>Gender Traffic</h6>
-          <div className="summmary-audience-wrapper-left-chart">
+          <h6 className="h6first">Gender Traffic</h6>
+          <div className="audience-wrapper-left dtl">
             <PieChart width={220} height={200}>
               <Pie
                 data={datas}
@@ -87,29 +87,30 @@ const Summary = () => {
                 ))}
               </Pie>
             </PieChart>
-
-            <table>
-              <tr>
-                <th>Gender</th>
-                <th>PageViews</th>
-                <th>Share</th>
-              </tr>
-              <tr>
-                <td>Male</td>
-                <td>6,54,545</td>
-                <td>65%</td>
-              </tr>
-              <tr>
-                <td>Male</td>
-                <td>6,54,545</td>
-                <td>65%</td>
-              </tr>
-              <tr>
-                <td>Male</td>
-                <td>6,54,545</td>
-                <td>65%</td>
-              </tr>
-            </table>
+            <div className="audience-left-table tw">
+              <table>
+                <tr>
+                  <th className="p1">Gender</th>
+                  <th className="p1">PageViews</th>
+                  <th className="p1">Share</th>
+                </tr>
+                <tr>
+                  <td className="p3">Male</td>
+                  <td className="num2">6,203,269</td>
+                  <td className="num3">65%</td>
+                </tr>
+                <tr>
+                  <td className="p3">Female</td> 
+                  <td className="num2">6,203,269</td>
+                  <td className="num3">30%</td>
+                </tr>
+                <tr>
+                  <td className="p3"> Other</td> 
+                  <td className="num2">6,203,269</td>
+                  <td className="num3">5%</td>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
         <div className="summary-audience-wrapper-right">

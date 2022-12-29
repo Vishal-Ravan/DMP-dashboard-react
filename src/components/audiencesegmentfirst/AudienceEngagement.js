@@ -1,4 +1,5 @@
 import React from "react";
+import { Tab, TabList, Tabs } from "react-tabs";
 import {
   ComposedChart,
   Line,
@@ -56,14 +57,20 @@ const AudienceEngagement = () => {
       <div className="audience-engagement">
         <div className="audience-engagement-wrapper">
           <div className="audience-engagement-wrapper-left">
-            <h5>Engagement by Gender</h5>
-            <h6>
+            <h5 className="h6first">Engagement by Gender</h5>
+            <h6 className="p1">
               Average Volume of Gender Traffic by Day of Week and Time of Day
             </h6>
           </div>
-          <div className="audience-engagement-wrapper-right">
-            <button>Value</button>
-            <button>Percentage</button>
+          <div className="audience-engagement-wrapper-right right-align">
+          <div className="overview-top-right-content">
+              <Tabs>
+                <TabList>
+                  <Tab>Title 1</Tab>
+                  <Tab>Title 2</Tab>
+                </TabList>
+              </Tabs>
+            </div>
           </div>
         </div>
         <div className="audience-engagement-bottom">

@@ -164,7 +164,7 @@
   margin-top: 1rem;
 }
 .multiple-tabs .react-tabs__tab {
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
   background-color: #000;
   color: #fff;
   font-size: 16px !important;
@@ -181,6 +181,7 @@
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   font-size: 16px;
+  border: 1px solid #000;
   font-weight: 500;
 }
 .multiple-tabs .react-tabs__tab-panel--selected {
@@ -962,6 +963,7 @@ margin-top: 1rem;
 .summary-audience {
   width: 100%;
   display: flex;
+  padding: 10px;
 }
 .summary-audience-wrapper-left {
   width: 40%;
@@ -972,6 +974,7 @@ margin-top: 1rem;
 /* audience-engagement */
 .audience-engagement {
   height: 500px;
+  padding: 10px;
 }
 
 /* AudienceEngagement &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
@@ -988,6 +991,8 @@ margin-top: 1rem;
 .audience-engagement-wrapper-right {
   width: 50%;
   text-align: end;
+  display: flex;
+  justify-content: flex-end;
 }
 .audience-engagement-bottom-left {
   width: 50%;
@@ -997,6 +1002,7 @@ margin-top: 1rem;
 }
 .audience-engagement-bottom {
   display: flex;
+  padding-top: 1rem;
   width: 100%;
 }
 
