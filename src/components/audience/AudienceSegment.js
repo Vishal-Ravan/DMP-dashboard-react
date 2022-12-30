@@ -1,49 +1,82 @@
 import React from "react";
 import Dropdown from "react-dropdown";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-
-import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
+import { Chart } from "react-google-charts";
 //   dropdown ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 const options = ["Online", "two", "three"];
 const defaultOption = options[0];
 
 // charts$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
-const data = [
-  { name: "Group A", value: 400 },
-  { name: "Group B", value: 300 },
-  { name: "Group C", value: 300 },
-  { name: "Group D", value: 200 },
-];
 
-const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
+const pieOptions = {
+  is3D: true,
 
-const RADIAN = Math.PI / 180;
-const renderCustomizedLabel = ({
-  cx,
-  cy,
-  midAngle,
-  innerRadius,
-  outerRadius,
-  percent,
-  index,
-}) => {
-  const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
-  const x = cx + radius * Math.cos(-midAngle * RADIAN);
-  const y = cy + radius * Math.sin(-midAngle * RADIAN);
-
-  return (
-    <text
-      x={x}
-      y={y}
-      fill="white"
-      textAnchor={x > cx ? "start" : "end"}
-      dominantBaseline="central"
-    >
-      {`${(percent * 100).toFixed(0)}%`}
-    </text>
-  );
+  slices: [
+    {
+      color: "#00a3e0",
+    },
+    {
+      color: "#f2a900",
+    },
+    {
+      color: "F16A21",
+    },
+    {
+      color: "#e9a227",
+    },
+  ],
+  legend: 'none',
+  tooltip: {
+    showColorCode: true,
+  },
+  chartArea: {
+    left: 3,
+    top: 0,
+    bottom: 0,
+    right: 0,
+    width: "100%",
+    height: "100%",
+  },
+  fontName: "Roboto",
+  fontSize: 12,
+  color: "000",
 };
+const pieOptions1 = {
+  is3D: true,
+
+  slices: [
+    {
+      color: "#00a3e0",
+    },
+    {
+      color: "#f2a900",
+    },
+    {
+      color: "F16A21",
+    },
+    {
+      color: "#e9a227",
+    },
+  ],
+  legend: 'none',
+  tooltip: {
+    showColorCode: true,
+  },
+  chartArea: {
+    left: 3,
+    top: 0,
+    bottom: 0,
+    right: 0,
+    width: "100%",
+    height: "100%",
+  },
+  fontName: "Roboto",
+  fontSize: 12,
+  color: "000",
+};
+
+
 const AudienceSegment = () => {
   return (
     <>
@@ -114,43 +147,7 @@ const AudienceSegment = () => {
                         />
                       </div>
                     </div>
-                    <div className="audience-segment-bottom-table-left-data">
-                      <div className="audience-srno">1</div>
-                      <div className="audience-drop">
-                        <Dropdown
-                          options={options}
-                          value={defaultOption}
-                          placeholder="Select an option"
-                        />
-                      </div>
-                    </div>   <div className="audience-segment-bottom-table-left-data">
-                      <div className="audience-srno">1</div>
-                      <div className="audience-drop">
-                        <Dropdown
-                          options={options}
-                          value={defaultOption}
-                          placeholder="Select an option"
-                        />
-                      </div>
-                    </div>   <div className="audience-segment-bottom-table-left-data">
-                      <div className="audience-srno">1</div>
-                      <div className="audience-drop">
-                        <Dropdown
-                          options={options}
-                          value={defaultOption}
-                          placeholder="Select an option"
-                        />
-                      </div>
-                    </div>   <div className="audience-segment-bottom-table-left-data">
-                      <div className="audience-srno">1</div>
-                      <div className="audience-drop">
-                        <Dropdown
-                          options={options}
-                          value={defaultOption}
-                          placeholder="Select an option"
-                        />
-                      </div>
-                    </div>
+                    
                   </div>
                   <div className="audience-segment-bottom-table-middle border-both">
                     <div className="audience-segment-bottom-table-middle-head">
@@ -174,175 +171,21 @@ const AudienceSegment = () => {
                         />
                       </div>
                       <div className="middle-datas-graph">
-                        <ResponsiveContainer width="100%" height="100%">
-                          <PieChart>
-                            <Pie
-                              data={data}
-                              cx="50%"
-                              cy="50%"
-                              labelLine={false}
-                              label={renderCustomizedLabel}
-                              outerRadius={80}
-                              fill="#8884d8"
-                              dataKey="value"
-                            >
-                              {data.map((entry, index) => (
-                                <Cell
-                                  key={`cell-${index}`}
-                                  fill={COLORS[index % COLORS.length]}
-                                />
-                              ))}
-                            </Pie>
-                          </PieChart>
-                        </ResponsiveContainer>
-                      </div>
-                    </div>
-                    <div className="audience-segment-bottom-table-middle-datas">
-                      <div className="middle-datas-num">
-                        <h6>45,565 </h6>
-                      </div>
-                      <div className="middle-datas-range">
-                        <input
-                          type="range"
-                          id="vol"
-                          name="vol"
-                          min="0"
-                          max="50"
+                        <Chart
+                          chartType="PieChart"
+                          data={[
+                            ["Item", "Numbers"],
+                            ["Item 1", 5000],
+                            ["Item 2", 20000],
+                            ["Item 3", 6000],
+                            ["Item 4", 6000],
+                          ]}
+                          options={pieOptions}
+                          graph_id="PieChart"
+                          width={"100%"}
+                          height={"100px"}
+                          legend_toggle
                         />
-                      </div>
-                      <div className="middle-datas-graph">
-                        <ResponsiveContainer width="100%" height="100%">
-                          <PieChart>
-                            <Pie
-                              data={data}
-                              cx="50%"
-                              cy="50%"
-                              labelLine={false}
-                              label={renderCustomizedLabel}
-                              outerRadius={80}
-                              fill="#8884d8"
-                              dataKey="value"
-                            >
-                              {data.map((entry, index) => (
-                                <Cell
-                                  key={`cell-${index}`}
-                                  fill={COLORS[index % COLORS.length]}
-                                />
-                              ))}
-                            </Pie>
-                          </PieChart>
-                        </ResponsiveContainer>
-                      </div>
-                    </div>{" "}
-                    <div className="audience-segment-bottom-table-middle-datas">
-                      <div className="middle-datas-num">
-                        <h6>45,565 </h6>
-                      </div>
-                      <div className="middle-datas-range">
-                        <input
-                          type="range"
-                          id="vol"
-                          name="vol"
-                          min="0"
-                          max="50"
-                        />
-                      </div>
-                      <div className="middle-datas-graph">
-                        <ResponsiveContainer width="100%" height="100%">
-                          <PieChart>
-                            <Pie
-                              data={data}
-                              cx="50%"
-                              cy="50%"
-                              labelLine={false}
-                              label={renderCustomizedLabel}
-                              outerRadius={80}
-                              fill="#8884d8"
-                              dataKey="value"
-                            >
-                              {data.map((entry, index) => (
-                                <Cell
-                                  key={`cell-${index}`}
-                                  fill={COLORS[index % COLORS.length]}
-                                />
-                              ))}
-                            </Pie>
-                          </PieChart>
-                        </ResponsiveContainer>
-                      </div>
-                    </div>{" "}
-                    <div className="audience-segment-bottom-table-middle-datas">
-                      <div className="middle-datas-num">
-                        <h6>45,565 </h6>
-                      </div>
-                      <div className="middle-datas-range">
-                        <input
-                          type="range"
-                          id="vol"
-                          name="vol"
-                          min="0"
-                          max="50"
-                        />
-                      </div>
-                      <div className="middle-datas-graph">
-                        <ResponsiveContainer width="100%" height="100%">
-                          <PieChart>
-                            <Pie
-                              data={data}
-                              cx="50%"
-                              cy="50%"
-                              labelLine={false}
-                              label={renderCustomizedLabel}
-                              outerRadius={80}
-                              fill="#8884d8"
-                              dataKey="value"
-                            >
-                              {data.map((entry, index) => (
-                                <Cell
-                                  key={`cell-${index}`}
-                                  fill={COLORS[index % COLORS.length]}
-                                />
-                              ))}
-                            </Pie>
-                          </PieChart>
-                        </ResponsiveContainer>
-                      </div>
-                    </div>{" "}
-                    <div className="audience-segment-bottom-table-middle-datas">
-                      <div className="middle-datas-num">
-                        <h6>45,565 </h6>
-                      </div>
-                      <div className="middle-datas-range">
-                        <input
-                          type="range"
-                          id="vol"
-                          name="vol"
-                          min="0"
-                          max="50"
-                        />
-                      </div>
-                      <div className="middle-datas-graph">
-                        <ResponsiveContainer width="100%" height="100%">
-                          <PieChart>
-                            <Pie
-                              data={data}
-                              cx="50%"
-                              cy="50%"
-                              labelLine={false}
-                              label={renderCustomizedLabel}
-                              outerRadius={80}
-                              fill="#8884d8"
-                              dataKey="value"
-                            >
-                              {data.map((entry, index) => (
-                                <Cell
-                                  key={`cell-${index}`}
-                                  fill={COLORS[index % COLORS.length]}
-                                />
-                              ))}
-                            </Pie>
-                          </PieChart>
-                        </ResponsiveContainer>
                       </div>
                     </div>
                   </div>
@@ -368,178 +211,24 @@ const AudienceSegment = () => {
                         />
                       </div>
                       <div className="middle-datas-graph">
-                        <ResponsiveContainer width="100%" height="100%">
-                          <PieChart>
-                            <Pie
-                              data={data}
-                              cx="50%"
-                              cy="50%"
-                              labelLine={false}
-                              label={renderCustomizedLabel}
-                              outerRadius={80}
-                              fill="#8884d8"
-                              dataKey="value"
-                            >
-                              {data.map((entry, index) => (
-                                <Cell
-                                  key={`cell-${index}`}
-                                  fill={COLORS[index % COLORS.length]}
-                                />
-                              ))}
-                            </Pie>
-                          </PieChart>
-                        </ResponsiveContainer>
+                      <Chart
+                          chartType="PieChart"
+                          data={[
+                            ["Item", "Numbers"],
+                            ["Item 1", 5000],
+                            ["Item 2", 20000],
+                            ["Item 3", 6000],
+                            ["Item 4", 6000],
+                          ]}
+                          options={pieOptions1}
+                          graph_id="PieChart1"
+                          width={"100%"}
+                          height={"100px"}
+                          legend_toggle
+                        />
                       </div>
                     </div>
-                    <div className="audience-segment-bottom-table-middle-datas">
-                      <div className="middle-datas-num">
-                        <h6>45,565 </h6>
-                      </div>
-                      <div className="middle-datas-range">
-                        <input
-                          type="range"
-                          id="vol"
-                          name="vol"
-                          min="0"
-                          max="50"
-                        />
-                      </div>
-                      <div className="middle-datas-graph">
-                        <ResponsiveContainer width="100%" height="100%">
-                          <PieChart>
-                            <Pie
-                              data={data}
-                              cx="50%"
-                              cy="50%"
-                              labelLine={false}
-                              label={renderCustomizedLabel}
-                              outerRadius={80}
-                              fill="#8884d8"
-                              dataKey="value"
-                            >
-                              {data.map((entry, index) => (
-                                <Cell
-                                  key={`cell-${index}`}
-                                  fill={COLORS[index % COLORS.length]}
-                                />
-                              ))}
-                            </Pie>
-                          </PieChart>
-                        </ResponsiveContainer>
-                      </div>
-                    </div>{" "}
-                    <div className="audience-segment-bottom-table-middle-datas">
-                      <div className="middle-datas-num">
-                        <h6>45,565 </h6>
-                      </div>
-                      <div className="middle-datas-range">
-                        <input
-                          type="range"
-                          id="vol"
-                          name="vol"
-                          min="0"
-                          max="50"
-                        />
-                      </div>
-                      <div className="middle-datas-graph">
-                        <ResponsiveContainer width="100%" height="100%">
-                          <PieChart>
-                            <Pie
-                              data={data}
-                              cx="50%"
-                              cy="50%"
-                              labelLine={false}
-                              label={renderCustomizedLabel}
-                              outerRadius={80}
-                              fill="#8884d8"
-                              dataKey="value"
-                            >
-                              {data.map((entry, index) => (
-                                <Cell
-                                  key={`cell-${index}`}
-                                  fill={COLORS[index % COLORS.length]}
-                                />
-                              ))}
-                            </Pie>
-                          </PieChart>
-                        </ResponsiveContainer>
-                      </div>
-                    </div>{" "}
-                    <div className="audience-segment-bottom-table-middle-datas">
-                      <div className="middle-datas-num">
-                        <h6>45,565 </h6>
-                      </div>
-                      <div className="middle-datas-range">
-                        <input
-                          type="range"
-                          id="vol"
-                          name="vol"
-                          min="0"
-                          max="50"
-                        />
-                      </div>
-                      <div className="middle-datas-graph">
-                        <ResponsiveContainer width="100%" height="100%">
-                          <PieChart>
-                            <Pie
-                              data={data}
-                              cx="50%"
-                              cy="50%"
-                              labelLine={false}
-                              label={renderCustomizedLabel}
-                              outerRadius={80}
-                              fill="#8884d8"
-                              dataKey="value"
-                            >
-                              {data.map((entry, index) => (
-                                <Cell
-                                  key={`cell-${index}`}
-                                  fill={COLORS[index % COLORS.length]}
-                                />
-                              ))}
-                            </Pie>
-                          </PieChart>
-                        </ResponsiveContainer>
-                      </div>
-                    </div>{" "}
-                    <div className="audience-segment-bottom-table-middle-datas">
-                      <div className="middle-datas-num">
-                        <h6>45,565 </h6>
-                      </div>
-                      <div className="middle-datas-range">
-                        <input
-                          type="range"
-                          id="vol"
-                          name="vol"
-                          min="0"
-                          max="50"
-                        />
-                      </div>
-                      <div className="middle-datas-graph">
-                        <ResponsiveContainer width="100%" height="100%">
-                          <PieChart>
-                            <Pie
-                              data={data}
-                              cx="50%"
-                              cy="50%"
-                              labelLine={false}
-                              label={renderCustomizedLabel}
-                              outerRadius={80}
-                              fill="#8884d8"
-                              dataKey="value"
-                            >
-                              {data.map((entry, index) => (
-                                <Cell
-                                  key={`cell-${index}`}
-                                  fill={COLORS[index % COLORS.length]}
-                                />
-                              ))}
-                            </Pie>
-                          </PieChart>
-                        </ResponsiveContainer>
-                      </div>
                     </div>
-                  </div>
                 </div>
               </TabPanel>
               <TabPanel></TabPanel>

@@ -1,5 +1,6 @@
 import React from "react";
-import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
+import { Chart } from "react-google-charts";
+import { ResponsiveContainer } from "recharts";
 import {
   Area,
   AreaChart,
@@ -10,13 +11,46 @@ import {
 } from "recharts";
 
 const Summary = () => {
-  const datas = [
-    { name: "Group A", value: 400 },
-    { name: "Group B", value: 300 },
-    { name: "Group C", value: 300 },
-    { name: "Group D", value: 200 },
-  ];
-  const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
+  const pieOptions = {
+    is3D: true,
+
+    slices: [
+      {
+        color: "#00a3e0",
+      },
+      {
+        color: "#f2a900",
+      },
+      {
+        color: "F16A21",
+      },
+      {
+        color: "#e9a227",
+      },
+    ],
+    legend: {
+      position: "right",
+      alignment: "center",
+      textStyle: {
+        color: "000",
+        fontSize: 18,
+      },
+    },
+    tooltip: {
+      showColorCode: true,
+    },
+    chartArea: {
+      left: 0,
+      top: 0,
+      bottom: 0,
+      right: 0,
+      width: "100%",
+      height: "100%",
+    },
+    fontName: "Roboto",
+    fontSize: 16,
+    color: "000",
+  };
   const data = [
     {
       name: "Page A",
@@ -67,25 +101,21 @@ const Summary = () => {
         <div className="summary-audience-wrapper-left">
           <h6 className="h6first">Gender Traffic</h6>
           <div className="audience-wrapper-left dtl">
-            <PieChart width={220} height={200}>
-              <Pie
-                data={datas}
-                cx={100}
-                cy={90}
-                innerRadius={50}
-                outerRadius={90}
-                fill="#8884d8"
-                // paddingAngle={0}
-                dataKey="value"
-              >
-                {datas.map((entry, index) => (
-                  <Cell
-                    key={`cell-${index}`}
-                    fill={COLORS[index % COLORS.length]}
-                  />
-                ))}
-              </Pie>
-            </PieChart>
+            <Chart
+              chartType="PieChart"
+              data={[
+                ["Item", "Numbers"],
+                ["Item 1", 5000],
+                ["Item 2", 20000],
+                ["Item 3", 6000],
+                ["Item 4", 6000],
+              ]}
+              options={pieOptions}
+              graph_id="PieChart"
+              width={"100%"}
+              height={"200px"}
+              legend_toggle
+            />
             <div className="audience-left-table tw">
               <table>
                 <tr>

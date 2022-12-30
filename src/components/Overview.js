@@ -1,5 +1,5 @@
 import React from "react";
-import { PieChart, Pie, Cell } from "recharts";
+import { Chart } from "react-google-charts";
 import { MdComputer } from "react-icons/md";
 import {
   AreaChart,
@@ -10,7 +10,6 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import Dropdown from "react-dropdown";
@@ -20,8 +19,47 @@ import AudienceInterest from "./overviewtabs/AudienceInterest";
 import RefferalSource from "./overviewtabs/RefferalSource";
 import GeoLocation from "./overviewtabs/GeoLocation";
 import Content from "./overviewtabs/Content";
-import PieCh from "./PieCh";
 const Overview = () => {
+  const pieOptions = {
+    is3D: true,
+
+    slices: [
+      {
+        color: "#00a3e0",
+      },
+      {
+        color: "#f2a900",
+      },
+      {
+        color: "F16A21",
+      },
+      {
+        color: "#e9a227",
+      },
+    ],
+    legend: {
+      //   position: "right",
+      alignment: "center",
+      textStyle: {
+        color: "233238",
+        fontSize: 14,
+      },
+    },
+    tooltip: {
+      showColorCode: true,
+    },
+    chartArea: {
+      left: 3,
+      top: 0,
+      bottom: 0,
+      right: 0,
+      width: "100%",
+      height: "100%",
+    },
+    fontName: "Roboto",
+    fontSize: 12,
+    color: "000",
+  };
   const options = ["one", "two", "three"];
   const defaultOption = options[0];
 
@@ -71,20 +109,9 @@ const Overview = () => {
     },
   ];
 
-  //    Dougout Chart ***************************************
-  const datas = [
-    { name: "Group A", value: 400 },
-    { name: "Group B", value: 300 },
-    { name: "Group C", value: 300 },
-    { name: "Group D", value: 200 },
-  ];
-  const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
-
   return (
     <>
       <div className="overview">
-      <PieCh/>
-
         <div className="overview-top">
           <div className="overview-top-left">
             <h3 className="h3first">Site Performance</h3>
@@ -162,28 +189,43 @@ const Overview = () => {
                   </div>
                   <div className="summary-left-charts lc">
                     <div style={{ width: "100%", height: 300 }}>
-                      <ResponsiveContainer>
-                        <AreaChart
-                          data={data}
-                          margin={{
-                            top: 10,
-                            right: 0,
-                            left: 0,
-                            bottom: 0,
-                          }}
-                        >
-                          <CartesianGrid strokeDasharray="3 3" />
-                          <XAxis dataKey="name" />
-                          <YAxis />
-                          <Tooltip />
-                          <Area
-                            type="monotone"
-                            dataKey="uv"
-                            stroke="#FFBB28"
-                            fill="#FF8042"
-                          />
-                        </AreaChart>
-                      </ResponsiveContainer>
+                    <ResponsiveContainer>
+            <AreaChart
+              width={730}
+              height={390}
+              data={data}
+              margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
+            >
+              <defs>
+                <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="5%" stopColor="#f16a21" stopOpacity={0.8} />
+                  <stop offset="95%" stopColor="#f16a21" stopOpacity={0} />
+                </linearGradient>
+                <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="5%" stopColor="#f2a900" stopOpacity={0.8} />
+                  <stop offset="95%" stopColor="#f2a900" stopOpacity={0} />
+                </linearGradient>
+              </defs>
+              <XAxis dataKey="name" />
+              <YAxis />
+              <CartesianGrid strokeDasharray="3 3" />
+              <Tooltip />
+              <Area
+                type="monotone"
+                dataKey="uv"
+                stroke="#f16a21"
+                fillOpacity={1}
+                fill="url(#colorUv)"
+              />
+              <Area
+                type="monotone"
+                dataKey="pv"
+                stroke="#f2a900"
+                fillOpacity={1}
+                fill="url(#colorPv)"
+              />
+            </AreaChart>
+          </ResponsiveContainer>
                     </div>
                   </div>
                 </div>
@@ -212,7 +254,21 @@ const Overview = () => {
                       </div>
                     </div>
                     <div className="summary-wrapper-right-visitordetails-right">
-
+                      <Chart
+                        chartType="PieChart"
+                        data={[
+                          ["Item", "Numbers"],
+                          ["Item 1", 5000],
+                          ["Item 2", 20000],
+                          ["Item 3", 6000],
+                          ["Item 4", 6000],
+                        ]}
+                        options={pieOptions}
+                        graph_id="PieChart"
+                        width={"100%"}
+                        height={"180px"}
+                        legend_toggle
+                      />
                       <button className="btn1">View Audience Engagement</button>
                     </div>
                   </div>

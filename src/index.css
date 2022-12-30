@@ -6,11 +6,8 @@
 
 /* Custom Css************************ */
 
-/* charts*********************** */
-div#bedf617a-bdcb-4498-9c80-cdccdbdbbfce
-
-
 /* btns##################### */
+
 .btn1 {
   padding: 5px 5px;
   background-color: #000;
@@ -510,11 +507,7 @@ nav.sc-AHaJN.hhTtXw.pro-menu {
 }
 .summary-wrapper-right-visitordetails-right {
   width: 50%;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 10px;
+  padding-left: 10px;
 }
 .visitor-content {
   display: flex;
