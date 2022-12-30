@@ -14,7 +14,7 @@ const AudienceSegmentFirst = () => {
       <div className="overview">
         <div className="source-top overview-top">
           <div className="source-top-left">
-            <h4>Audience Demography - Gender</h4>
+            <h4 className="h3first">Audience Demography - Gender</h4>
           </div>
           <div className="audience-segment-top-right right-align">
             <div className="overview-top-right-content">
@@ -48,10 +48,10 @@ const AudienceSegmentFirst = () => {
               <Summary />
             </TabPanel>
             <TabPanel>
-                <AudienceEngagement/>
+              <AudienceEngagement />
             </TabPanel>
             <TabPanel>
-              <AudienceTraffic/>
+              <AudienceTraffic />
             </TabPanel>
           </Tabs>
         </div>

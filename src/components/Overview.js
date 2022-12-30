@@ -20,6 +20,7 @@ import AudienceInterest from "./overviewtabs/AudienceInterest";
 import RefferalSource from "./overviewtabs/RefferalSource";
 import GeoLocation from "./overviewtabs/GeoLocation";
 import Content from "./overviewtabs/Content";
+import PieCh from "./PieCh";
 const Overview = () => {
   const options = ["one", "two", "three"];
   const defaultOption = options[0];
@@ -82,6 +83,8 @@ const Overview = () => {
   return (
     <>
       <div className="overview">
+      <PieCh/>
+
         <div className="overview-top">
           <div className="overview-top-left">
             <h3 className="h3first">Site Performance</h3>
@@ -209,25 +212,7 @@ const Overview = () => {
                       </div>
                     </div>
                     <div className="summary-wrapper-right-visitordetails-right">
-                      <PieChart width={220} height={200}>
-                        <Pie
-                          data={datas}
-                          cx={100}
-                          cy={90}
-                          innerRadius={50}
-                          outerRadius={90}
-                          fill="#8884d8"
-                          // paddingAngle={0}
-                          dataKey="value"
-                        >
-                          {datas.map((entry, index) => (
-                            <Cell
-                              key={`cell-${index}`}
-                              fill={COLORS[index % COLORS.length]}
-                            />
-                          ))}
-                        </Pie>
-                      </PieChart>
+
                       <button className="btn1">View Audience Engagement</button>
                     </div>
                   </div>

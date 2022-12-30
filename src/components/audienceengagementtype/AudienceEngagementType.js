@@ -7,30 +7,31 @@ const AudienceEngagementType = () => {
   const defaultOption = options[0];
   return (
     <>
-      <div className="audienceengagementtype">
-        <div className="audiencegeography-wrapper">
-          <div className="source-top">
-            <div className="source-top-left">
-              <h4>Audience Engagement </h4>
+      <div className="overview">
+        <div className="source-top overview-top">
+          <div className="source-top-left">
+            <h4 className="h3first">Audience Engagement</h4>
+          </div>
+          <div className="audience-segment-top-right right-align">
+            <div className="overview-top-right-content">
+              <p className="p1">Time Period</p>
+              <Tabs>
+                <TabList>
+                  <Tab>Title 1</Tab>
+                  <Tab>Title 2</Tab>
+                </TabList>
+              </Tabs>
             </div>
-            <div className="source-top-left-time">
-              <p>Time Period</p>
-
-              <div className="source-top-left-btn-drop">
-                <div className="source-top-left-btn">
-                  <button>Pulse</button>
-                  <button>Historic</button>
-                </div>
-                <Dropdown
-                  options={options}
-                  value={defaultOption}
-                  placeholder="Select an option"
-                />
-              </div>
+            <div className="overview-top-right-content">
+              <Dropdown
+                options={options}
+                value={defaultOption}
+                placeholder="Select an option"
+              />
             </div>
           </div>
         </div>
-        <div className="audienceengagementtype-tabs">
+        <div className="audienceengagementtype-tabs multiple-tabs">
           <Tabs>
             <TabList>
               <Tab>Frequency</Tab>
@@ -39,24 +40,22 @@ const AudienceEngagementType = () => {
               <Tab>Page Depth </Tab>
             </TabList>
             <TabPanel>
-              <div className="audience-engagement-types-table">
-                <div className="h3">Frequency of Sessions</div>
+              <div className="audience-engagement-types-table audience-interest">
+                <h6 className="h6first">Frequency of Sessions</h6>
                 <table>
                   <tr>
-                    <th>Number of Sessions</th>
-                    <th>Sessions</th>
+                    <th className="p1">Number of Sessions</th>
+                    <th className="p1">Sessions</th>
                     <th></th>
-                    <th>PageViews</th>
+                    <th className="p1">PageViews</th>
                     <th></th>
-                    <th>Page Depth vs. Site Average</th>
-
+                    <th className="p1">Page Depth vs. Site Average</th>
                     <th></th>
-
                     <th></th>
                   </tr>
                   <tr>
-                    <td>1</td>
-                    <td>34,676</td>
+                    <td className="num5">1</td>
+                    <td className="num4">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -66,7 +65,7 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>34,676</td>
+                    <td className="num5">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -76,40 +75,7 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>53,767</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
-                      />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>1</td>
-                    <td>34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
-                      />
-                    </td>
-                    <td>34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
-                      />
-                    </td>
-                    <td>53,767</td>
+                    <td className="num4">53,767</td>
                     <td>
                       <input
                         type="range"
@@ -121,8 +87,8 @@ const AudienceEngagementType = () => {
                     </td>
                   </tr>
                   <tr>
-                    <td>1</td>
-                    <td>34,676</td>
+                    <td className="num5">1</td>
+                    <td className="num4">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -132,7 +98,7 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>34,676</td>
+                    <td className="num5">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -142,40 +108,7 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>53,767</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
-                      />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>1</td>
-                    <td>34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
-                      />
-                    </td>
-                    <td>34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
-                      />
-                    </td>
-                    <td>53,767</td>
+                    <td className="num4">53,767</td>
                     <td>
                       <input
                         type="range"
@@ -187,8 +120,8 @@ const AudienceEngagementType = () => {
                     </td>
                   </tr>
                   <tr>
-                    <td>1</td>
-                    <td>34,676</td>
+                    <td className="num5">1</td>
+                    <td className="num4">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -198,7 +131,7 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>34,676</td>
+                    <td className="num5">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -208,7 +141,7 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>53,767</td>
+                    <td className="num4">53,767</td>
                     <td>
                       <input
                         type="range"
@@ -220,8 +153,8 @@ const AudienceEngagementType = () => {
                     </td>
                   </tr>
                   <tr>
-                    <td>1</td>
-                    <td>34,676</td>
+                    <td className="num5">1</td>
+                    <td className="num4">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -231,7 +164,7 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>34,676</td>
+                    <td className="num5">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -241,7 +174,40 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>53,767</td>
+                    <td className="num4">53,767</td>
+                    <td>
+                      <input
+                        type="range"
+                        id="vol"
+                        name="vol"
+                        min="0"
+                        max="50"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="num5">1</td>
+                    <td className="num4">34,676</td>
+                    <td>
+                      <input
+                        type="range"
+                        id="vol"
+                        name="vol"
+                        min="0"
+                        max="50"
+                      />
+                    </td>
+                    <td className="num5">34,676</td>
+                    <td>
+                      <input
+                        type="range"
+                        id="vol"
+                        name="vol"
+                        min="0"
+                        max="50"
+                      />
+                    </td>
+                    <td className="num4">53,767</td>
                     <td>
                       <input
                         type="range"
@@ -254,95 +220,105 @@ const AudienceEngagementType = () => {
                   </tr>
                 </table>
               </div>
-              <div className="audience-engagement-types-table-bottom">
-                <div className="audience-engagement-types-table-bottom-head">
-                  <div className="audience-engagement-types-table-bottom-head-left">
-                    <h6>Top Engaging Client IDs :</h6>
-                    <p>Contributing 200+ Sessions</p>
-                  </div>
-                  <div className="audience-engagement-types-table-bottom-head-right">
-                    <p>Show Clients by:</p>
-                    <Dropdown />
+              <div className="audience-engagement-types-table-bottom audience-segment-bottom">
+                <div className="audience-segment-bottom-head">
+                  <h4 className="h6first">
+                    Top Engaging Client IDs :{" "}
+                    <span className="p1"> Contributing 200+ Sessions</span>
+                  </h4>
+                  <div className="audience-segment-bottom-head-right right-align">
+                    <p className="p4">Show Clients by:</p>
+                    <Dropdown
+                      options={options}
+                      value={defaultOption}
+                      placeholder="Select an option"
+                    />
                   </div>
                 </div>
                 <table>
                   <tr>
                     <th></th>
-                    <th>Client ID</th>
-                    <th>Trend</th>
-                    <th>Sessions</th>
-                    <th>Total Time</th>
-                    <th>Avg. Time</th>
-                    <th>PageViews</th>
+                    <th className="p1">Client ID</th>
+                    <th className="p1">Trend</th>
+                    <th className="p1">Sessions</th>
+                    <th className="p1">Total Time</th>
+                    <th className="p1">Avg. Time</th>
+                    <th className="p1">PageViews</th>
                   </tr>
                   <tr>
-                    <td>1</td>
-                    <td>5454584854548545.54</td>
-                    <td> graph</td>
-                    <td>398</td>
-                    <td>2:51:34</td>
-                    <td>0.82 min</td>
-                    <td>34,578</td>
-                  </tr>
-
-                  <tr>
-                    <td>1</td>
-                    <td>5454584854548545.54</td>
-                    <td> graph</td>
-                    <td>398</td>
-                    <td>2:51:34</td>
-                    <td>0.82 min</td>
-                    <td>34,578</td>
+                    <td className="num5">1.</td>
+                    <td className="num4">5454584854548545.54</td>
+                    <td className="num4"> graph</td>
+                    <td className="num4">398</td>
+                    <td className="num4">2:51:34</td>
+                    <td className="num4">0.82 min</td>
+                    <td className="num5">34,578</td>
                   </tr>
                   <tr>
-                    <td>1</td>
-                    <td>5454584854548545.54</td>
-                    <td> graph</td>
-                    <td>398</td>
-                    <td>2:51:34</td>
-                    <td>0.82 min</td>
-                    <td>34,578</td>
-                  </tr>
+                    <td className="num5">1.</td>
+                    <td className="num4">5454584854548545.54</td>
+                    <td className="num4"> graph</td>
+                    <td className="num4">398</td>
+                    <td className="num4">2:51:34</td>
+                    <td className="num4">0.82 min</td>
+                    <td className="num5">34,578</td>
+                  </tr>{" "}
                   <tr>
-                    <td>1</td>
-                    <td>5454584854548545.54</td>
-                    <td> graph</td>
-                    <td>398</td>
-                    <td>2:51:34</td>
-                    <td>0.82 min</td>
-                    <td>34,578</td>
-                  </tr>
+                    <td className="num5">1.</td>
+                    <td className="num4">5454584854548545.54</td>
+                    <td className="num4"> graph</td>
+                    <td className="num4">398</td>
+                    <td className="num4">2:51:34</td>
+                    <td className="num4">0.82 min</td>
+                    <td className="num5">34,578</td>
+                  </tr>{" "}
                   <tr>
-                    <td>1</td>
-                    <td>5454584854548545.54</td>
-                    <td> graph</td>
-                    <td>398</td>
-                    <td>2:51:34</td>
-                    <td>0.82 min</td>
-                    <td>34,578</td>
+                    <td className="num5">1.</td>
+                    <td className="num4">5454584854548545.54</td>
+                    <td className="num4"> graph</td>
+                    <td className="num4">398</td>
+                    <td className="num4">2:51:34</td>
+                    <td className="num4">0.82 min</td>
+                    <td className="num5">34,578</td>
+                  </tr>{" "}
+                  <tr>
+                    <td className="num5">1.</td>
+                    <td className="num4">5454584854548545.54</td>
+                    <td className="num4"> graph</td>
+                    <td className="num4">398</td>
+                    <td className="num4">2:51:34</td>
+                    <td className="num4">0.82 min</td>
+                    <td className="num5">34,578</td>
+                  </tr>{" "}
+                  <tr>
+                    <td className="num5">1.</td>
+                    <td className="num4">5454584854548545.54</td>
+                    <td className="num4"> graph</td>
+                    <td className="num4">398</td>
+                    <td className="num4">2:51:34</td>
+                    <td className="num4">0.82 min</td>
+                    <td className="num5">34,578</td>
                   </tr>
                 </table>
               </div>
             </TabPanel>
             <TabPanel>
-              <div className="audience-engagement-types-table">
-                <div className="h3">Recency of Sessions</div>
+              <div className="audience-engagement-types-table audience-interest">
+                <div className="h6first">Recency of Sessions</div>
                 <table>
                   <tr>
-                    <th>Days Since Last Sessions</th>
-                    <th>Sessions</th>
+                    <th className="p1">Days Since Last Sessions</th>
+                    <th className="p1">Sessions</th>
                     <th></th>
-                    <th>PageViews</th>
+                    <th className="p1">PageViews</th>
                     <th></th>
-                    <th>Page Depth vs. Site Average</th>
-
+                    <th className="p1">Page Depth vs. Site Average</th>
                     <th></th>
-
                     <th></th>
                   </tr>
                   <tr>
-                    <td>1</td>
-                    <td>34,676</td>
+                    <td className="num5">1</td>
+                    <td className="num4">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -352,7 +328,7 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>34,676</td>
+                    <td className="num5">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -362,40 +338,7 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>53,767</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
-                      />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>1</td>
-                    <td>34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
-                      />
-                    </td>
-                    <td>34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
-                      />
-                    </td>
-                    <td>53,767</td>
+                    <td className="num4">53,767</td>
                     <td>
                       <input
                         type="range"
@@ -407,8 +350,8 @@ const AudienceEngagementType = () => {
                     </td>
                   </tr>
                   <tr>
-                    <td>1</td>
-                    <td>34,676</td>
+                    <td className="num5">1</td>
+                    <td className="num4">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -418,7 +361,7 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>34,676</td>
+                    <td className="num4">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -428,7 +371,7 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>53,767</td>
+                    <td className="num5">53,767</td>
                     <td>
                       <input
                         type="range"
@@ -438,10 +381,10 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                  </tr>
+                  </tr>{" "}
                   <tr>
-                    <td>1</td>
-                    <td>34,676</td>
+                    <td className="num5">1</td>
+                    <td className="num4">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -451,7 +394,7 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>34,676</td>
+                    <td className="num4">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -461,7 +404,7 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>53,767</td>
+                    <td className="num5">53,767</td>
                     <td>
                       <input
                         type="range"
@@ -471,10 +414,10 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                  </tr>
+                  </tr>{" "}
                   <tr>
-                    <td>1</td>
-                    <td>34,676</td>
+                    <td className="num5">1</td>
+                    <td className="num4">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -484,7 +427,7 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>34,676</td>
+                    <td className="num4">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -494,7 +437,7 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>53,767</td>
+                    <td className="num5">53,767</td>
                     <td>
                       <input
                         type="range"
@@ -504,10 +447,10 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                  </tr>
+                  </tr>{" "}
                   <tr>
-                    <td>1</td>
-                    <td>34,676</td>
+                    <td className="num5">1</td>
+                    <td className="num4">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -517,7 +460,7 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>34,676</td>
+                    <td className="num4">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -527,7 +470,40 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>53,767</td>
+                    <td className="num5">53,767</td>
+                    <td>
+                      <input
+                        type="range"
+                        id="vol"
+                        name="vol"
+                        min="0"
+                        max="50"
+                      />
+                    </td>
+                  </tr>{" "}
+                  <tr>
+                    <td className="num5">1</td>
+                    <td className="num4">34,676</td>
+                    <td>
+                      <input
+                        type="range"
+                        id="vol"
+                        name="vol"
+                        min="0"
+                        max="50"
+                      />
+                    </td>
+                    <td className="num4">34,676</td>
+                    <td>
+                      <input
+                        type="range"
+                        id="vol"
+                        name="vol"
+                        min="0"
+                        max="50"
+                      />
+                    </td>
+                    <td className="num5">53,767</td>
                     <td>
                       <input
                         type="range"
@@ -540,95 +516,105 @@ const AudienceEngagementType = () => {
                   </tr>
                 </table>
               </div>
-              <div className="audience-engagement-types-table-bottom">
-                <div className="audience-engagement-types-table-bottom-head">
-                  <div className="audience-engagement-types-table-bottom-head-left">
-                    <h6>Top Engaging Client IDs :</h6>
-                    <p>Active 15 -30 days ago</p>
-                  </div>
-                  <div className="audience-engagement-types-table-bottom-head-right">
-                    <p>Show Clients by:</p>
-                    <Dropdown />
+              <div className="audience-engagement-types-table-bottom audience-segment-bottom">
+                <div className="audience-segment-bottom-head">
+                  <h4 className="h6first">
+                    Top Engaging Client IDs :{" "}
+                    <span className="p1"> Active 15 -30 days ago</span>
+                  </h4>
+                  <div className="audience-segment-bottom-head-right right-align">
+                    <p className="p4">Show Clients by:</p>
+                    <Dropdown
+                      options={options}
+                      value={defaultOption}
+                      placeholder="Select an option"
+                    />
                   </div>
                 </div>
                 <table>
                   <tr>
                     <th></th>
-                    <th>Client ID</th>
-                    <th>Trend</th>
-                    <th>Sessions</th>
-                    <th>Total Time</th>
-                    <th>Avg. Time</th>
-                    <th>PageViews</th>
+                    <th className="p1">Client ID</th>
+                    <th className="p1">Trend</th>
+                    <th className="p1">Sessions</th>
+                    <th className="p1">Total Time</th>
+                    <th className="p1">Avg. Time</th>
+                    <th className="p1">PageViews</th>
                   </tr>
                   <tr>
-                    <td>1</td>
-                    <td>5454584854548545.54</td>
-                    <td> graph</td>
-                    <td>398</td>
-                    <td>2:51:34</td>
-                    <td>0.82 min</td>
-                    <td>34,578</td>
-                  </tr>
-
-                  <tr>
-                    <td>1</td>
-                    <td>5454584854548545.54</td>
-                    <td> graph</td>
-                    <td>398</td>
-                    <td>2:51:34</td>
-                    <td>0.82 min</td>
-                    <td>34,578</td>
+                    <td className="num5">1.</td>
+                    <td className="num4">5454584854548545.54</td>
+                    <td className="num4"> graph</td>
+                    <td className="num4">398</td>
+                    <td className="num4">2:51:34</td>
+                    <td className="num4">0.82 min</td>
+                    <td className="num5">34,578</td>
                   </tr>
                   <tr>
-                    <td>1</td>
-                    <td>5454584854548545.54</td>
-                    <td> graph</td>
-                    <td>398</td>
-                    <td>2:51:34</td>
-                    <td>0.82 min</td>
-                    <td>34,578</td>
-                  </tr>
+                    <td className="num5">1.</td>
+                    <td className="num4">5454584854548545.54</td>
+                    <td className="num4"> graph</td>
+                    <td className="num4">398</td>
+                    <td className="num4">2:51:34</td>
+                    <td className="num4">0.82 min</td>
+                    <td className="num5">34,578</td>
+                  </tr>{" "}
                   <tr>
-                    <td>1</td>
-                    <td>5454584854548545.54</td>
-                    <td> graph</td>
-                    <td>398</td>
-                    <td>2:51:34</td>
-                    <td>0.82 min</td>
-                    <td>34,578</td>
-                  </tr>
+                    <td className="num5">1.</td>
+                    <td className="num4">5454584854548545.54</td>
+                    <td className="num4"> graph</td>
+                    <td className="num4">398</td>
+                    <td className="num4">2:51:34</td>
+                    <td className="num4">0.82 min</td>
+                    <td className="num5">34,578</td>
+                  </tr>{" "}
                   <tr>
-                    <td>1</td>
-                    <td>5454584854548545.54</td>
-                    <td> graph</td>
-                    <td>398</td>
-                    <td>2:51:34</td>
-                    <td>0.82 min</td>
-                    <td>34,578</td>
+                    <td className="num5">1.</td>
+                    <td className="num4">5454584854548545.54</td>
+                    <td className="num4"> graph</td>
+                    <td className="num4">398</td>
+                    <td className="num4">2:51:34</td>
+                    <td className="num4">0.82 min</td>
+                    <td className="num5">34,578</td>
+                  </tr>{" "}
+                  <tr>
+                    <td className="num5">1.</td>
+                    <td className="num4">5454584854548545.54</td>
+                    <td className="num4"> graph</td>
+                    <td className="num4">398</td>
+                    <td className="num4">2:51:34</td>
+                    <td className="num4">0.82 min</td>
+                    <td className="num5">34,578</td>
+                  </tr>{" "}
+                  <tr>
+                    <td className="num5">1.</td>
+                    <td className="num4">5454584854548545.54</td>
+                    <td className="num4"> graph</td>
+                    <td className="num4">398</td>
+                    <td className="num4">2:51:34</td>
+                    <td className="num4">0.82 min</td>
+                    <td className="num5">34,578</td>
                   </tr>
                 </table>
               </div>
             </TabPanel>
             <TabPanel>
-              <div className="audience-engagement-types-table">
-                <div className="h3">Time Spent</div>
+              <div className="audience-engagement-types-table audience-interest">
+                <div className="h6first">Time Spent</div>
                 <table>
                   <tr>
-                    <th>Session Durations</th>
-                    <th>Sessions</th>
+                    <th className="p1">Session Durations</th>
+                    <th className="p1">Sessions</th>
                     <th></th>
-                    <th>PageViews</th>
+                    <th className="p1">PageViews</th>
                     <th></th>
-                    <th>Page Depth vs. Site Average</th>
-
+                    <th className="p1">Page Depth vs. Site Average</th>
                     <th></th>
-
                     <th></th>
                   </tr>
                   <tr>
-                    <td>0-10 Seconds</td>
-                    <td>34,676</td>
+                    <td className="num4">0-10 Seconds</td>
+                    <td className="num4">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -638,7 +624,7 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>34,676</td>
+                    <td className="num5">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -648,40 +634,7 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>53,767</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
-                      />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>1</td>
-                    <td>34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
-                      />
-                    </td>
-                    <td>34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
-                      />
-                    </td>
-                    <td>53,767</td>
+                    <td className="num4">53,767</td>
                     <td>
                       <input
                         type="range"
@@ -693,8 +646,8 @@ const AudienceEngagementType = () => {
                     </td>
                   </tr>
                   <tr>
-                    <td>1</td>
-                    <td>34,676</td>
+                    <td className="num4">0-10 Seconds</td>
+                    <td className="num4">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -704,7 +657,7 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>34,676</td>
+                    <td className="num5">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -714,7 +667,7 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>53,767</td>
+                    <td className="num4">53,767</td>
                     <td>
                       <input
                         type="range"
@@ -724,10 +677,10 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                  </tr>
+                  </tr>{" "}
                   <tr>
-                    <td>1</td>
-                    <td>34,676</td>
+                    <td className="num4">0-10 Seconds</td>
+                    <td className="num4">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -737,7 +690,7 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>34,676</td>
+                    <td className="num5">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -747,7 +700,7 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>53,767</td>
+                    <td className="num4">53,767</td>
                     <td>
                       <input
                         type="range"
@@ -757,10 +710,10 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                  </tr>
+                  </tr>{" "}
                   <tr>
-                    <td>1</td>
-                    <td>34,676</td>
+                    <td className="num4">0-10 Seconds</td>
+                    <td className="num4">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -770,7 +723,7 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>34,676</td>
+                    <td className="num5">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -780,7 +733,7 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>53,767</td>
+                    <td className="num4">53,767</td>
                     <td>
                       <input
                         type="range"
@@ -790,10 +743,10 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                  </tr>
+                  </tr>{" "}
                   <tr>
-                    <td>1</td>
-                    <td>34,676</td>
+                    <td className="num4">0-10 Seconds</td>
+                    <td className="num4">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -803,7 +756,7 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>34,676</td>
+                    <td className="num5">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -813,7 +766,106 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>53,767</td>
+                    <td className="num4">53,767</td>
+                    <td>
+                      <input
+                        type="range"
+                        id="vol"
+                        name="vol"
+                        min="0"
+                        max="50"
+                      />
+                    </td>
+                  </tr>{" "}
+                  <tr>
+                    <td className="num4">0-10 Seconds</td>
+                    <td className="num4">34,676</td>
+                    <td>
+                      <input
+                        type="range"
+                        id="vol"
+                        name="vol"
+                        min="0"
+                        max="50"
+                      />
+                    </td>
+                    <td className="num5">34,676</td>
+                    <td>
+                      <input
+                        type="range"
+                        id="vol"
+                        name="vol"
+                        min="0"
+                        max="50"
+                      />
+                    </td>
+                    <td className="num4">53,767</td>
+                    <td>
+                      <input
+                        type="range"
+                        id="vol"
+                        name="vol"
+                        min="0"
+                        max="50"
+                      />
+                    </td>
+                  </tr>{" "}
+                  <tr>
+                    <td className="num4">0-10 Seconds</td>
+                    <td className="num4">34,676</td>
+                    <td>
+                      <input
+                        type="range"
+                        id="vol"
+                        name="vol"
+                        min="0"
+                        max="50"
+                      />
+                    </td>
+                    <td className="num5">34,676</td>
+                    <td>
+                      <input
+                        type="range"
+                        id="vol"
+                        name="vol"
+                        min="0"
+                        max="50"
+                      />
+                    </td>
+                    <td className="num4">53,767</td>
+                    <td>
+                      <input
+                        type="range"
+                        id="vol"
+                        name="vol"
+                        min="0"
+                        max="50"
+                      />
+                    </td>
+                  </tr>{" "}
+                  <tr>
+                    <td className="num4">0-10 Seconds</td>
+                    <td className="num4">34,676</td>
+                    <td>
+                      <input
+                        type="range"
+                        id="vol"
+                        name="vol"
+                        min="0"
+                        max="50"
+                      />
+                    </td>
+                    <td className="num5">34,676</td>
+                    <td>
+                      <input
+                        type="range"
+                        id="vol"
+                        name="vol"
+                        min="0"
+                        max="50"
+                      />
+                    </td>
+                    <td className="num4">53,767</td>
                     <td>
                       <input
                         type="range"
@@ -826,95 +878,110 @@ const AudienceEngagementType = () => {
                   </tr>
                 </table>
               </div>
-              <div className="audience-engagement-types-table-bottom">
-                <div className="audience-engagement-types-table-bottom-head">
-                  <div className="audience-engagement-types-table-bottom-head-left">
-                    <h6>Top Engaging Client IDs :</h6>
-                    <p>Spending 181-600 Seconds per Session</p>
-                  </div>
-                  <div className="audience-engagement-types-table-bottom-head-right">
-                    <p>Show Clients by:</p>
-                    <Dropdown />
+              <div className="audience-engagement-types-table-bottom audience-segment-bottom">
+                <div className="audience-segment-bottom-head">
+                  <h4 className="h6first">
+                    Top Engaging Client IDs :{" "}
+                    <span className="p1">
+                      {" "}
+                      : Spending 181-600 Seconds per Session
+                    </span>
+                  </h4>
+                  <div className="audience-segment-bottom-head-right right-align">
+                    <p className="p4">Show Clients by:</p>
+                    <Dropdown
+                      options={options}
+                      value={defaultOption}
+                      placeholder="Select an option"
+                    />
                   </div>
                 </div>
                 <table>
                   <tr>
                     <th></th>
-                    <th>Client ID</th>
-                    <th>Trend</th>
-                    <th>Sessions</th>
-                    <th>Total Time</th>
-                    <th>Avg. Time</th>
-                    <th>PageViews</th>
+                    <th className="p1">Client ID</th>
+                    <th className="p1">Trend</th>
+                    <th className="p1">Sessions</th>
+                    <th className="p1">Total Time</th>
+                    <th className="p1">Avg. Time</th>
+                    <th className="p1">PageViews</th>
                   </tr>
                   <tr>
-                    <td>1</td>
-                    <td>5454584854548545.54</td>
-                    <td> graph</td>
-                    <td>398</td>
-                    <td>2:51:34</td>
-                    <td>0.82 min</td>
-                    <td>34,578</td>
-                  </tr>
-
-                  <tr>
-                    <td>1</td>
-                    <td>5454584854548545.54</td>
-                    <td> graph</td>
-                    <td>398</td>
-                    <td>2:51:34</td>
-                    <td>0.82 min</td>
-                    <td>34,578</td>
+                    <td className="num5">1.</td>
+                    <td className="num4">5454584854548545.54</td>
+                    <td className="num4"> graph</td>
+                    <td className="num4">398</td>
+                    <td className="num4">2:51:34</td>
+                    <td className="num4">0.82 min</td>
+                    <td className="num5">34,578</td>
                   </tr>
                   <tr>
-                    <td>1</td>
-                    <td>5454584854548545.54</td>
-                    <td> graph</td>
-                    <td>398</td>
-                    <td>2:51:34</td>
-                    <td>0.82 min</td>
-                    <td>34,578</td>
-                  </tr>
+                    <td className="num5">1.</td>
+                    <td className="num4">5454584854548545.54</td>
+                    <td className="num4"> graph</td>
+                    <td className="num4">398</td>
+                    <td className="num4">2:51:34</td>
+                    <td className="num4">0.82 min</td>
+                    <td className="num5">34,578</td>
+                  </tr>{" "}
                   <tr>
-                    <td>1</td>
-                    <td>5454584854548545.54</td>
-                    <td> graph</td>
-                    <td>398</td>
-                    <td>2:51:34</td>
-                    <td>0.82 min</td>
-                    <td>34,578</td>
-                  </tr>
+                    <td className="num5">1.</td>
+                    <td className="num4">5454584854548545.54</td>
+                    <td className="num4"> graph</td>
+                    <td className="num4">398</td>
+                    <td className="num4">2:51:34</td>
+                    <td className="num4">0.82 min</td>
+                    <td className="num5">34,578</td>
+                  </tr>{" "}
                   <tr>
-                    <td>1</td>
-                    <td>5454584854548545.54</td>
-                    <td> graph</td>
-                    <td>398</td>
-                    <td>2:51:34</td>
-                    <td>0.82 min</td>
-                    <td>34,578</td>
+                    <td className="num5">1.</td>
+                    <td className="num4">5454584854548545.54</td>
+                    <td className="num4"> graph</td>
+                    <td className="num4">398</td>
+                    <td className="num4">2:51:34</td>
+                    <td className="num4">0.82 min</td>
+                    <td className="num5">34,578</td>
+                  </tr>{" "}
+                  <tr>
+                    <td className="num5">1.</td>
+                    <td className="num4">5454584854548545.54</td>
+                    <td className="num4"> graph</td>
+                    <td className="num4">398</td>
+                    <td className="num4">2:51:34</td>
+                    <td className="num4">0.82 min</td>
+                    <td className="num5">34,578</td>
+                  </tr>{" "}
+                  <tr>
+                    <td className="num5">1.</td>
+                    <td className="num4">5454584854548545.54</td>
+                    <td className="num4"> graph</td>
+                    <td className="num4">398</td>
+                    <td className="num4">2:51:34</td>
+                    <td className="num4">0.82 min</td>
+                    <td className="num5">34,578</td>
                   </tr>
                 </table>
               </div>
             </TabPanel>
             <TabPanel>
-              <div className="audience-engagement-types-table">
-                <div className="h3">Number of Pages Viewed per Sessions</div>
+              <div className="audience-engagement-types-table audience-interest">
+                <div className="h6first">
+                  Number of Pages Viewed per Sessions
+                </div>
                 <table>
                   <tr>
-                    <th>Page Depth</th>
-                    <th>Sessions</th>
+                    <th className="p1">Page Depth</th>
+                    <th className="p1">Sessions</th>
                     <th></th>
-                    <th>PageViews</th>
+                    <th className="p1">PageViews</th>
                     <th></th>
-                    <th>Page Depth vs. Site Average</th>
-
+                    <th className="p1">Page Depth vs. Site Average</th>
                     <th></th>
-
                     <th></th>
                   </tr>
                   <tr>
-                    <td> 1</td>
-                    <td>34,676</td>
+                    <td className="num5"> 1</td>
+                    <td className="num4">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -924,7 +991,7 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>34,676</td>
+                    <td className="num5">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -934,40 +1001,7 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>53,767</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
-                      />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>1</td>
-                    <td>34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
-                      />
-                    </td>
-                    <td>34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
-                      />
-                    </td>
-                    <td>53,767</td>
+                    <td className="num4">53,767</td>
                     <td>
                       <input
                         type="range"
@@ -979,8 +1013,8 @@ const AudienceEngagementType = () => {
                     </td>
                   </tr>
                   <tr>
-                    <td>1</td>
-                    <td>34,676</td>
+                    <td className="num5"> 1</td>
+                    <td className="num4">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -990,7 +1024,7 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>34,676</td>
+                    <td className="num5">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -1000,7 +1034,7 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>53,767</td>
+                    <td className="num4">53,767</td>
                     <td>
                       <input
                         type="range"
@@ -1010,10 +1044,10 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                  </tr>
+                  </tr>{" "}
                   <tr>
-                    <td>1</td>
-                    <td>34,676</td>
+                    <td className="num5"> 1</td>
+                    <td className="num4">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -1023,7 +1057,7 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>34,676</td>
+                    <td className="num5">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -1033,7 +1067,7 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>53,767</td>
+                    <td className="num4">53,767</td>
                     <td>
                       <input
                         type="range"
@@ -1043,10 +1077,10 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                  </tr>
+                  </tr>{" "}
                   <tr>
-                    <td>1</td>
-                    <td>34,676</td>
+                    <td className="num5"> 1</td>
+                    <td className="num4">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -1056,7 +1090,7 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>34,676</td>
+                    <td className="num5">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -1066,7 +1100,7 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>53,767</td>
+                    <td className="num4">53,767</td>
                     <td>
                       <input
                         type="range"
@@ -1076,10 +1110,10 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                  </tr>
+                  </tr>{" "}
                   <tr>
-                    <td>1</td>
-                    <td>34,676</td>
+                    <td className="num5"> 1</td>
+                    <td className="num4">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -1089,7 +1123,7 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>34,676</td>
+                    <td className="num5">34,676</td>
                     <td>
                       <input
                         type="range"
@@ -1099,7 +1133,7 @@ const AudienceEngagementType = () => {
                         max="50"
                       />
                     </td>
-                    <td>53,767</td>
+                    <td className="num4">53,767</td>
                     <td>
                       <input
                         type="range"
@@ -1112,72 +1146,87 @@ const AudienceEngagementType = () => {
                   </tr>
                 </table>
               </div>
-              <div className="audience-engagement-types-table-bottom">
-                <div className="audience-engagement-types-table-bottom-head">
-                  <div className="audience-engagement-types-table-bottom-head-left">
-                    <h6>Top Engaging Client IDs :</h6>
-                    <p>Viewing 10 Pages per Sessions</p>
-                  </div>
-                  <div className="audience-engagement-types-table-bottom-head-right">
-                    <p>Show Clients by:</p>
-                    <Dropdown />
+              <div className="audience-engagement-types-table-bottom audience-segment-bottom">
+                <div className="audience-segment-bottom-head">
+                  <h4 className="h6first">
+                    Top Engaging Client IDs :{" "}
+                    <span className="p1">
+                      {" "}
+                      : Viewing 10 pages per Session
+                    </span>
+                  </h4>
+                  <div className="audience-segment-bottom-head-right right-align">
+                    <p className="p4">Show Clients by:</p>
+                    <Dropdown
+                      options={options}
+                      value={defaultOption}
+                      placeholder="Select an option"
+                    />
                   </div>
                 </div>
                 <table>
                   <tr>
                     <th></th>
-                    <th>Client ID</th>
-                    <th>Trend</th>
-                    <th>Sessions</th>
-                    <th>Total Time</th>
-                    <th>Avg. Time</th>
-                    <th>PageViews</th>
+                    <th className="p1">Client ID</th>
+                    <th className="p1">Trend</th>
+                    <th className="p1">Sessions</th>
+                    <th className="p1">Total Time</th>
+                    <th className="p1">Avg. Time</th>
+                    <th className="p1">PageViews</th>
                   </tr>
                   <tr>
-                    <td>1</td>
-                    <td>5454584854548545.54</td>
-                    <td> graph</td>
-                    <td>398</td>
-                    <td>2:51:34</td>
-                    <td>0.82 min</td>
-                    <td>34,578</td>
-                  </tr>
-
-                  <tr>
-                    <td>1</td>
-                    <td>5454584854548545.54</td>
-                    <td> graph</td>
-                    <td>398</td>
-                    <td>2:51:34</td>
-                    <td>0.82 min</td>
-                    <td>34,578</td>
+                    <td className="num5">1.</td>
+                    <td className="num4">5454584854548545.54</td>
+                    <td className="num4"> graph</td>
+                    <td className="num4">398</td>
+                    <td className="num4">2:51:34</td>
+                    <td className="num4">0.82 min</td>
+                    <td className="num5">34,578</td>
                   </tr>
                   <tr>
-                    <td>1</td>
-                    <td>5454584854548545.54</td>
-                    <td> graph</td>
-                    <td>398</td>
-                    <td>2:51:34</td>
-                    <td>0.82 min</td>
-                    <td>34,578</td>
-                  </tr>
+                    <td className="num5">1.</td>
+                    <td className="num4">5454584854548545.54</td>
+                    <td className="num4"> graph</td>
+                    <td className="num4">398</td>
+                    <td className="num4">2:51:34</td>
+                    <td className="num4">0.82 min</td>
+                    <td className="num5">34,578</td>
+                  </tr>{" "}
                   <tr>
-                    <td>1</td>
-                    <td>5454584854548545.54</td>
-                    <td> graph</td>
-                    <td>398</td>
-                    <td>2:51:34</td>
-                    <td>0.82 min</td>
-                    <td>34,578</td>
-                  </tr>
+                    <td className="num5">1.</td>
+                    <td className="num4">5454584854548545.54</td>
+                    <td className="num4"> graph</td>
+                    <td className="num4">398</td>
+                    <td className="num4">2:51:34</td>
+                    <td className="num4">0.82 min</td>
+                    <td className="num5">34,578</td>
+                  </tr>{" "}
                   <tr>
-                    <td>1</td>
-                    <td>5454584854548545.54</td>
-                    <td> graph</td>
-                    <td>398</td>
-                    <td>2:51:34</td>
-                    <td>0.82 min</td>
-                    <td>34,578</td>
+                    <td className="num5">1.</td>
+                    <td className="num4">5454584854548545.54</td>
+                    <td className="num4"> graph</td>
+                    <td className="num4">398</td>
+                    <td className="num4">2:51:34</td>
+                    <td className="num4">0.82 min</td>
+                    <td className="num5">34,578</td>
+                  </tr>{" "}
+                  <tr>
+                    <td className="num5">1.</td>
+                    <td className="num4">5454584854548545.54</td>
+                    <td className="num4"> graph</td>
+                    <td className="num4">398</td>
+                    <td className="num4">2:51:34</td>
+                    <td className="num4">0.82 min</td>
+                    <td className="num5">34,578</td>
+                  </tr>{" "}
+                  <tr>
+                    <td className="num5">1.</td>
+                    <td className="num4">5454584854548545.54</td>
+                    <td className="num4"> graph</td>
+                    <td className="num4">398</td>
+                    <td className="num4">2:51:34</td>
+                    <td className="num4">0.82 min</td>
+                    <td className="num5">34,578</td>
                   </tr>
                 </table>
               </div>
