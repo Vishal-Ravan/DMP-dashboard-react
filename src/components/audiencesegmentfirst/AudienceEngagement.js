@@ -1,10 +1,13 @@
 import React from "react";
 import { Tab, TabList, Tabs } from "react-tabs";
+import FusionCharts from "fusioncharts";
+import charts from "fusioncharts/fusioncharts.charts";
+import ReactFusioncharts from "react-fusioncharts";
 import {
-  ComposedChart,
+  // ComposedChart,
   Line,
-  Area,
-  Bar,
+  // Area,
+  // Bar,
   XAxis,
   YAxis,
   LineChart,
@@ -13,6 +16,81 @@ import {
   Legend,
 } from "recharts";
 const AudienceEngagement = () => {
+
+  charts(FusionCharts);
+  const dataSource = {
+    chart: {
+      // caption: "Medal Tally for 2017",
+      // subcaption: "Olympics vs Paralympics",
+      // plottooltext: "$label won <b>$dataValue</b> medals in $seriesName",
+      // theme: "fusion"
+    },
+    categories: [
+      {
+        category: [
+          {
+            label: "USA"
+          },
+          {
+            label: "United Kingdom"
+          },
+          {
+            label: "China"
+          },
+          {
+            label: "Russia"
+          },
+          {
+            label: "Germany"
+          }
+        ]
+      }
+    ],
+    dataset: [
+      {
+        seriesname: "Olympics",
+        data: [
+          {
+            value: "121"
+          },
+          {
+            value: "67"
+          },
+          {
+            value: "70"
+          },
+          {
+            value: "55"
+          },
+          {
+            value: "42"
+          }
+        ]
+      },
+      {
+        seriesname: "Paralympics",
+        data: [
+          {
+            value: "115"
+          },
+          {
+            value: "147"
+          },
+          {
+            value: "239"
+          },
+          {
+            value: ""
+          },
+          {
+            value: "57"
+          }
+        ]
+      }
+    ]
+  };
+
+
   const data = [
     {
       name: "Page A",
@@ -75,7 +153,14 @@ const AudienceEngagement = () => {
         </div>
         <div className="audience-engagement-bottom">
           <div className="audience-engagement-bottom-left">
-              <ComposedChart
+          <ReactFusioncharts
+        type="msbar3d"
+        width="97%"
+        height="55%"
+        dataFormat="JSON"
+        dataSource={dataSource}
+      />
+              {/* <ComposedChart
                 layout="vertical"
                 width={500}
                 height={400}
@@ -95,7 +180,7 @@ const AudienceEngagement = () => {
                 <Area dataKey="amt" fill="#8884d8" stroke="#8884d8" />
                 <Bar dataKey="pv" barSize={20} fill="#413ea0" />
                 <Line dataKey="uv" stroke="#ff7300" />
-              </ComposedChart>
+              </ComposedChart> */}
           </div>
           <div className="audience-engagement-bottom-right">
             

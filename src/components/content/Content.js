@@ -1,5 +1,6 @@
 import React from "react";
-import { PieChart, Pie, Cell } from "recharts";
+import { Chart } from "react-google-charts";
+
 import { MdComputer } from "react-icons/md";
 import { BarChart, Bar } from "recharts";
 
@@ -19,6 +20,49 @@ import "react-dropdown/style.css";
 import { Tab, TabList, Tabs } from "react-tabs";
 
 const Content = () => {
+
+  const pieOptions = {
+    is3D: true,
+
+    slices: [
+      {
+        color: "#00a3e0",
+      },
+      {
+        color: "#f2a900",
+      },
+      {
+        color: "F16A21",
+      },
+      {
+        color: "#e9a227",
+      },
+    ],
+    legend: {
+      //   position: "right",
+      alignment: "center",
+      textStyle: {
+        color: "233238",
+        fontSize: 14,
+      },
+    },
+    tooltip: {
+      showColorCode: true,
+    },
+    chartArea: {
+      left: 3,
+      top: 0,
+      bottom: 0,
+      right: 0,
+      width: "100%",
+      height: "100%",
+    },
+    fontName: "Roboto",
+    fontSize: 12,
+    color: "000",
+  };
+
+
   const options = ["one", "two", "three"];
   const defaultOption = options[0];
 
@@ -68,15 +112,7 @@ const Content = () => {
     },
   ];
 
-  //    Dougout Chart ***************************************
-  const datas = [
-    { name: "Group A", value: 400 },
-    { name: "Group B", value: 300 },
-    { name: "Group C", value: 300 },
-    { name: "Group D", value: 200 },
-  ];
-  const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
-
+  
   return (
     <>
       <div className="overview">
@@ -141,23 +177,66 @@ const Content = () => {
                     <div style={{ width: "100%", height: 300 }}>
                       <ResponsiveContainer>
                         <AreaChart
+                          width={730}
+                          height={390}
                           data={data}
-                          margin={{
-                            top: 10,
-                            right: 0,
-                            left: 0,
-                            bottom: 0,
-                          }}
+                          margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
                         >
-                          <CartesianGrid strokeDasharray="3 3" />
+                          <defs>
+                            <linearGradient
+                              id="colorUv"
+                              x1="0"
+                              y1="0"
+                              x2="0"
+                              y2="1"
+                            >
+                              <stop
+                                offset="5%"
+                                stopColor="#f16a21"
+                                stopOpacity={0.8}
+                              />
+                              <stop
+                                offset="95%"
+                                stopColor="#f16a21"
+                                stopOpacity={0}
+                              />
+                            </linearGradient>
+                            <linearGradient
+                              id="colorPv"
+                              x1="0"
+                              y1="0"
+                              x2="0"
+                              y2="1"
+                            >
+                              <stop
+                                offset="5%"
+                                stopColor="#f2a900"
+                                stopOpacity={0.8}
+                              />
+                              <stop
+                                offset="95%"
+                                stopColor="#f2a900"
+                                stopOpacity={0}
+                              />
+                            </linearGradient>
+                          </defs>
                           <XAxis dataKey="name" />
                           <YAxis />
+                          <CartesianGrid strokeDasharray="3 3" />
                           <Tooltip />
                           <Area
                             type="monotone"
                             dataKey="uv"
-                            stroke="#FFBB28"
-                            fill="#FF8042"
+                            stroke="#f16a21"
+                            fillOpacity={1}
+                            fill="url(#colorUv)"
+                          />
+                          <Area
+                            type="monotone"
+                            dataKey="pv"
+                            stroke="#f2a900"
+                            fillOpacity={1}
+                            fill="url(#colorPv)"
                           />
                         </AreaChart>
                       </ResponsiveContainer>
@@ -189,25 +268,21 @@ const Content = () => {
                       </div>
                     </div>
                     <div className="summary-wrapper-right-visitordetails-right">
-                      <PieChart width={220} height={200}>
-                        <Pie
-                          data={datas}
-                          cx={100}
-                          cy={90}
-                          innerRadius={50}
-                          outerRadius={90}
-                          fill="#8884d8"
-                          // paddingAngle={0}
-                          dataKey="value"
-                        >
-                          {datas.map((entry, index) => (
-                            <Cell
-                              key={`cell-${index}`}
-                              fill={COLORS[index % COLORS.length]}
-                            />
-                          ))}
-                        </Pie>
-                      </PieChart>
+                      <Chart
+                        chartType="PieChart"
+                        data={[
+                          ["Item", "Numbers"],
+                          ["Item 1", 5000],
+                          ["Item 2", 20000],
+                          ["Item 3", 6000],
+                          ["Item 4", 6000],
+                        ]}
+                        options={pieOptions}
+                        graph_id="PieChart"
+                        width={"100%"}
+                        height={"180px"}
+                        legend_toggle
+                      />
                       <button className="btn1">View Audience Engagement</button>
                     </div>
                   </div>

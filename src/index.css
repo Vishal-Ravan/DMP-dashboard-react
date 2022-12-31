@@ -1013,10 +1013,10 @@ tr:nth-child(even) {
   display: flex;
 }
 .audience-engagement-wrapper-left {
-  width: 50%;
+  width: 60%;
 }
 .audience-engagement-wrapper-right {
-  width: 50%;
+  width: 40%;
   text-align: end;
   display: flex;
   justify-content: flex-end;

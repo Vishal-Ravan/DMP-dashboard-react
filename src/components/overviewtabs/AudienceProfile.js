@@ -1,42 +1,68 @@
 import React from "react";
-import { PieChart, Pie, Cell } from "recharts";
+import { Chart } from "react-google-charts";
 
 const AudienceProfile = () => {
   // left-audience-chart
+  const pieOptions = {
+    is3D: true,
 
-  const datas = [
-    { name: "Group A", value: 400 },
-    { name: "Group B", value: 300 },
-    { name: "Group C", value: 300 },
-    { name: "Group D", value: 200 },
-  ];
-  const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
-
+    slices: [
+      {
+        color: "#00a3e0",
+      },
+      {
+        color: "F16A21",
+      },
+      {
+        color: "#e9a227",
+      },
+      { color: "#198754" },
+    ],
+    legend: {
+      position: "center",
+      alignment: "center",
+      textStyle: {
+        color: "233238",
+        fontSize: 14,
+      },
+    },
+    tooltip: {
+      showColorCode: true,
+    },
+    chartArea: {
+      left: 3,
+      top: 0,
+      bottom: 0,
+      right: 0,
+      width: "100%",
+      height: "100%",
+    },
+    fontName: "Roboto",
+    fontSize: 12,
+    color: "000",
+  };
+  
   return (
     <>
       <div className="audience">
         <h5>Audience</h5>
         <div className="audience-wrapper">
           <div className="audience-wrapper-left dtl">
-            <PieChart width={220} height={200}>
-              <Pie
-                data={datas}
-                cx={100}
-                cy={90}
-                innerRadius={50}
-                outerRadius={90}
-                fill="#8884d8"
-                // paddingAngle={0}
-                dataKey="value"
-              >
-                {datas.map((entry, index) => (
-                  <Cell
-                    key={`cell-${index}`}
-                    fill={COLORS[index % COLORS.length]}
-                  />
-                ))}
-              </Pie>
-            </PieChart>
+            <Chart
+              chartType="PieChart"
+              data={[
+                ["Item", "Numbers"],
+                ["Item 1", 5000],
+                ["Item 2", 20000],
+                ["Item 3", 6000],
+                ["Item 4", 5000],
+              ]}
+              options={pieOptions}
+              graph_id="PieChart"
+              width={"100%"}
+              height={"180px"}
+              legend_toggle
+            />
             <div className="audience-left-table tw">
               <table>
                 <tr>
@@ -50,12 +76,12 @@ const AudienceProfile = () => {
                   <td className="num3">65%</td>
                 </tr>
                 <tr>
-                  <td className="p3">Female</td> 
+                  <td className="p3">Female</td>
                   <td className="num2">6,203,269</td>
                   <td className="num3">30%</td>
                 </tr>
                 <tr>
-                  <td className="p3"> Other</td> 
+                  <td className="p3"> Other</td>
                   <td className="num2">6,203,269</td>
                   <td className="num3">5%</td>
                 </tr>
@@ -63,27 +89,23 @@ const AudienceProfile = () => {
             </div>
           </div>
           <div className="audience-wrapper-middle dtl">
-            <PieChart width={220} height={200}>
-              <Pie
-                data={datas}
-                cx={100}
-                cy={90}
-                innerRadius={50}
-                outerRadius={90}
-                fill="#8884d8"
-                // paddingAngle={0}
-                dataKey="value"
-              >
-                {datas.map((entry, index) => (
-                  <Cell
-                    key={`cell-${index}`}
-                    fill={COLORS[index % COLORS.length]}
-                  />
-                ))}
-              </Pie>
-            </PieChart>
+            <Chart
+              chartType="PieChart"
+              data={[
+                ["Item", "Numbers"],
+                ["Item 1", 5000],
+                ["Item 2", 20000],
+                ["Item 3", 6000],
+                ["Item 4", 6000],
+              ]}
+              options={pieOptions}
+              graph_id="PieChart1"
+              width={"100%"}
+              height={"180px"}
+              legend_toggle
+            />
             <div className="audience-middle-table tw ">
-            <table>
+              <table>
                 <tr>
                   <th className="p1">Gender</th>
                   <th className="p1">PageViews</th>
@@ -95,12 +117,12 @@ const AudienceProfile = () => {
                   <td className="num3">65%</td>
                 </tr>
                 <tr>
-                  <td className="p3">Female</td> 
+                  <td className="p3">Female</td>
                   <td className="num2">6,203,269</td>
                   <td className="num3">30%</td>
                 </tr>
                 <tr>
-                  <td className="p3"> Other</td> 
+                  <td className="p3"> Other</td>
                   <td className="num2">6,203,269</td>
                   <td className="num3">5%</td>
                 </tr>
@@ -108,27 +130,23 @@ const AudienceProfile = () => {
             </div>
           </div>
           <div className="audience-wrapper-right dtr">
-            <PieChart width={220} height={200}>
-              <Pie
-                data={datas}
-                cx={100}
-                cy={90}
-                innerRadius={50}
-                outerRadius={90}
-                fill="#8884d8"
-                // paddingAngle={0}
-                dataKey="value"
-              >
-                {datas.map((entry, index) => (
-                  <Cell
-                    key={`cell-${index}`}
-                    fill={COLORS[index % COLORS.length]}
-                  />
-                ))}
-              </Pie>
-            </PieChart>
+            <Chart
+              chartType="PieChart"
+              data={[
+                ["Item", "Numbers"],
+                ["Item 1", 5000],
+                ["Item 2", 20000],
+                ["Item 3", 6000],
+                ["Item 4", 6000],
+              ]}
+              options={pieOptions}
+              graph_id="PieChart2"
+              width={"100%"}
+              height={"180px"}
+              legend_toggle
+            />
             <div className="audience-right-table tw">
-            <table>
+              <table>
                 <tr>
                   <th className="p1">Gender</th>
                   <th className="p1">PageViews</th>
@@ -140,12 +158,12 @@ const AudienceProfile = () => {
                   <td className="num3">65%</td>
                 </tr>
                 <tr>
-                  <td className="p3">Female</td> 
+                  <td className="p3">Female</td>
                   <td className="num2">6,203,269</td>
                   <td className="num3">30%</td>
                 </tr>
                 <tr>
-                  <td className="p3"> Other</td> 
+                  <td className="p3"> Other</td>
                   <td className="num2">6,203,269</td>
                   <td className="num3">5%</td>
                 </tr>
