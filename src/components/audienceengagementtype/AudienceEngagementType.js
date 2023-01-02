@@ -1,3 +1,4 @@
+import ProgressBar from "@ramonak/react-progress-bar";
 import React from "react";
 import Dropdown from "react-dropdown";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
@@ -57,165 +58,288 @@ const AudienceEngagementType = () => {
                   <tr>
                     <td className="num5">1</td>
                     <td className="num4">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                     <td className="num5">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                     <td className="num4">53,767</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                   </tr>
                   <tr>
                     <td className="num5">1</td>
                     <td className="num4">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                     <td className="num5">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                     <td className="num4">53,767</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                   </tr>
                   <tr>
                     <td className="num5">1</td>
                     <td className="num4">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                     <td className="num5">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                     <td className="num4">53,767</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                   </tr>
                   <tr>
                     <td className="num5">1</td>
                     <td className="num4">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                     <td className="num5">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                     <td className="num4">53,767</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                   </tr>
                   <tr>
                     <td className="num5">1</td>
                     <td className="num4">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                     <td className="num5">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                     <td className="num4">53,767</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="num5">1</td>
+                    <td className="num4">34,676</td>
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
+                      />
+                    </td>
+                    <td className="num5">34,676</td>
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
+                      />
+                    </td>
+                    <td className="num4">53,767</td>
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="num5">1</td>
+                    <td className="num4">34,676</td>
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
+                      />
+                    </td>
+                    <td className="num5">34,676</td>
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
+                      />
+                    </td>
+                    <td className="num4">53,767</td>
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="num5">1</td>
+                    <td className="num4">34,676</td>
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
+                      />
+                    </td>
+                    <td className="num5">34,676</td>
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
+                      />
+                    </td>
+                    <td className="num4">53,767</td>
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                   </tr>
@@ -320,198 +444,352 @@ const AudienceEngagementType = () => {
                   <tr>
                     <td className="num5">1</td>
                     <td className="num4">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                     <td className="num5">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                     <td className="num4">53,767</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                   </tr>
                   <tr>
                     <td className="num5">1</td>
                     <td className="num4">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
-                    <td className="num4">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td className="num5">34,676</td>
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
-                    <td className="num5">53,767</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td className="num4">53,767</td>
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
-                  </tr>{" "}
-                  <tr>
+                  </tr> <tr>
                     <td className="num5">1</td>
                     <td className="num4">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
-                    <td className="num4">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td className="num5">34,676</td>
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
-                    <td className="num5">53,767</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td className="num4">53,767</td>
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
-                  </tr>{" "}
-                  <tr>
+                  </tr> <tr>
                     <td className="num5">1</td>
                     <td className="num4">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
-                    <td className="num4">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td className="num5">34,676</td>
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
-                    <td className="num5">53,767</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td className="num4">53,767</td>
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
-                  </tr>{" "}
-                  <tr>
+                  </tr> <tr>
                     <td className="num5">1</td>
                     <td className="num4">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
-                    <td className="num4">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td className="num5">34,676</td>
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
-                    <td className="num5">53,767</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td className="num4">53,767</td>
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
-                  </tr>{" "}
-                  <tr>
+                  </tr> <tr>
                     <td className="num5">1</td>
                     <td className="num4">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
+                    <td className="num5">34,676</td>
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
+                      />
+                    </td>
+                    <td className="num4">53,767</td>
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
+                      />
+                    </td>
+                  </tr> <tr>
+                    <td className="num5">1</td>
                     <td className="num4">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
-                    <td className="num5">53,767</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td className="num5">34,676</td>
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
+                      />
+                    </td>
+                    <td className="num4">53,767</td>
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
+                      />
+                    </td>
+                  </tr> <tr>
+                    <td className="num5">1</td>
+                    <td className="num4">34,676</td>
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
+                      />
+                    </td>
+                    <td className="num5">34,676</td>
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
+                      />
+                    </td>
+                    <td className="num4">53,767</td>
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
+                      />
+                    </td>
+                  </tr> <tr>
+                    <td className="num5">1</td>
+                    <td className="num4">34,676</td>
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
+                      />
+                    </td>
+                    <td className="num5">34,676</td>
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
+                      />
+                    </td>
+                    <td className="num4">53,767</td>
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
+                      />
+                    </td>
+                  </tr> <tr>
+                    <td className="num5">1</td>
+                    <td className="num4">34,676</td>
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
+                      />
+                    </td>
+                    <td className="num5">34,676</td>
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
+                      />
+                    </td>
+                    <td className="num4">53,767</td>
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                   </tr>
@@ -616,264 +894,247 @@ const AudienceEngagementType = () => {
                   <tr>
                     <td className="num4">0-10 Seconds</td>
                     <td className="num4">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                     <td className="num5">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                     <td className="num4">53,767</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                   </tr>
                   <tr>
                     <td className="num4">0-10 Seconds</td>
                     <td className="num4">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                     <td className="num5">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                     <td className="num4">53,767</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
-                  </tr>{" "}
-                  <tr>
+                  </tr><tr>
                     <td className="num4">0-10 Seconds</td>
                     <td className="num4">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                     <td className="num5">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                     <td className="num4">53,767</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
-                  </tr>{" "}
-                  <tr>
+                  </tr><tr>
                     <td className="num4">0-10 Seconds</td>
                     <td className="num4">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                     <td className="num5">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                     <td className="num4">53,767</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
-                  </tr>{" "}
-                  <tr>
+                  </tr><tr>
                     <td className="num4">0-10 Seconds</td>
                     <td className="num4">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                     <td className="num5">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                     <td className="num4">53,767</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
-                  </tr>{" "}
-                  <tr>
+                  </tr><tr>
                     <td className="num4">0-10 Seconds</td>
                     <td className="num4">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                     <td className="num5">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                     <td className="num4">53,767</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
-                  </tr>{" "}
-                  <tr>
+                  </tr><tr>
                     <td className="num4">0-10 Seconds</td>
                     <td className="num4">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                     <td className="num5">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                     <td className="num4">53,767</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
-                      />
-                    </td>
-                  </tr>{" "}
-                  <tr>
-                    <td className="num4">0-10 Seconds</td>
-                    <td className="num4">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
-                      />
-                    </td>
-                    <td className="num5">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
-                      />
-                    </td>
-                    <td className="num4">53,767</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                   </tr>
@@ -983,165 +1244,252 @@ const AudienceEngagementType = () => {
                   <tr>
                     <td className="num5"> 1</td>
                     <td className="num4">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                     <td className="num5">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                     <td className="num4">53,767</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                   </tr>
                   <tr>
                     <td className="num5"> 1</td>
                     <td className="num4">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                     <td className="num5">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                     <td className="num4">53,767</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
-                  </tr>{" "}
+                  </tr>
                   <tr>
                     <td className="num5"> 1</td>
                     <td className="num4">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                     <td className="num5">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                     <td className="num4">53,767</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
-                  </tr>{" "}
+                  </tr>
                   <tr>
                     <td className="num5"> 1</td>
                     <td className="num4">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                     <td className="num5">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                     <td className="num4">53,767</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
-                  </tr>{" "}
+                  </tr>
                   <tr>
                     <td className="num5"> 1</td>
                     <td className="num4">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                     <td className="num5">34,676</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                     <td className="num4">53,767</td>
-                    <td>
-                      <input
-                        type="range"
-                        id="vol"
-                        name="vol"
-                        min="0"
-                        max="50"
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="num5"> 1</td>
+                    <td className="num4">34,676</td>
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
+                      />
+                    </td>
+                    <td className="num5">34,676</td>
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
+                      />
+                    </td>
+                    <td className="num4">53,767</td>
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="num5"> 1</td>
+                    <td className="num4">34,676</td>
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
+                      />
+                    </td>
+                    <td className="num5">34,676</td>
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
+                      />
+                    </td>
+                    <td className="num4">53,767</td>
+                    <td style={{ width: "200px", paddingLeft: "0" }}>
+                      <ProgressBar
+                        completed="48"
+                        baseBgColor="#fff"
+                        bgColor="#666"
+                        height="30px"
+                        className="progress-bar"
+                        borderRadius={0}
                       />
                     </td>
                   </tr>
@@ -1151,10 +1499,7 @@ const AudienceEngagementType = () => {
                 <div className="audience-segment-bottom-head">
                   <h4 className="h6first">
                     Top Engaging Client IDs :{" "}
-                    <span className="p1">
-                      {" "}
-                      : Viewing 10 pages per Session
-                    </span>
+                    <span className="p1"> : Viewing 10 pages per Session</span>
                   </h4>
                   <div className="audience-segment-bottom-head-right right-align">
                     <p className="p4">Show Clients by:</p>
@@ -1236,7 +1581,7 @@ const AudienceEngagementType = () => {
         </div>
       </div>
 
-      <AudienceEngagementWeekDay/>
+      <AudienceEngagementWeekDay />
     </>
   );
 };

@@ -2,6 +2,7 @@ import React from "react";
 import Dropdown from "react-dropdown";
 import { Tabs, TabList, Tab } from "react-tabs";
 import { Chart } from "react-google-charts";
+import ProgressBar from "@ramonak/react-progress-bar";
 
 const Source = () => {
   const pieOptions = {
@@ -117,8 +118,15 @@ const Source = () => {
                 <tr>
                   <td className="num4">Direct</td>
                   <td className="num5">6,54,545</td>
-                  <td>
-                    <input type="range" id="vol" name="vol" min="0" max="50" />
+                  <td style={{ width: "150px", paddingLeft: "0" }}>
+                    <ProgressBar
+                      completed="8"
+                      baseBgColor="#fff"
+                      bgColor="#666"
+                      height="30px"
+                      className="progress-bar"
+                      borderRadius={0}
+                    />
                   </td>
                   <td className="num4">269</td>
                   <td className="num4">34,576</td>
@@ -128,8 +136,15 @@ const Source = () => {
                 <tr>
                   <td className="num4">Direct</td>
                   <td className="num5">6,54,545</td>
-                  <td>
-                    <input type="range" id="vol" name="vol" min="0" max="50" />
+                  <td style={{ width: "150px", paddingLeft: "0" }}>
+                    <ProgressBar
+                      completed="48"
+                      baseBgColor="#fff"
+                      bgColor="#666"
+                      height="30px"
+                      className="progress-bar"
+                      borderRadius={0}
+                    />
                   </td>
                   <td className="num4">269</td>
                   <td className="num4">34,576</td>
@@ -139,8 +154,15 @@ const Source = () => {
                 <tr>
                   <td className="num4">Direct</td>
                   <td className="num5">6,54,545</td>
-                  <td>
-                    <input type="range" id="vol" name="vol" min="0" max="50" />
+                  <td style={{ width: "150px", paddingLeft: "0" }}>
+                    <ProgressBar
+                      completed="48"
+                      baseBgColor="#fff"
+                      bgColor="#666"
+                      height="30px"
+                      className="progress-bar"
+                      borderRadius={0}
+                    />
                   </td>
                   <td className="num4">269</td>
                   <td className="num4">34,576</td>
@@ -150,8 +172,15 @@ const Source = () => {
                 <tr>
                   <td className="num4">Direct</td>
                   <td className="num5">6,54,545</td>
-                  <td>
-                    <input type="range" id="vol" name="vol" min="0" max="50" />
+                  <td style={{ width: "150px", paddingLeft: "0" }}>
+                    <ProgressBar
+                      completed="48"
+                      baseBgColor="#fff"
+                      bgColor="#666"
+                      height="30px"
+                      className="progress-bar"
+                      borderRadius={0}
+                    />
                   </td>
                   <td className="num4">269</td>
                   <td className="num4">34,576</td>
@@ -161,8 +190,15 @@ const Source = () => {
                 <tr>
                   <td className="num4">Direct</td>
                   <td className="num5">6,54,545</td>
-                  <td>
-                    <input type="range" id="vol" name="vol" min="0" max="50" />
+                  <td style={{ width: "150px", paddingLeft: "0" }}>
+                    <ProgressBar
+                      completed="48"
+                      baseBgColor="#fff"
+                      bgColor="#666"
+                      height="30px"
+                      className="progress-bar"
+                      borderRadius={0}
+                    />
                   </td>
                   <td className="num4">269</td>
                   <td className="num4">34,576</td>
@@ -196,8 +232,15 @@ const Source = () => {
                 <td className="num4">34,578</td>
                 <td className="num4">34,578</td>
                 <td className="num5">34,578</td>
-                <td>
-                  <input type="range" id="vol" name="vol" min="0" max="50" />
+                <td style={{ width: "200px", paddingLeft: "0" }}>
+                  <ProgressBar
+                    completed="48"
+                    baseBgColor="#fff"
+                    bgColor="#666"
+                    height="30px"
+                    className="progress-bar"
+                    borderRadius={0}
+                  />
                 </td>
               </tr>
               <tr>
@@ -208,8 +251,15 @@ const Source = () => {
                 <td className="num4">34,578</td>
                 <td className="num4">34,578</td>
                 <td className="num5">34,578</td>
-                <td>
-                  <input type="range" id="vol" name="vol" min="0" max="50" />
+                <td style={{ width: "200px", paddingLeft: "0" }}>
+                  <ProgressBar
+                    completed="48"
+                    baseBgColor="#fff"
+                    bgColor="#666"
+                    height="30px"
+                    className="progress-bar"
+                    borderRadius={0}
+                  />
                 </td>
               </tr>
               <tr>
@@ -220,8 +270,15 @@ const Source = () => {
                 <td className="num4">34,578</td>
                 <td className="num4">34,578</td>
                 <td className="num5">34,578</td>
-                <td>
-                  <input type="range" id="vol" name="vol" min="0" max="50" />
+                <td style={{ width: "200px", paddingLeft: "0" }}>
+                  <ProgressBar
+                    completed="18"
+                    baseBgColor="#fff"
+                    bgColor="#666"
+                    height="30px"
+                    className="progress-bar"
+                    borderRadius={0}
+                  />
                 </td>
               </tr>
               <tr>
@@ -232,8 +289,15 @@ const Source = () => {
                 <td className="num4">34,578</td>
                 <td className="num4">34,578</td>
                 <td className="num5">34,578</td>
-                <td>
-                  <input type="range" id="vol" name="vol" min="0" max="50" />
+                <td style={{ width: "200px", paddingLeft: "0" }}>
+                  <ProgressBar
+                    completed="88"
+                    baseBgColor="#fff"
+                    bgColor="#666"
+                    height="30px"
+                    className="progress-bar"
+                    borderRadius={0}
+                  />
                 </td>
               </tr>
               <tr>
@@ -244,8 +308,15 @@ const Source = () => {
                 <td className="num4">34,578</td>
                 <td className="num4">34,578</td>
                 <td className="num5">34,578</td>
-                <td>
-                  <input type="range" id="vol" name="vol" min="0" max="50" />
+                <td style={{ width: "200px", paddingLeft: "0" }}>
+                  <ProgressBar
+                    completed="48"
+                    baseBgColor="#fff"
+                    bgColor="#666"
+                    height="30px"
+                    className="progress-bar"
+                    borderRadius={0}
+                  />
                 </td>
               </tr>
               <tr>
@@ -256,8 +327,53 @@ const Source = () => {
                 <td className="num4">34,578</td>
                 <td className="num4">34,578</td>
                 <td className="num5">34,578</td>
-                <td>
-                  <input type="range" id="vol" name="vol" min="0" max="50" />
+                <td style={{ width: "200px", paddingLeft: "0" }}>
+                  <ProgressBar
+                    completed="78"
+                    baseBgColor="#fff"
+                    bgColor="#666"
+                    height="30px"
+                    className="progress-bar"
+                    borderRadius={0}
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td className="num5">1.</td>
+                <td className="num4">sub.domain.com</td>
+                <td className="num4">internal</td>
+                <td className="num4">456</td>
+                <td className="num4">34,578</td>
+                <td className="num4">34,578</td>
+                <td className="num5">34,578</td>
+                <td style={{ width: "200px", paddingLeft: "0" }}>
+                  <ProgressBar
+                    completed="48"
+                    baseBgColor="#fff"
+                    bgColor="#666"
+                    height="30px"
+                    className="progress-bar"
+                    borderRadius={0}
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td className="num5">1.</td>
+                <td className="num4">sub.domain.com</td>
+                <td className="num4">internal</td>
+                <td className="num4">456</td>
+                <td className="num4">34,578</td>
+                <td className="num4">34,578</td>
+                <td className="num5">34,578</td>
+                <td style={{ width: "200px", paddingLeft: "0" }}>
+                  <ProgressBar
+                    completed="38"
+                    baseBgColor="#fff"
+                    bgColor="#666"
+                    height="30px"
+                    className="progress-bar"
+                    borderRadius={0}
+                  />
                 </td>
               </tr>
             </table>

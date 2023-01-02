@@ -1,3 +1,4 @@
+import ProgressBar from "@ramonak/react-progress-bar";
 import React from "react";
 import Dropdown from "react-dropdown";
 import { Chart } from "react-google-charts";
@@ -41,7 +42,7 @@ const RefferalSource = () => {
     fontSize: 12,
     color: "000",
   };
- 
+
   const options = ["Online Shopping", "two", "three"];
   const defaultOption = options[0];
   return (
@@ -114,8 +115,15 @@ const RefferalSource = () => {
                 <td className="num4">269</td>
                 <td className="num5">-</td>
                 <td className="num5">34,578</td>
-                <td>
-                  <input type="range" id="vol" name="vol" min="0" max="50" />
+                <td style={{ width: "150px", paddingLeft: "0" }}>
+                  <ProgressBar
+                    completed="70"
+                    baseBgColor="#fff"
+                    bgColor="#666"
+                    height="30px"
+                    className="progress-bar"
+                    borderRadius={0}
+                  />
                 </td>
               </tr>
             </table>

@@ -6,6 +6,11 @@
 
 /* Custom Css************************ */
 
+.progress-bar span{
+  display: none !important;
+  }
+
+
 /* btns##################### */
 
 .btn1 {
@@ -574,9 +579,13 @@ th {
   text-align: left;
   padding: 8px;
 }
+Table tr{
+  border: 1px solid rgba(87, 84, 84, 0.473);
+
+}
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  /* background-color: #dddddd; */
 }
 /* refferal-source $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
 
@@ -884,21 +893,21 @@ tr:nth-child(even) {
   padding: 5px 0;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
+  height: 105px;
 }
 .middle-datas-num {
-  width: 30%;
+  width: 20%;
 }
 .middle-datas-range {
-  width: 30%;
-}
-.middle-datas-graph {
   width: 40%;
 }
 .middle-datas-graph {
+  width: 40%;
+  display: flex;align-items: center;
   height: 100px;
-  width: 100%;
+  justify-content: flex-end;
 }
+
 .middle-datas-graph .recharts-responsive-container {
   /* width: 170px; */
   text-align: end;

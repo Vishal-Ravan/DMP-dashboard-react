@@ -1,5 +1,6 @@
 import React from "react";
 import Dropdown from "react-dropdown";
+import ProgressBar from "@ramonak/react-progress-bar";
 
 const AudienceInterest = () => {
   const options = ["Online Shopping", "two", "three"];
@@ -32,10 +33,18 @@ const AudienceInterest = () => {
               <td className="num4">34,578</td>
               <td className="num4">34,578</td>
               <td className="num5">34,578</td>
-              <td>
-                <input type="range" id="vol" name="vol" min="0" max="50" />
+              <td style={{ width: "200px", paddingLeft: "0" }}>
+                <ProgressBar
+                  completed="70"
+                  baseBgColor="#fff"
+                  bgColor="#666"
+                  height="30px"
+                  className="progress-bar"
+                  borderRadius={0}
+                />
               </td>
             </tr>
+
             <tr>
               <td>1</td>
               <td className="table-dd">
@@ -49,11 +58,17 @@ const AudienceInterest = () => {
               <td className="num4">34,578</td>
               <td className="num4">34,578</td>
               <td className="num5">34,578</td>
-              <td>
-                <input type="range" id="vol" name="vol" min="0" max="50" />
+              <td style={{ width: "200px", paddingLeft: "0" }}>
+                <ProgressBar
+                  completed="70"
+                  baseBgColor="#fff"
+                  bgColor="#666"
+                  height="30px"
+                  className="progress-bar"
+                  borderRadius={0}
+                />
               </td>
-            </tr>
-            <tr>
+            </tr><tr>
               <td>1</td>
               <td className="table-dd">
                 <Dropdown
@@ -66,11 +81,17 @@ const AudienceInterest = () => {
               <td className="num4">34,578</td>
               <td className="num4">34,578</td>
               <td className="num5">34,578</td>
-              <td>
-                <input type="range" id="vol" name="vol" min="0" max="50" />
+              <td style={{ width: "200px", paddingLeft: "0" }}>
+                <ProgressBar
+                  completed="70"
+                  baseBgColor="#fff"
+                  bgColor="#666"
+                  height="30px"
+                  className="progress-bar"
+                  borderRadius={0}
+                />
               </td>
-            </tr>
-            <tr>
+            </tr><tr>
               <td>1</td>
               <td className="table-dd">
                 <Dropdown
@@ -83,8 +104,38 @@ const AudienceInterest = () => {
               <td className="num4">34,578</td>
               <td className="num4">34,578</td>
               <td className="num5">34,578</td>
-              <td>
-                <input type="range" id="vol" name="vol" min="0" max="50" />
+              <td style={{ width: "200px", paddingLeft: "0" }}>
+                <ProgressBar
+                  completed="70"
+                  baseBgColor="#fff"
+                  bgColor="#666"
+                  height="30px"
+                  className="progress-bar"
+                  borderRadius={0}
+                />
+              </td>
+            </tr><tr>
+              <td>1</td>
+              <td className="table-dd">
+                <Dropdown
+                  options={options}
+                  value={defaultOption}
+                  placeholder="Select an option"
+                />
+              </td>
+              <td className="num4">269</td>
+              <td className="num4">34,578</td>
+              <td className="num4">34,578</td>
+              <td className="num5">34,578</td>
+              <td style={{ width: "200px", paddingLeft: "0" }}>
+                <ProgressBar
+                  completed="70"
+                  baseBgColor="#fff"
+                  bgColor="#666"
+                  height="30px"
+                  className="progress-bar"
+                  borderRadius={0}
+                />
               </td>
             </tr>
           </table>

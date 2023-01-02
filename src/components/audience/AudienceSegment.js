@@ -2,12 +2,12 @@ import React from "react";
 import Dropdown from "react-dropdown";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { Chart } from "react-google-charts";
+import ProgressBar from "@ramonak/react-progress-bar";
 //   dropdown ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 const options = ["Online", "two", "three"];
 const defaultOption = options[0];
 
 // charts$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-
 
 const pieOptions = {
   is3D: true,
@@ -26,7 +26,7 @@ const pieOptions = {
       color: "#e9a227",
     },
   ],
-  legend: 'none',
+  legend: "none",
   tooltip: {
     showColorCode: true,
   },
@@ -59,7 +59,7 @@ const pieOptions1 = {
       color: "#e9a227",
     },
   ],
-  legend: 'none',
+  legend: "none",
   tooltip: {
     showColorCode: true,
   },
@@ -75,7 +75,6 @@ const pieOptions1 = {
   fontSize: 12,
   color: "000",
 };
-
 
 const AudienceSegment = () => {
   return (
@@ -147,7 +146,6 @@ const AudienceSegment = () => {
                         />
                       </div>
                     </div>
-                    
                   </div>
                   <div className="audience-segment-bottom-table-middle border-both">
                     <div className="audience-segment-bottom-table-middle-head">
@@ -162,12 +160,13 @@ const AudienceSegment = () => {
                         <h6>45,565 </h6>
                       </div>
                       <div className="middle-datas-range">
-                        <input
-                          type="range"
-                          id="vol"
-                          name="vol"
-                          min="0"
-                          max="50"
+                        <ProgressBar
+                          completed="55"
+                          baseBgColor="#fff"
+                          bgColor="#666"
+                          height="30px"
+                          className="progress-bar"
+                          borderRadius={0}
                         />
                       </div>
                       <div className="middle-datas-graph">
@@ -202,16 +201,17 @@ const AudienceSegment = () => {
                         <h6>45,565 </h6>
                       </div>
                       <div className="middle-datas-range">
-                        <input
-                          type="range"
-                          id="vol"
-                          name="vol"
-                          min="0"
-                          max="50"
+                        <ProgressBar
+                          completed="100"
+                          baseBgColor="#fff"
+                          bgColor="#666"
+                          height="30px"
+                          className="progress-bar"
+                          borderRadius={0}
                         />
                       </div>
                       <div className="middle-datas-graph">
-                      <Chart
+                        <Chart
                           chartType="PieChart"
                           data={[
                             ["Item", "Numbers"],
@@ -228,7 +228,7 @@ const AudienceSegment = () => {
                         />
                       </div>
                     </div>
-                    </div>
+                  </div>
                 </div>
               </TabPanel>
               <TabPanel></TabPanel>

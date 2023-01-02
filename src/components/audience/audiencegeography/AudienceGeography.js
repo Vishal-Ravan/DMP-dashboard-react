@@ -2,6 +2,7 @@ import React from "react";
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 import Dropdown from "react-dropdown";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import ProgressBar from "@ramonak/react-progress-bar";
 
 const AudienceGeography = () => {
   const geoUrl =
@@ -78,13 +79,15 @@ const AudienceGeography = () => {
                       <td className="num4">269</td>
                       <td className="num4">0.80 min</td>
                       <td className="num5">53,767</td>
-                      <td>
-                        <input
-                          type="range"
-                          id="vol"
-                          name="vol"
-                          min="0"
-                          max="50"
+
+                      <td style={{ width: "230px", paddingLeft: "0" }}>
+                        <ProgressBar
+                          completed="66"
+                          baseBgColor="#fff"
+                          bgColor="#666"
+                          height="30px"
+                          className="progress-bar"
+                          borderRadius={0}
                         />
                       </td>
                     </tr>
@@ -95,77 +98,91 @@ const AudienceGeography = () => {
                       <td className="num4">269</td>
                       <td className="num4">0.80 min</td>
                       <td className="num5">53,767</td>
-                      <td>
-                        <input
-                          type="range"
-                          id="vol"
-                          name="vol"
-                          min="0"
-                          max="50"
+
+                      <td style={{ width: "230px", paddingLeft: "0" }}>
+                        <ProgressBar
+                          completed="6"
+                          baseBgColor="#fff"
+                          bgColor="#666"
+                          height="30px"
+                          className="progress-bar"
+                          borderRadius={0}
                         />
                       </td>
-                    </tr><tr>
+                    </tr>{" "}
+                    <tr>
                       <td className="num5">1.</td>
                       <td className="num4">New Delhi</td>
                       <td></td>
                       <td className="num4">269</td>
                       <td className="num4">0.80 min</td>
                       <td className="num5">53,767</td>
-                      <td>
-                        <input
-                          type="range"
-                          id="vol"
-                          name="vol"
-                          min="0"
-                          max="50"
+
+                      <td style={{ width: "230px", paddingLeft: "0" }}>
+                        <ProgressBar
+                          completed="48"
+                          baseBgColor="#fff"
+                          bgColor="#666"
+                          height="30px"
+                          className="progress-bar"
+                          borderRadius={0}
                         />
                       </td>
-                    </tr><tr>
+                    </tr>{" "}
+                    <tr>
                       <td className="num5">1.</td>
                       <td className="num4">New Delhi</td>
                       <td></td>
                       <td className="num4">269</td>
                       <td className="num4">0.80 min</td>
                       <td className="num5">53,767</td>
-                      <td>
-                        <input
-                          type="range"
-                          id="vol"
-                          name="vol"
-                          min="0"
-                          max="50"
+
+                      <td style={{ width: "230px", paddingLeft: "0" }}>
+                        <ProgressBar
+                          completed="2s"
+                          baseBgColor="#fff"
+                          bgColor="#666"
+                          height="30px"
+                          className="progress-bar"
+                          borderRadius={0}
                         />
                       </td>
-                    </tr><tr>
+                    </tr>{" "}
+                    <tr>
                       <td className="num5">1.</td>
                       <td className="num4">New Delhi</td>
                       <td></td>
                       <td className="num4">269</td>
                       <td className="num4">0.80 min</td>
                       <td className="num5">53,767</td>
-                      <td>
-                        <input
-                          type="range"
-                          id="vol"
-                          name="vol"
-                          min="0"
-                          max="50"
+
+                      <td style={{ width: "230px", paddingLeft: "0" }}>
+                        <ProgressBar
+                          completed="46"
+                          baseBgColor="#fff"
+                          bgColor="#666"
+                          height="30px"
+                          className="progress-bar"
+                          borderRadius={0}
                         />
                       </td>
-                    </tr><tr>
+                    </tr>{" "}
+                    <tr>
                       <td className="num5">1.</td>
                       <td className="num4">New Delhi</td>
                       <td></td>
                       <td className="num4">269</td>
                       <td className="num4">0.80 min</td>
                       <td className="num5">53,767</td>
-                      <td>
-                        <input
-                          type="range"
-                          id="vol"
-                          name="vol"
-                          min="0"
-                          max="50"
+
+                      <td style={{ width: "230px", paddingLeft: "0" }}>
+                        <ProgressBar
+                          completed="23"
+                          baseBgColor="#fff"
+                          bgColor="#666"
+                          height="30px"
+                          className="progress-bar"
+                          borderRadius={0}
                         />
                       </td>
                     </tr>

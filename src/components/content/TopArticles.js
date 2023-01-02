@@ -1,9 +1,6 @@
 import React from "react";
 import { Chart } from "react-google-charts";
-
 import { MdComputer } from "react-icons/md";
-import { BarChart, Bar } from "recharts";
-
 import {
   AreaChart,
   Area,
@@ -13,14 +10,12 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-
 import "react-tabs/style/react-tabs.css";
 import Dropdown from "react-dropdown";
 import "react-dropdown/style.css";
 import { Tab, TabList, Tabs } from "react-tabs";
-import TopArticles from "./TopArticles";
 
-const Content = () => {
+const TopArticles = () => {
   const pieOptions = {
     is3D: true,
 
@@ -116,11 +111,11 @@ const Content = () => {
       <div className="overview">
         <div className="source-top overview-top">
           <div className="source-top-left">
-            <h4>Sectionwise Summary</h4>
+            <h4>Top Articles</h4>
           </div>
           <div className="audience-segment-top-right right-align">
             <div className="overview-top-right-content">
-              <p className="p1">Time Period</p>
+              <p className="p1">View Performance</p>
               <Tabs>
                 <TabList>
                   <Tab>Title 1</Tab>
@@ -356,138 +351,118 @@ const Content = () => {
             <table>
               <tr>
                 <th></th>
-                <th className="p1">Section Name</th>
-                <th className="p1">PageViews : 30 Days</th>
-                <th className="p1">Posts</th>
-                <th className="p1">Pageviews per Post</th>
+                <th className="p1">Post</th>
+                <th></th>
+                <th className="p1">Section</th>
+                <th className="p1">Trend</th>
                 <th className="p1">Visitors</th>
                 <th className="p1">Avg Time</th>
                 <th className="p1">Pageviews</th>
               </tr>
               <tr>
                 <td className="num5">1.</td>
-                <td className="num4">Etim in iligula</td>
-                <td className="graph-height">
-                  <ResponsiveContainer width="100%" height="100%">
-                    <BarChart width={150} height={40} data={data}>
-                      <Bar dataKey="uv" fill="#8884d8" />
-                    </BarChart>
-                  </ResponsiveContainer>
+                <td className="imgst">
+                  <img
+                    src="https://media.istockphoto.com/id/1151355457/photo/hard-working-woman-farmer-wearing-saree-working-in-her-fields-in-the-harvest-season-and-is.jpg?s=612x612&w=is&k=20&c=uPh9k10WQi_fy6-u8GynDhZLqUvwi03utoGXseHUCkI="
+                    alt=""
+                  />
                 </td>
-                <td className="num4">269</td>
-                <td className="num4">269</td>
+                <td className="num4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </td>
+
+                <td className="num4">Etim in iligula</td>
+                <td className="num4">Graph</td>
                 <td className="num4">226</td>
                 <td className="num4">0.80 min</td>
                 <td className="num5">34,576</td>
               </tr>
               <tr>
                 <td className="num5">1.</td>
-                <td className="num4">Etim in iligula</td>
-                <td className="graph-height">
-                  <ResponsiveContainer width="100%" height="100%">
-                    <BarChart width={150} height={40} data={data}>
-                      <Bar dataKey="uv" fill="#8884d8" />
-                    </BarChart>
-                  </ResponsiveContainer>
+                <td className="imgst">
+                  <img
+                    src="https://media.istockphoto.com/id/1151355457/photo/hard-working-woman-farmer-wearing-saree-working-in-her-fields-in-the-harvest-season-and-is.jpg?s=612x612&w=is&k=20&c=uPh9k10WQi_fy6-u8GynDhZLqUvwi03utoGXseHUCkI="
+                    alt=""
+                  />
                 </td>
-                <td className="num4">269</td>
-                <td className="num4">269</td>
+                <td className="num4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </td>
+
+                <td className="num4">Etim in iligula</td>
+                <td className="num4">Graph</td>
                 <td className="num4">226</td>
                 <td className="num4">0.80 min</td>
                 <td className="num5">34,576</td>
-              </tr>
+              </tr>{" "}
               <tr>
                 <td className="num5">1.</td>
-                <td className="num4">Etim in iligula</td>
-                <td className="graph-height">
-                  <ResponsiveContainer width="100%" height="100%">
-                    <BarChart width={150} height={40} data={data}>
-                      <Bar dataKey="uv" fill="#8884d8" />
-                    </BarChart>
-                  </ResponsiveContainer>
+                <td className="imgst">
+                  <img
+                    src="https://media.istockphoto.com/id/1151355457/photo/hard-working-woman-farmer-wearing-saree-working-in-her-fields-in-the-harvest-season-and-is.jpg?s=612x612&w=is&k=20&c=uPh9k10WQi_fy6-u8GynDhZLqUvwi03utoGXseHUCkI="
+                    alt=""
+                  />
                 </td>
-                <td className="num4">269</td>
-                <td className="num4">269</td>
+                <td className="num4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </td>
+
+                <td className="num4">Etim in iligula</td>
+                <td className="num4">Graph</td>
                 <td className="num4">226</td>
                 <td className="num4">0.80 min</td>
                 <td className="num5">34,576</td>
-              </tr>
+              </tr>{" "}
               <tr>
                 <td className="num5">1.</td>
-                <td className="num4">Etim in iligula</td>
-                <td className="graph-height">
-                  <ResponsiveContainer width="100%" height="100%">
-                    <BarChart width={150} height={40} data={data}>
-                      <Bar dataKey="uv" fill="#8884d8" />
-                    </BarChart>
-                  </ResponsiveContainer>
+                <td className="imgst">
+                  <img
+                    src="https://media.istockphoto.com/id/1151355457/photo/hard-working-woman-farmer-wearing-saree-working-in-her-fields-in-the-harvest-season-and-is.jpg?s=612x612&w=is&k=20&c=uPh9k10WQi_fy6-u8GynDhZLqUvwi03utoGXseHUCkI="
+                    alt=""
+                  />
                 </td>
-                <td className="num4">269</td>
-                <td className="num4">269</td>
+                <td className="num4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </td>
+
+                <td className="num4">Etim in iligula</td>
+                <td className="num4">Graph</td>
                 <td className="num4">226</td>
                 <td className="num4">0.80 min</td>
                 <td className="num5">34,576</td>
-              </tr>
+              </tr>{" "}
               <tr>
                 <td className="num5">1.</td>
-                <td className="num4">Etim in iligula</td>
-                <td className="graph-height">
-                  <ResponsiveContainer width="100%" height="100%">
-                    <BarChart width={150} height={40} data={data}>
-                      <Bar dataKey="uv" fill="#8884d8" />
-                    </BarChart>
-                  </ResponsiveContainer>
+                <td className="imgst">
+                  <img
+                    src="https://media.istockphoto.com/id/1151355457/photo/hard-working-woman-farmer-wearing-saree-working-in-her-fields-in-the-harvest-season-and-is.jpg?s=612x612&w=is&k=20&c=uPh9k10WQi_fy6-u8GynDhZLqUvwi03utoGXseHUCkI="
+                    alt=""
+                  />
                 </td>
-                <td className="num4">269</td>
-                <td className="num4">269</td>
+                <td className="num4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </td>
+
+                <td className="num4">Etim in iligula</td>
+                <td className="num4">Graph</td>
                 <td className="num4">226</td>
                 <td className="num4">0.80 min</td>
                 <td className="num5">34,576</td>
-              </tr>
+              </tr>{" "}
               <tr>
                 <td className="num5">1.</td>
-                <td className="num4">Etim in iligula</td>
-                <td className="graph-height">
-                  <ResponsiveContainer width="100%" height="100%">
-                    <BarChart width={150} height={40} data={data}>
-                      <Bar dataKey="uv" fill="#8884d8" />
-                    </BarChart>
-                  </ResponsiveContainer>
+                <td className="imgst">
+                  <img
+                    src="https://media.istockphoto.com/id/1151355457/photo/hard-working-woman-farmer-wearing-saree-working-in-her-fields-in-the-harvest-season-and-is.jpg?s=612x612&w=is&k=20&c=uPh9k10WQi_fy6-u8GynDhZLqUvwi03utoGXseHUCkI="
+                    alt=""
+                  />
                 </td>
-                <td className="num4">269</td>
-                <td className="num4">269</td>
-                <td className="num4">226</td>
-                <td className="num4">0.80 min</td>
-                <td className="num5">34,576</td>
-              </tr>
-              <tr>
-                <td className="num5">1.</td>
-                <td className="num4">Etim in iligula</td>
-                <td className="graph-height">
-                  <ResponsiveContainer width="100%" height="100%">
-                    <BarChart width={150} height={40} data={data}>
-                      <Bar dataKey="uv" fill="#8884d8" />
-                    </BarChart>
-                  </ResponsiveContainer>
+                <td className="num4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
                 </td>
-                <td className="num4">269</td>
-                <td className="num4">269</td>
-                <td className="num4">226</td>
-                <td className="num4">0.80 min</td>
-                <td className="num5">34,576</td>
-              </tr>
-              <tr>
-                <td className="num5">1.</td>
+
                 <td className="num4">Etim in iligula</td>
-                <td className="graph-height">
-                  <ResponsiveContainer width="100%" height="100%">
-                    <BarChart width={150} height={40} data={data}>
-                      <Bar dataKey="uv" fill="#8884d8" />
-                    </BarChart>
-                  </ResponsiveContainer>
-                </td>
-                <td className="num4">269</td>
-                <td className="num4">269</td>
+                <td className="num4">Graph</td>
                 <td className="num4">226</td>
                 <td className="num4">0.80 min</td>
                 <td className="num5">34,576</td>
@@ -496,11 +471,8 @@ const Content = () => {
           </div>
         </div>
       </div>
-
-
-      <TopArticles/>
     </>
   );
 };
 
-export default Content;
+export default TopArticles;
