@@ -16,7 +16,6 @@ import {
   Legend,
 } from "recharts";
 const AudienceEngagement = () => {
-
   charts(FusionCharts);
   const dataSource = {
     chart: {
@@ -29,67 +28,66 @@ const AudienceEngagement = () => {
       {
         category: [
           {
-            label: "USA"
+            label: "USA",
           },
           {
-            label: "United Kingdom"
+            label: "United Kingdom",
           },
           {
-            label: "China"
+            label: "China",
           },
           {
-            label: "Russia"
+            label: "Russia",
           },
           {
-            label: "Germany"
-          }
-        ]
-      }
+            label: "Germany",
+          },
+        ],
+      },
     ],
     dataset: [
       {
         seriesname: "Olympics",
         data: [
           {
-            value: "121"
+            value: "121",
           },
           {
-            value: "67"
+            value: "67",
           },
           {
-            value: "70"
+            value: "70",
           },
           {
-            value: "55"
+            value: "55",
           },
           {
-            value: "42"
-          }
-        ]
+            value: "42",
+          },
+        ],
       },
       {
         seriesname: "Paralympics",
         data: [
           {
-            value: "115"
+            value: "115",
           },
           {
-            value: "147"
+            value: "147",
           },
           {
-            value: "239"
+            value: "239",
           },
           {
-            value: ""
+            value: "",
           },
           {
-            value: "57"
-          }
-        ]
-      }
-    ]
+            value: "57",
+          },
+        ],
+      },
+    ],
   };
-
 
   const data = [
     {
@@ -141,7 +139,7 @@ const AudienceEngagement = () => {
             </h6>
           </div>
           <div className="audience-engagement-wrapper-right right-align">
-          <div className="overview-top-right-content">
+            <div className="overview-top-right-content">
               <Tabs>
                 <TabList>
                   <Tab>Title 1</Tab>
@@ -153,37 +151,15 @@ const AudienceEngagement = () => {
         </div>
         <div className="audience-engagement-bottom">
           <div className="audience-engagement-bottom-left">
-          <ReactFusioncharts
-        type="msbar3d"
-        width="97%"
-        height="55%"
-        dataFormat="JSON"
-        dataSource={dataSource}
-      />
-              {/* <ComposedChart
-                layout="vertical"
-                width={500}
-                height={400}
-                data={data}
-                margin={{
-                  top: 20,
-                  right: 20,
-                  bottom: 20,
-                  left: 20,
-                }}
-              >
-                <CartesianGrid stroke="#f5f5f5" />
-                <XAxis type="number" />
-                <YAxis dataKey="name" type="category" scale="band" />
-                <Tooltip />
-                <Legend />
-                <Area dataKey="amt" fill="#8884d8" stroke="#8884d8" />
-                <Bar dataKey="pv" barSize={20} fill="#413ea0" />
-                <Line dataKey="uv" stroke="#ff7300" />
-              </ComposedChart> */}
+            <ReactFusioncharts
+              type="msbar3d"
+              width="97%"
+              height="55%"
+              dataFormat="JSON"
+              dataSource={dataSource}
+            />
           </div>
           <div className="audience-engagement-bottom-right">
-            
             <LineChart
               width={530}
               height={400}

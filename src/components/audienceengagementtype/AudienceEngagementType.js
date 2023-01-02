@@ -1,6 +1,7 @@
 import React from "react";
 import Dropdown from "react-dropdown";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import AudienceEngagementWeekDay from "./AudienceEngagementWeekDay";
 
 const AudienceEngagementType = () => {
   const options = ["one", "two", "three"];
@@ -1234,6 +1235,8 @@ const AudienceEngagementType = () => {
           </Tabs>
         </div>
       </div>
+
+      <AudienceEngagementWeekDay/>
     </>
   );
 };
