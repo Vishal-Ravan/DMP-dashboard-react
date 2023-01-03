@@ -1,11 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import {BrowserRouter} from 'react-router-dom'
+import React from "react";
+import "./index.css";
+import ReactDOM from "react-dom/client";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import { BrowserRouter } from "react-router-dom";
+import Login from "./components/Login";
+import App from "./App";
+import Routess from "./Routess";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-    <BrowserRouter> <App /></BrowserRouter>
+  <>
+    <React.StrictMode>
+      <BrowserRouter>
+        <Login />
+      </BrowserRouter>
+    </React.StrictMode>
+  </>
 );
-

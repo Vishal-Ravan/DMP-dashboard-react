@@ -19,6 +19,7 @@ import AudienceInterest from "./overviewtabs/AudienceInterest";
 import RefferalSource from "./overviewtabs/RefferalSource";
 import GeoLocation from "./overviewtabs/GeoLocation";
 import Content from "./overviewtabs/Content";
+import Login from "./Login";
 const Overview = () => {
   const pieOptions = {
     is3D: true,

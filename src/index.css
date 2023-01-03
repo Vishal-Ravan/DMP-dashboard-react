@@ -400,6 +400,12 @@ h5 {
   background-color: #fff;
   color: black;
 }
+.bPQHAq .head-div {
+  align-items: center;
+}
+.bPQHAq .head-div .icon-suffix {
+  color: #666;
+}
 .sc-bCfvAP.bJmMch.pro-sidebar-content {
   padding: 0;
 }
@@ -507,14 +513,13 @@ nav.sc-AHaJN.hhTtXw.pro-menu {
   font-size: 16;
 }
 
-.dropdown-content a svg{
- font-size:  18px !important;
- padding-right: 2px;
+.dropdown-content a svg {
+  font-size: 18px !important;
+  padding-right: 2px;
 }
 .dropdown-content a:hover {
   background-color: #ddd;
   color: rgb(59, 59, 59);
-
 }
 
 .dropdown:hover .dropdown-content {
@@ -1162,4 +1167,63 @@ tr:nth-child(even) {
   width: 50%;
   display: flex;
   justify-content: flex-end;
+}
+
+/* Login Form &&&&&&&&&&&&&&&&&&&&&& */
+
+.login {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.login-left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffff;
+}
+.login-left img {
+  width: 300px;
+  height: auto;
+}
+.login-right {
+  width: 50%;
+  background-color: #666;
+  padding: 20px;
+}
+.login-right form {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.login-right form input {
+  margin: 10px 0;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+}
+.login-right button {
+  margin: 10px 0;
+  padding: 10px;
+  outline: none;
+  background-color: #cccccc;
+  border: none;
+  font-size: 16px;
+  border-radius: 2px;
+  font-weight: 500;
+}
+.login-right button:hover {
+  margin: 10px 0;
+  padding: 10px;
+  outline: none;
+  background-color: #fff;
+  border: none;
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
 }
