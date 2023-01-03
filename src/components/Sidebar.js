@@ -19,43 +19,51 @@ const Sidebar = () => {
       <CDBSidebarContent>
         <CDBSidebarMenu>
           <Link to="/">
-            <CDBSidebarMenuItem icon="sticky-note">Overview</CDBSidebarMenuItem>
+            <CDBSidebarMenuItem icon="binoculars" iconSize="lg">Overview</CDBSidebarMenuItem>
           </Link>
           <Link to="/live-view">
-            <CDBSidebarMenuItem icon="sticky-note">
+            <CDBSidebarMenuItem icon="eye" iconSize="lg">
               Live View
             </CDBSidebarMenuItem>
           </Link>
           <Link to="/audience">
             {" "}
-            <CDBSidebarMenuItem icon="credit-card" iconType="solid">
+            <CDBSidebarMenuItem icon="users"iconSize="lg">
               Audience
             </CDBSidebarMenuItem>
           </Link>
           <Link to="/audience-first">
             {" "}
-            <CDBSidebarMenuItem icon="credit-card" iconType="solid">
+            <CDBSidebarMenuItem icon="user"iconSize="lg">
               Audiencefirst
             </CDBSidebarMenuItem>
           </Link>
           <Link to="/geo-graphy">
-            <CDBSidebarMenuItem icon="th-large">GeoGraphy</CDBSidebarMenuItem>
+            <CDBSidebarMenuItem icon="map-pin" iconSize="lg">GeoGraphy</CDBSidebarMenuItem>
           </Link>
           <Link to="/source">
-            <CDBSidebarMenuItem icon="th-large">Source</CDBSidebarMenuItem>
+            <CDBSidebarMenuItem icon="database" iconSize="lg">Source</CDBSidebarMenuItem>
           </Link>
           <Link to="/engagement">
-            <CDBSidebarMenuItem icon="th-large">Engagement</CDBSidebarMenuItem>
+            <CDBSidebarMenuItem icon="people-arrows" iconSize="lg">Engagement</CDBSidebarMenuItem>
           </Link>
           <Link to="/content">
-            <CDBSidebarMenuItem icon="th-large">Content</CDBSidebarMenuItem>
+            <CDBSidebarMenuItem icon="file" iconSize="lg">Content</CDBSidebarMenuItem>
           </Link>
         </CDBSidebarMenu>
       </CDBSidebarContent>
 
       <CDBSidebarFooter style={{ textAlign: "center" }}>
-        <div className="sidebar-btn-wrapper" style={{ padding: "10px 2px" }}>
-        © 2023 Cuberoot Technologies Pvt. Ltd.
+        <div
+          className="sidebar-btn-wrapper"
+          style={{
+            padding: "10px 2px",
+            fontSize: "16px",
+            fontWeight: "600",
+            color: "#666",
+          }}
+        >
+          © 2023 Cuberoot Technologies Pvt. Ltd.
         </div>
       </CDBSidebarFooter>
     </CDBSidebar>

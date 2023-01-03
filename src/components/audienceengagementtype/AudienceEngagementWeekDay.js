@@ -238,7 +238,7 @@ const AudienceEngagementWeekDay = () => {
                   <div className="audience-engagement-bottom-left">
                     <ReactFusioncharts
                       type="msbar3d"
-                      width="97%"
+                      width="9%"
                       height="450px"
                       dataFormat="JSON"
                       dataSource={dataSource}
@@ -278,7 +278,7 @@ const AudienceEngagementWeekDay = () => {
                   <div className="audience-engagement-bottom-left">
                     <ReactFusioncharts
                       type="column3d"
-                      width="100%"
+                      width="97%"
                       height="450px"
                       dataFormat="JSON"
                       dataSource={dataSources}

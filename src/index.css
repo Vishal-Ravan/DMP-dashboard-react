@@ -938,7 +938,7 @@ tr:nth-child(even) {
 .audience-segment-top-middle input {
   outline: none;
   border: 1px solid #666;
-  padding: 2px 5px;
+  padding: 0px 5px;
   border-radius: 2px;
 }
 .audience-segment-top-right {
@@ -1139,8 +1139,10 @@ tr:nth-child(even) {
   justify-content: center;
   object-fit: contain;
   padding: 10px;
+  box-shadow: 1px 1px 5px #0000008c;
   margin-top: 1rem;
   background-color: #fff;
+  border-radius: 2px;
 }
 .audiencegeography-wrapper-map svg {
   height: 500px;

@@ -42,7 +42,7 @@ const AudienceEngagementType = () => {
               <Tab>Page Depth </Tab>
             </TabList>
             <TabPanel>
-              <div className="audience-engagement-types-table audience-interest">
+              <div className="audience-engagement-types-table ph ">
                 <h6 className="h6first">Frequency of Sessions</h6>
                 <table>
                   <tr>
@@ -428,7 +428,7 @@ const AudienceEngagementType = () => {
               </div>
             </TabPanel>
             <TabPanel>
-              <div className="audience-engagement-types-table audience-interest">
+              <div className="audience-engagement-types-table ph">
                 <div className="h6first">Recency of Sessions</div>
                 <table>
                   <tr>
@@ -878,7 +878,7 @@ const AudienceEngagementType = () => {
               </div>
             </TabPanel>
             <TabPanel>
-              <div className="audience-engagement-types-table audience-interest">
+              <div className="audience-engagement-types-table ph">
                 <div className="h6first">Time Spent</div>
                 <table>
                   <tr>
@@ -1226,7 +1226,7 @@ const AudienceEngagementType = () => {
               </div>
             </TabPanel>
             <TabPanel>
-              <div className="audience-engagement-types-table audience-interest">
+              <div className="audience-engagement-types-table ph">
                 <div className="h6first">
                   Number of Pages Viewed per Sessions
                 </div>
