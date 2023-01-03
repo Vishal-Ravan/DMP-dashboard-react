@@ -4,7 +4,7 @@ import React from "react";
 const AudienceTraffic = () => {
   return (
     <>
-      <div className="audience-traffic">
+      <div className="audience-engagement">
         <table>
           <tr>
             <th></th>

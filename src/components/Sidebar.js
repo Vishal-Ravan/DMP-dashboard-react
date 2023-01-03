@@ -19,7 +19,7 @@ const Sidebar = () => {
       <CDBSidebarContent>
         <CDBSidebarMenu>
           <Link to="/">
-            <CDBSidebarMenuItem icon="th-large">Overview</CDBSidebarMenuItem>
+            <CDBSidebarMenuItem icon="sticky-note">Overview</CDBSidebarMenuItem>
           </Link>
           <Link to="/live-view">
             <CDBSidebarMenuItem icon="sticky-note">
@@ -54,8 +54,8 @@ const Sidebar = () => {
       </CDBSidebarContent>
 
       <CDBSidebarFooter style={{ textAlign: "center" }}>
-        <div className="sidebar-btn-wrapper" style={{ padding: "20px 5px" }}>
-          Sidebar Footer
+        <div className="sidebar-btn-wrapper" style={{ padding: "10px 2px" }}>
+        © 2023 Cuberoot Technologies Pvt. Ltd.
         </div>
       </CDBSidebarFooter>
     </CDBSidebar>
