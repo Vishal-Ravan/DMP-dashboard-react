@@ -14,12 +14,12 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import Dropdown from "react-dropdown";
 import "react-dropdown/style.css";
-import AudienceProfile from "./overviewtabs/AudienceProfile";
-import AudienceInterest from "./overviewtabs/AudienceInterest";
-import RefferalSource from "./overviewtabs/RefferalSource";
-import GeoLocation from "./overviewtabs/GeoLocation";
-import Content from "./overviewtabs/Content";
-const Overview = () => {
+import ContentSecondAudienceProfile from "./ContentSecondAudienceProfile";
+import ContentSecondInterest from "./ContentSecondInterest";
+import ContentSecondRefferal from "./ContentSecondRefferal";
+import ContendSecondGeoLocation from "./ContendSecondGeoLocation";
+
+const ContentSecond = () => {
   const pieOptions = {
     is3D: true,
 
@@ -112,20 +112,36 @@ const Overview = () => {
   return (
     <>
       <div className="overview">
-        <div className="overview-top">
-          <div className="overview-top-left">
-            <h3 className="h3first">Site Performance</h3>
+        <div className="content-second-top ">
+          <div className="content-second-top-left">
+            <img src="https://imgs.search.brave.com/GhwrppavP_kPrKYE1bSm-dKOkdRGqaCf2-OpbesLw_g/rs:fit:660:826:1/g:ce/aHR0cHM6Ly9jZG4u/YWNpZGNvdy5jb20v/cGljcy8yMDE4MDYy/Ny9vZGRfYW5kX3dl/aXJkXzA1LmpwZw" alt="" height='auto' width={100} />
           </div>
-          <div className="overview-top-right right-align">
-            <div className="overview-top-right-content">
-              <p className="p1">Post Published</p>
-              <h5>345</h5>
+          <div className="content-second-top-middle">
+            <h4>
+              Lorem ipsum dolor sit amet consectetur adipisicing.
+            </h4>
+            <div className="content-second-top-middle-wrapper">
+              <p className="p1">
+                Author: <span>Lorem Epsum Dolor</span>
+              </p>
+              <p className="p1">
+                Section: <span>Lorem Epsum Dolor</span>
+              </p>
+              <p className="p1">
+                Publish Date: <span>DD/MM/YYYY</span>
+              </p>
             </div>
-            <div className="overview-top-right-content">
-              <p className="p1">Publishing Trend</p>
-              <h5>345</h5>
+            <div className="content-second-top-middle-bottom">
+              <p className="p1">Tags:</p>
+              <button className="btn3">Duis Costrect non</button>
+              <button className="btn3">Donec eu</button>
+              <button className="btn3">Curabitur</button>
+              <button className="btn3">Quisq nulla</button>
+              <button className="btn3">Etim in igulia</button>
             </div>
-            <div className="overview-top-right-content">
+          </div>
+          <div className="content-second-top-right right-align">
+            <div className="overview-top-right-content ">
               <p className="p1">Time Period</p>
               <Tabs>
                 <TabList>
@@ -134,7 +150,7 @@ const Overview = () => {
                 </TabList>
               </Tabs>
             </div>
-            <div className="overview-top-right-content">
+            <div className="overview-top-right-content ">
               <Dropdown
                 options={options}
                 value={defaultOption}
@@ -151,12 +167,13 @@ const Overview = () => {
               <Tab>Interest Segments</Tab>
               <Tab>Referral Sources</Tab>
               <Tab>Geo Location</Tab>
-              <Tab>Top Content</Tab>
+              <Tab>Traffice Distribution</Tab>
+              <Tab>Engagement</Tab>
             </TabList>
             <TabPanel className="summary">
               <div className="summary-wrapper ph">
                 <div className="summary-wrapper-left pls">
-                  <h6 className="h6first">Key Metric</h6>
+                  <h6 className="h6first">Key Metric - Article Performance</h6>
                   <div className="summary-left-top">
                     <div className="summary-left-top-content">
                       <p className="p1">Visitors</p>
@@ -339,22 +356,20 @@ const Overview = () => {
             </TabPanel>
 
             <TabPanel>
-              <AudienceProfile />
+              <ContentSecondAudienceProfile />
             </TabPanel>
 
             <TabPanel>
-              <AudienceInterest />
+              <ContentSecondInterest />
             </TabPanel>
 
             <TabPanel>
-              <RefferalSource />
+              <ContentSecondRefferal />
             </TabPanel>
             <TabPanel>
-              <GeoLocation />
+              <ContendSecondGeoLocation />
             </TabPanel>
-            <TabPanel>
-              <Content />
-            </TabPanel>
+            <TabPanel></TabPanel>
           </Tabs>
         </div>
       </div>
@@ -362,4 +377,4 @@ const Overview = () => {
   );
 };
 
-export default Overview;
+export default ContentSecond;

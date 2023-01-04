@@ -10,6 +10,7 @@ import Content from "./components/content/Content";
 import AudienceSegmentFirst from "./components/audiencesegmentfirst/AudienceSegmentFirst";
 import AudienceGeography from "./components/audience/audiencegeography/AudienceGeography";
 import AudienceEngagementType from "./components/audienceengagementtype/AudienceEngagementType";
+import ContentSecond from "./components/content/ContentSecond";
 
 const App = () => {
   return (
@@ -25,10 +26,11 @@ const App = () => {
             <Route path="/live-view" component={LIveView} />
             <Route path="/audience" component={AudienceSegment} />
             <Route path="/source" component={Source} />
-            <Route path="/content" component={Content} />
             <Route path="/engagement" component={AudienceEngagementType} />
             <Route path="/geo-graphy" component={AudienceGeography} />
             <Route path="/audience-first" component={AudienceSegmentFirst} />
+            <Route path="/content" component={Content} />
+            <Route path="/content-Second" component={ContentSecond} />
           </Switch>
         </div>
       </div>

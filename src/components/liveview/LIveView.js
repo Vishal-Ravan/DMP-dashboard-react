@@ -125,12 +125,14 @@ const LIveView = () => {
           <div className="liveview-wrapper-left">
             <div className="liveview-wrapper-left-first">
               <div className="liveview-wrapper-left-head">
-                <p>
-                  Visitors <span>Live Now</span>
+                <p className="p1">
+                  Visitors <span className="btn3">Live Now</span>
                 </p>
               </div>
+              <div className="tac">
               <h3>3,000,685</h3>
-              <p>+15% vs lorem epson</p>
+              <p className="p1"> +15%  <span className="num4">vs lorem epson </span></p>
+              </div>
               <div className="liveview-wrapper-left-bargraph">
                 <ResponsiveContainer width="100%" height="100%">
                   <BarChart width={150} height={40} data={data}>

@@ -53,11 +53,11 @@
   color: rgb(0, 0, 0);
 }
 .btn3 {
-  background-color: blue;
+  background-color: rgb(123, 123, 128);
   color: white;
   font-size: 14px;
   padding: 4px 4px;
-  border: 1px solid #666;
+  border: none;
   outline: none;
   border-radius: 2px;
   margin-left: 5px;
@@ -117,6 +117,10 @@
 }
 .lc {
   margin-top: 2rem;
+}
+.tac{
+  text-align: center;
+  padding-top: 16px;
 }
 .num {
   color: #424242;
@@ -344,6 +348,7 @@
 
 .pa {
   padding: 10px;
+  box-shadow: 1px 1px 5px #0000008c;
 }
 
 .imgst img {
@@ -403,6 +408,7 @@ h5 {
 .bPQHAq .head-div {
   align-items: center;
 }
+
 .bPQHAq .head-div .icon-suffix {
   color: #666;
 }
@@ -639,6 +645,7 @@ nav.sc-AHaJN.hhTtXw.pro-menu {
 /* Audience profile*************************** */
 .audience {
   padding: 5px;
+  box-shadow: 1px 1px 5px #0000008c;
 }
 .audience-wrapper {
   padding: 10px;
@@ -705,6 +712,7 @@ tr:nth-child(even) {
   width: 100%;
   align-items: center;
   display: flex;
+  margin-bottom: 1rem;
 }
 .geolocation-wrapper-right {
   width: 60%;
@@ -746,11 +754,18 @@ tr:nth-child(even) {
 }
 .liveview-wrapper-left {
   width: 30%;
+  padding: 5px;
+}
+.liveview-wrapper-left-first{
+  background-color: #fff;
+  padding: 5px;
+  box-shadow: 1px 1px 5px #0000008c;
+  
 }
 
 .liveview-wrapper-left-bargraph {
   width: 100%;
-  height: 150px;
+  height: 130px;
 }
 .liveview-wrapper-left-graph-multi {
   width: 100%;
@@ -1226,4 +1241,38 @@ tr:nth-child(even) {
   font-size: 16px;
   color: #333;
   font-weight: 500;
+}
+
+/* contend Second ********************** */
+
+.content-second-top {
+  display: flex;
+  width: 100%;
+  padding:  5px;
+  background-color: #fff;
+  align-items: center;
+  box-shadow: 1px 1px 5px #0000008c;
+}
+.content-second-top-left {
+  width: 10%;
+  padding: 5px;
+}
+.content-second-top-middle {
+  width: 65%;
+  padding: 5px 10px;
+}
+.content-second-top-middle-wrapper {
+  display: flex;
+  width: 100%;
+  padding-bottom: 10px;
+  justify-content: space-between;
+}
+.content-second-top-middle-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.content-second-top-right {
+  width: 25%;
+  padding: 5px;
 }

@@ -2,13 +2,15 @@ import React from "react";
 import Dropdown from "react-dropdown";
 import ProgressBar from "@ramonak/react-progress-bar";
 
-const AudienceInterest = () => {
+const ContentSecondInterest = () => {
   const options = ["Online Shopping", "two", "three"];
   const defaultOption = options[0];
 
   return (
     <>
       <div className="audience">
+      <h5 className="h6first">Audience Interest Segments of Articles</h5>
+
         <div className="audience-interest-wrpper">
           <table>
             <tr>
@@ -145,4 +147,4 @@ const AudienceInterest = () => {
   );
 };
 
-export default AudienceInterest;
+export default ContentSecondInterest;

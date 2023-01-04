@@ -3,7 +3,7 @@ import React from "react";
 import Dropdown from "react-dropdown";
 import { Chart } from "react-google-charts";
 
-const RefferalSource = () => {
+const ContentSecondRefferal = () => {
   const pieOptions = {
     is3D: true,
 
@@ -134,4 +134,4 @@ const RefferalSource = () => {
   );
 };
 
-export default RefferalSource;
+export default ContentSecondRefferal;

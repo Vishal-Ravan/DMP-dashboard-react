@@ -50,6 +50,9 @@ const Sidebar = () => {
           <Link to="/content">
             <CDBSidebarMenuItem icon="file" iconSize="lg">Content</CDBSidebarMenuItem>
           </Link>
+          <Link to="/content-second">
+            <CDBSidebarMenuItem icon="file" iconSize="lg">Content Second</CDBSidebarMenuItem>
+          </Link>
         </CDBSidebarMenu>
       </CDBSidebarContent>
 

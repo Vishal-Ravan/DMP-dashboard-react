@@ -1,7 +1,5 @@
 import React, { useRef } from "react";
-import App from "../App";
 import Routess from "../Routess";
-import Overview from "./Overview";
 import cuberoot from "./source/cuberoot.png";
 
 const Login = () => {

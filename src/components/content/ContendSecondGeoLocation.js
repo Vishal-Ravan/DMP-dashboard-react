@@ -1,9 +1,9 @@
-import React from "react";
 import ProgressBar from "@ramonak/react-progress-bar";
+import React from "react";
 import Dropdown from "react-dropdown";
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 
-const GeoLocation = () => {
+const ContendSecondGeoLocation = () => {
   const geoUrl =
     "https://raw.githubusercontent.com/deldersveld/topojson/master/world-countries.json";
 
@@ -11,8 +11,8 @@ const GeoLocation = () => {
   const defaultOption = options[0];
   return (
     <>
-      <div className="geolocation pa">
-        <h6 className="h6first">Location</h6>
+      <div className="audience">
+        <h6 className="h6first">Location  driving Traffic To Articles</h6>
         <div className="geolocation-wrapper">
           <div className="geolocation-wrapper-left">
             <div className="geolocation-wrapper-top">
@@ -36,7 +36,7 @@ const GeoLocation = () => {
                 <tr>
                   <td className="num2">New Delhi</td>
                   <td className="num5">28%</td>
-                  <td style={{ width: "150px", paddingLeft: "0" }}>
+                  <td style={{ width: "200px", paddingLeft: "0" }}>
                     <ProgressBar
                       completed="70"
                       baseBgColor="#fff"
@@ -50,7 +50,7 @@ const GeoLocation = () => {
                 <tr>
                   <td className="num2">New Delhi</td>
                   <td className="num5">28%</td>
-                  <td style={{ width: "150px", paddingLeft: "0" }}>
+                  <td style={{ width: "200px", paddingLeft: "0" }}>
                     <ProgressBar
                       completed="70"
                       baseBgColor="#fff"
@@ -60,11 +60,10 @@ const GeoLocation = () => {
                       borderRadius={0}
                     />
                   </td>
-                </tr>{" "}
-                <tr>
+                </tr><tr>
                   <td className="num2">New Delhi</td>
                   <td className="num5">28%</td>
-                  <td style={{ width: "150px", paddingLeft: "0" }}>
+                  <td style={{ width: "200px", paddingLeft: "0" }}>
                     <ProgressBar
                       completed="70"
                       baseBgColor="#fff"
@@ -74,11 +73,10 @@ const GeoLocation = () => {
                       borderRadius={0}
                     />
                   </td>
-                </tr>{" "}
-                <tr>
+                </tr><tr>
                   <td className="num2">New Delhi</td>
                   <td className="num5">28%</td>
-                  <td style={{ width: "150px", paddingLeft: "0" }}>
+                  <td style={{ width: "200px", paddingLeft: "0" }}>
                     <ProgressBar
                       completed="70"
                       baseBgColor="#fff"
@@ -88,11 +86,10 @@ const GeoLocation = () => {
                       borderRadius={0}
                     />
                   </td>
-                </tr>{" "}
-                <tr>
+                </tr><tr>
                   <td className="num2">New Delhi</td>
                   <td className="num5">28%</td>
-                  <td style={{ width: "150px", paddingLeft: "0" }}>
+                  <td style={{ width: "200px", paddingLeft: "0" }}>
                     <ProgressBar
                       completed="70"
                       baseBgColor="#fff"
@@ -102,11 +99,10 @@ const GeoLocation = () => {
                       borderRadius={0}
                     />
                   </td>
-                </tr>{" "}
-                <tr>
+                </tr><tr>
                   <td className="num2">New Delhi</td>
                   <td className="num5">28%</td>
-                  <td style={{ width: "150px", paddingLeft: "0" }}>
+                  <td style={{ width: "200px", paddingLeft: "0" }}>
                     <ProgressBar
                       completed="70"
                       baseBgColor="#fff"
@@ -116,11 +112,10 @@ const GeoLocation = () => {
                       borderRadius={0}
                     />
                   </td>
-                </tr>{" "}
-                <tr>
+                </tr><tr>
                   <td className="num2">New Delhi</td>
                   <td className="num5">28%</td>
-                  <td style={{ width: "150px", paddingLeft: "0" }}>
+                  <td style={{ width: "200px", paddingLeft: "0" }}>
                     <ProgressBar
                       completed="70"
                       baseBgColor="#fff"
@@ -130,11 +125,10 @@ const GeoLocation = () => {
                       borderRadius={0}
                     />
                   </td>
-                </tr>{" "}
-                <tr>
+                </tr><tr>
                   <td className="num2">New Delhi</td>
                   <td className="num5">28%</td>
-                  <td style={{ width: "150px", paddingLeft: "0" }}>
+                  <td style={{ width: "200px", paddingLeft: "0" }}>
                     <ProgressBar
                       completed="70"
                       baseBgColor="#fff"
@@ -144,25 +138,10 @@ const GeoLocation = () => {
                       borderRadius={0}
                     />
                   </td>
-                </tr>{" "}
-                <tr>
+                </tr><tr>
                   <td className="num2">New Delhi</td>
                   <td className="num5">28%</td>
-                  <td style={{ width: "150px", paddingLeft: "0" }}>
-                    <ProgressBar
-                      completed="70"
-                      baseBgColor="#fff"
-                      bgColor="#666"
-                      height="30px"
-                      className="progress-bar"
-                      borderRadius={0}
-                    />
-                  </td>
-                </tr>{" "}
-                <tr>
-                  <td className="num2">New Delhi</td>
-                  <td className="num5">28%</td>
-                  <td style={{ width: "150px", paddingLeft: "0" }}>
+                  <td style={{ width: "200px", paddingLeft: "0" }}>
                     <ProgressBar
                       completed="70"
                       baseBgColor="#fff"
@@ -205,4 +184,4 @@ const GeoLocation = () => {
   );
 };
 
-export default GeoLocation;
+export default ContendSecondGeoLocation;
