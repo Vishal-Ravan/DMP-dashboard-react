@@ -218,7 +218,6 @@ const AudienceEngagementWeekDay = () => {
               <Tab>Gender</Tab>
               <Tab>Age Group</Tab>
               <Tab>Income Level</Tab>
-
             </TabList>
 
             <TabPanel>
@@ -238,8 +237,8 @@ const AudienceEngagementWeekDay = () => {
                   <div className="audience-engagement-bottom-left">
                     <ReactFusioncharts
                       type="msbar3d"
-                      width="9%"
-                      height="450px"
+                      width="97%"
+                      height="500"
                       dataFormat="JSON"
                       dataSource={dataSource}
                     />
@@ -273,45 +272,45 @@ const AudienceEngagementWeekDay = () => {
                 </div>
               </div>
 
-              <div className="audience-engagement">
-                <div className="audience-engagement-bottom">
-                  <div className="audience-engagement-bottom-left">
-                    <ReactFusioncharts
-                      type="column3d"
-                      width="97%"
-                      height="450px"
-                      dataFormat="JSON"
-                      dataSource={dataSources}
+              <div className="audience-engagement-bottom">
+                <div className="audience-engagement-bottom-left">
+                  <ReactFusioncharts
+                    type="column3d"
+                    width="97%"
+                    height="500"
+                    dataFormat="JSON"
+                    dataSource={dataSources}
+                  />
+                </div>
+                <div className="audience-engagement-bottom-right">
+                  <LineChart
+                    width={530}
+                    height={400}
+                    data={data}
+                    margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+                  >
+                    <XAxis dataKey="name" />
+                    <YAxis />
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <Tooltip />
+                    <Legend verticalAlign="top" height={36} />
+                    <Line
+                      name="pv of pages"
+                      type="monotone"
+                      dataKey="pv"
+                      stroke="#8884d8"
                     />
-                  </div>
-                  <div className="audience-engagement-bottom-right">
-                    <LineChart
-                      width={530}
-                      height={400}
-                      data={data}
-                      margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
-                    >
-                      <XAxis dataKey="name" />
-                      <YAxis />
-                      <CartesianGrid strokeDasharray="3 3" />
-                      <Tooltip />
-                      <Legend verticalAlign="top" height={36} />
-                      <Line
-                        name="pv of pages"
-                        type="monotone"
-                        dataKey="pv"
-                        stroke="#8884d8"
-                      />
-                      <Line
-                        name="uv of pages"
-                        type="monotone"
-                        dataKey="uv"
-                        stroke="#82ca9d"
-                      />
-                    </LineChart>
-                  </div>
+                    <Line
+                      name="uv of pages"
+                      type="monotone"
+                      dataKey="uv"
+                      stroke="#82ca9d"
+                    />
+                  </LineChart>
                 </div>
               </div>
+
+            
             </TabPanel>
             <TabPanel></TabPanel>
             <TabPanel></TabPanel>

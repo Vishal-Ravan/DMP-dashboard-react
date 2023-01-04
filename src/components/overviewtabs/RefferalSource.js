@@ -115,7 +115,7 @@ const RefferalSource = () => {
                 <td className="num4">269</td>
                 <td className="num5">-</td>
                 <td className="num5">34,578</td>
-                <td style={{ width: "150px", paddingLeft: "0" }}>
+                <td style={{ width: "100px", paddingLeft: "0" }}>
                   <ProgressBar
                     completed="70"
                     baseBgColor="#fff"
