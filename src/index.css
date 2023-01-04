@@ -118,7 +118,7 @@
 .lc {
   margin-top: 2rem;
 }
-.tac{
+.tac {
   text-align: center;
   padding-top: 16px;
 }
@@ -349,6 +349,7 @@
 .pa {
   padding: 10px;
   box-shadow: 1px 1px 5px #0000008c;
+  background-color: #fff;
 }
 
 .imgst img {
@@ -756,16 +757,21 @@ tr:nth-child(even) {
   width: 30%;
   padding: 5px;
 }
-.liveview-wrapper-left-first{
+.liveview-wrapper-left-first {
   background-color: #fff;
   padding: 5px;
   box-shadow: 1px 1px 5px #0000008c;
-  
 }
 
 .liveview-wrapper-left-bargraph {
   width: 100%;
   height: 130px;
+}
+.liveview-wrapper-left-second {
+  background-color: #fff;
+  padding: 5px;
+  box-shadow: 1px 1px 5px #0000008c;
+  margin-top: 1rem;
 }
 .liveview-wrapper-left-graph-multi {
   width: 100%;
@@ -814,13 +820,28 @@ tr:nth-child(even) {
   justify-content: space-between;
   margin-top: 1rem;
 }
+.liveview-wrapper-middle-second {
+  margin-top: 1rem;
+  background-color: #fff;
+  padding: 5px;
+  box-shadow: 1px 1px 5px #0000008c;
+}
 .liveview-wrapper-middle-second-bottom {
   display: flex;
   width: 100%;
 }
 .liveview-wrapper-middle-second-bottom-left {
   width: 45%;
-  border-right: 1px solid rgba(95, 93, 93, 0.123);
+  border-right: 1px dotted rgba(0, 0, 0, 0.411);
+}
+.middle-live-bar {
+  display: flex;
+  width: 100%;
+  padding: 6px 0;
+  align-items: center;
+}
+.middle-live-bar svg {
+  margin-right: 5px;
 }
 .liveview-wrapper-middle-second-bottom-right {
   width: 55%;
@@ -828,6 +849,8 @@ tr:nth-child(even) {
 .liveview-wrapper-middle-second-bottom-right-graph {
   width: 100%;
   height: 140px;
+  display: flex;
+  align-items: center;
   border-bottom: 1px solid rgba(114, 111, 111, 0.151);
 }
 .liveview-wrapper-middle-second-bottom-right-graph svg.recharts-surface {
@@ -840,41 +863,63 @@ tr:nth-child(even) {
 /* right************************************* */
 .liveview-wrapper-right {
   width: 40%;
+  height: 100%;
+  padding: 5px;
 }
 .liveview-wrapper-right-side-wrapper {
   width: 100%;
   display: flex;
+}
+.liveview-wrapper-right-first{
+  background-color: #fff;
+    padding: 5px;
+    box-shadow: 1px 1px 5px #0000008c;
+
 }
 .liveview-wrapper-right-first-top {
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
+.liveview-wrapper-right-first-bottom {
+  margin-top: 1rem;
+}
+.right-geo-Location {
+  padding-left: 5px;
+  padding-top: 5px;
+}
 .liveview-wrapper-right-first-bottom-content {
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin-top: 1rem;
-  padding: 5px 0;
+  align-items: center;
+  padding: 5px;
   border-bottom: 1px solid rgba(134, 127, 127, 0.281);
 }
-
+.liveview-wrapper-right-first-bottom-content img {
+  width: 70px;
+  height: 50px;
+  border-radius: 2px;
+  object-fit: cover;
+}
 /* left-liveview-publishing ********************************* */
 .publishing-content {
   width: 100%;
   display: flex;
-  margin-bottom: 3rem;
-  height: 80px;
+  margin-bottom: 1.3rem;
+  height: 100px;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.411);
 }
 .publishing-content-left {
   width: 50%;
 }
 .publishing-content-right {
   width: 50%;
+  height: 70px;
 }
-.liveview-wrapper-left-second-authors {
-  margin-top: 5rem;
-}
+
 .liveview-wrapper-left-second-authors-head {
   display: flex;
   justify-content: space-between;
@@ -885,8 +930,21 @@ tr:nth-child(even) {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.411);
+  padding: 5px;
+}
+.liveview-wrapper-left-second-authors-details img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
 }
 
+.liveview-wrapper-middle-first {
+  background-color: #fff;
+  padding: 5px;
+  box-shadow: 1px 1px 5px #0000008c;
+}
 /*  Audience Segments^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
 .audience-segment-bottom {
   padding: 10px;
@@ -1248,7 +1306,7 @@ tr:nth-child(even) {
 .content-second-top {
   display: flex;
   width: 100%;
-  padding:  5px;
+  padding: 5px;
   background-color: #fff;
   align-items: center;
   box-shadow: 1px 1px 5px #0000008c;

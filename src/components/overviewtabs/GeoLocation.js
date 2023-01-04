@@ -103,48 +103,7 @@ const GeoLocation = () => {
                     />
                   </td>
                 </tr>{" "}
-                <tr>
-                  <td className="num2">New Delhi</td>
-                  <td className="num5">28%</td>
-                  <td style={{ width: "150px", paddingLeft: "0" }}>
-                    <ProgressBar
-                      completed="70"
-                      baseBgColor="#fff"
-                      bgColor="#666"
-                      height="30px"
-                      className="progress-bar"
-                      borderRadius={0}
-                    />
-                  </td>
-                </tr>{" "}
-                <tr>
-                  <td className="num2">New Delhi</td>
-                  <td className="num5">28%</td>
-                  <td style={{ width: "150px", paddingLeft: "0" }}>
-                    <ProgressBar
-                      completed="70"
-                      baseBgColor="#fff"
-                      bgColor="#666"
-                      height="30px"
-                      className="progress-bar"
-                      borderRadius={0}
-                    />
-                  </td>
-                </tr>{" "}
-                <tr>
-                  <td className="num2">New Delhi</td>
-                  <td className="num5">28%</td>
-                  <td style={{ width: "150px", paddingLeft: "0" }}>
-                    <ProgressBar
-                      completed="70"
-                      baseBgColor="#fff"
-                      bgColor="#666"
-                      height="30px"
-                      className="progress-bar"
-                      borderRadius={0}
-                    />
-                  </td>
-                </tr>{" "}
+               
                 <tr>
                   <td className="num2">New Delhi</td>
                   <td className="num5">28%</td>
